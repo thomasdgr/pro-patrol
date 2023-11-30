@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0jwe5fwtfcda"]
+
+[ext_resource type="PackedScene" uid="uid://bbf31pi4uedn6" path="res://casual_male/casual_male_animated.tscn" id="1_qt7rt"]
+
+[node name="Demo" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.992187, 0, 0.124762, -0.0108151, 0.996236, 0.086009, -0.124292, -0.0866863, 0.988452, 0.485873, 1.6849, 2.20003)
+current = true
+
+[node name="Character" parent="." instance=ExtResource("1_qt7rt")]
+
+[editable path="Character"]
