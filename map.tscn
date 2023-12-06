@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://yd8vw7rcf53q"]
+[gd_scene load_steps=14 format=3 uid="uid://yd8vw7rcf53q"]
 
 [ext_resource type="PackedScene" uid="uid://c5h1jr1qf8xij" path="res://png.tscn" id="1_2vbu7"]
 [ext_resource type="PackedScene" uid="uid://gk345cw7fe6d" path="res://character.tscn" id="1_8t06m"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bth24b8oufsc6" path="res://car.tscn" id="4_qxnn0"]
 [ext_resource type="PackedScene" uid="uid://do3tcpmsb6xp1" path="res://dialogBox.tscn" id="6_8hwvt"]
 [ext_resource type="Script" path="res://dialogBox.gd" id="7_n28hc"]
-[ext_resource type="PackedScene" uid="uid://j4bkwml8oj12" path="res://Cop.tscn" id="8_a0yqs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i8go0"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -68,7 +67,7 @@ transform = Transform3D(0.999862, -0.0165389, 0.00169087, 0.0165571, 0.999798, -
 curve = SubResource("Curve3D_u2hic")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.020159, 0.0167862, 0.999621, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201558, 682.197, 10.0943, 470.219)
+transform = Transform3D(0.020159, 0.0167862, 0.99962, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201558, 682.197, 10.0943, 470.219)
 
 [node name="group" parent="Path3D/PathFollow3D" instance=ExtResource("4_qxnn0")]
 transform = Transform3D(139.479, 2.17698, 3.10289, -2.17198, 139.513, -0.269983, -3.10675, 0.22167, 139.496, 7.37579, -14.6518, -57.4089)
@@ -80,6 +79,3 @@ offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 script = ExtResource("7_n28hc")
-
-[node name="Cop" parent="." instance=ExtResource("8_a0yqs")]
-transform = Transform3D(-0.0776457, 0, -0.289778, 0, 0.3, 0, 0.289778, 0, -0.0776457, 147, 7, 117)
