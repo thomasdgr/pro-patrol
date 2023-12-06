@@ -9,7 +9,7 @@ var mouse_sensitivity = 0.002
 func _input(event):
 	if event is InputEventMouseMotion :
 		rotate_y(-event.relative.x * mouse_sensitivity)
-		print($Neck/Camera3D.rotation.x)
+		#print($Neck/Camera3D.rotation.x)
 		$Neck/Camera3D.rotate_x(-event.relative.y * mouse_sensitivity)
 		$Neck/Camera3D.rotation.x = clampf($Neck/Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 		
