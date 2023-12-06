@@ -1,0 +1,11 @@
+Model Information:
+* title:	Barney (Animated + rigged)
+* source:	https://sketchfab.com/3d-models/barney-animated-rigged-acd5b08caec340e7998025661a07f5e3
+* author:	hvp0926 (https://sketchfab.com/hvp0926)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Barney (Animated + rigged)" (https://sketchfab.com/3d-models/barney-animated-rigged-acd5b08caec340e7998025661a07f5e3) by hvp0926 (https://sketchfab.com/hvp0926) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
