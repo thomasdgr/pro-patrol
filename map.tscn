@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://yd8vw7rcf53q"]
+[gd_scene load_steps=15 format=3 uid="uid://yd8vw7rcf53q"]
 
 [ext_resource type="PackedScene" uid="uid://c5h1jr1qf8xij" path="res://png.tscn" id="1_2vbu7"]
 [ext_resource type="PackedScene" uid="uid://gk345cw7fe6d" path="res://character.tscn" id="1_8t06m"]
@@ -22,7 +22,7 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y7pwh"]
-size = Vector3(2000, 1, 2000)
+size = Vector3(7550.11, 1, 4646.34)
 
 [sub_resource type="BoxMesh" id="BoxMesh_am6a4"]
 size = Vector3(2.08165e-12, 1, 2.08165e-12)
@@ -34,12 +34,15 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_fskc3"]
+size = Vector3(0.407717, 336.588, 4212.79)
+
 [node name="Map" type="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, -365, 467)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, -689.993, 467)
 script = ExtResource("1_feh4l")
 
 [node name="Png" parent="." instance=ExtResource("1_2vbu7")]
-transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 30.071, 1.5, -289.494)
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 30.071, -0.0991211, -289.494)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_w1byj")
@@ -49,7 +52,7 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.446, 0, 56.516)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2302.41, 0, -1005.17)
 shape = SubResource("BoxShape3D_y7pwh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
@@ -67,7 +70,7 @@ transform = Transform3D(0.999862, -0.0165389, 0.00169087, 0.0165571, 0.999798, -
 curve = SubResource("Curve3D_u2hic")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.020159, 0.0167862, 0.999621, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201558, 682.197, 10.0943, 470.219)
+transform = Transform3D(0.020159, 0.0167862, 0.99962, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201558, 682.197, 10.0943, 470.219)
 
 [node name="group" parent="Path3D/PathFollow3D" instance=ExtResource("4_qxnn0")]
 transform = Transform3D(139.479, 2.17698, 3.10289, -2.17198, 139.513, -0.269983, -3.10675, 0.22167, 139.496, 7.37579, -14.6518, -57.4089)
@@ -79,3 +82,19 @@ offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 script = ExtResource("7_n28hc")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2903.01, 0, -811.577)
+shape = SubResource("BoxShape3D_fskc3")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 192.395, 0, -811.577)
+shape = SubResource("BoxShape3D_fskc3")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1332.65, 0, -2479.86)
+shape = SubResource("BoxShape3D_fskc3")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1332.65, 0, 573.531)
+shape = SubResource("BoxShape3D_fskc3")
