@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://j4bkwml8oj12"]
+[gd_scene load_steps=4 format=3 uid="uid://nw4wps5woyai"]
 
 [ext_resource type="Script" path="res://Cop.gd" id="1_4yhno"]
 [ext_resource type="PackedScene" uid="uid://vgds4rtmnvst" path="res://barney_animated__rigged/scene.gltf" id="1_hinho"]
