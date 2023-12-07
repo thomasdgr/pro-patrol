@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://do3tcpmsb6xp1"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 179.0
+offset_right = 5.0
+offset_bottom = 179.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dialog" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 257.0
+offset_right = 1031.0
+offset_bottom = 402.0
+color = Color(0.364706, 0.364706, 0.364706, 1)
+
+[node name="Name" type="RichTextLabel" parent="Dialog"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.102
+anchor_bottom = 0.263
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 169.65
+offset_bottom = 9.865
+text = "Name"
+scroll_active = false
+
+[node name="Text" type="RichTextLabel" parent="Dialog"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 39.0
+offset_right = 839.0
+offset_bottom = 111.0
+text = "Lorem Ipsum blablabla"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3fkug478xiy0"]
+
+[ext_resource type="Script" path="res://scripts/Cop.gd" id="1_0na6c"]
+[ext_resource type="PackedScene" uid="uid://vgds4rtmnvst" path="res://assets/barney_animated__rigged/scene.gltf" id="2_057vd"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sn87m"]
+radius = 16.7217
+height = 75.7368
+
+[node name="Cop" type="CharacterBody3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -7.84495, 7.94629, 1.75165)
+script = ExtResource("1_0na6c")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="Character" parent="Pivot" instance=ExtResource("2_057vd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.239453, 0, -0.00839114)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.24582, 29.9755, 2.84802)
+shape = SubResource("CapsuleShape3D_sn87m")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.14838, 29.0373, -1.63343)
+aabb = AABB(-15.7084, -38.1649, -12.3332, 31.4167, 76.3297, 24.6665)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.912142, -0.542374, 3.1599, 0.0536271, 3.28225, 0.578856, -3.20566, 0.209236, -0.889437, 67.2796, 42.368, 5.19609)
+fov = 83.9471

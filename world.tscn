@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvjs3nust2ib"]
-
-[ext_resource type="PackedScene" uid="uid://b37p6af5f8vf" path="res://ccity_building_set_1/scene.gltf" id="1_7c1sx"]
-
-[node name="scene" instance=ExtResource("1_7c1sx")]
-
-[node name="pasted__ALPHA_OPAQUE_INT_BTM_elise_0" parent="Sketchfab_model/9c4529a64bd147c6b03660f10745daad_fbx/RootNode/group/pasted__group1/pasted__ALPHA_OPAQUE_INT_BTM" index="0"]
-transform = Transform3D(1, -2.13329e-24, -5.84406e-10, -5.39667e-24, 1, 1.01911e-24, 6.99977e-10, 7.39043e-25, 1, 0, 0, 0)

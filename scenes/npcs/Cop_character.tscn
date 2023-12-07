@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4kcf7fnvs0o7"]
+
+[ext_resource type="PackedScene" uid="uid://vgds4rtmnvst" path="res://assets/barney_animated__rigged/scene.gltf" id="1_078s8"]
+
+[node name="scene" instance=ExtResource("1_078s8")]
+
+[node name="Skeleton3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/BARNEY-X_Template_Biped1_skeleton_64/GLTF_created_0" index="0"]
+bones/1/rotation = Quaternion(-0.518247, -0.47278, -0.501676, 0.506182)
+bones/3/rotation = Quaternion(-0.17821, -0.980722, -0.0646494, 0.0474034)
+bones/4/rotation = Quaternion(0.00969768, 0.00309034, -0.62117, 0.78361)
+bones/5/rotation = Quaternion(-0.00149013, 0.999972, 0.0041433, 0.00604061)
+bones/7/rotation = Quaternion(-0.146595, -0.985478, 0.0767834, 0.0380382)
+bones/8/rotation = Quaternion(-0.0658801, 0.007623, -0.304937, 0.950061)
+bones/9/rotation = Quaternion(-0.00160883, 0.99916, 0.00518712, 0.0406139)
+bones/12/rotation = Quaternion(0.00378986, 0.0110601, 0.00277973, 0.999928)
+bones/14/rotation = Quaternion(0.623323, 0.0359773, 0.761454, 0.174248)
+bones/15/rotation = Quaternion(-0.0793461, 0.432315, 0.0409497, 0.897291)
+bones/16/rotation = Quaternion(0.151659, 0.0869633, -0.272436, 0.946158)
+bones/17/rotation = Quaternion(-0.595411, -0.107195, -0.0356575, 0.795439)
+bones/22/rotation = Quaternion(0.0926657, 0.0752257, 0.379224, 0.917575)
+bones/30/rotation = Quaternion(-0.614812, 0.00843919, 0.777874, 0.129799)
+bones/31/rotation = Quaternion(0.0728492, -0.457507, 0.162867, 0.871122)
+bones/33/rotation = Quaternion(0.559515, 0.114558, 0.0341118, 0.820156)
+bones/34/rotation = Quaternion(-0.619628, -0.177526, -0.12398, 0.754436)
+bones/38/rotation = Quaternion(-0.0618424, -0.0378575, 0.358237, 0.930811)
+bones/48/rotation = Quaternion(-0.029316, 0.0115878, -0.0184164, 0.999333)
