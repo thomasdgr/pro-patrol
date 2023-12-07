@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://yd8vw7rcf53q"]
+[gd_scene load_steps=17 format=3 uid="uid://yd8vw7rcf53q"]
 
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_1acjj"]
 [ext_resource type="PackedScene" uid="uid://cnyyf71he22r1" path="res://scenes/png.tscn" id="1_2vbu7"]
@@ -8,18 +8,22 @@
 [ext_resource type="PackedScene" uid="uid://do3tcpmsb6xp1" path="res://scenes/dialogBox.tscn" id="6_8hwvt"]
 [ext_resource type="Script" path="res://scripts/dialogBox.gd" id="7_v4erb"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i8go0"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+[sub_resource type="Gradient" id="Gradient_aufgv"]
+colors = PackedColorArray(0.137255, 0.137255, 0.529412, 1, 0.0509804, 0.0509804, 0.0509804, 1)
 
-[sub_resource type="Sky" id="Sky_jkhbh"]
-sky_material = SubResource("ProceduralSkyMaterial_i8go0")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ydrpk"]
+gradient = SubResource("Gradient_aufgv")
+fill_from = Vector2(0.982051, 0.574359)
 
-[sub_resource type="Environment" id="Environment_w1byj"]
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_3vo0y"]
+night_sky = SubResource("GradientTexture2D_ydrpk")
+
+[sub_resource type="Sky" id="Sky_gj8w5"]
+sky_material = SubResource("PhysicalSkyMaterial_3vo0y")
+
+[sub_resource type="Environment" id="Environment_m0pa7"]
 background_mode = 2
-sky = SubResource("Sky_jkhbh")
-tonemap_mode = 2
-glow_enabled = true
+sky = SubResource("Sky_gj8w5")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y7pwh"]
 size = Vector3(7550.11, 1, 4646.34)
@@ -35,22 +39,21 @@ _data = {
 point_count = 2
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fskc3"]
-size = Vector3(0.407717, 336.588, 4212.79)
+size = Vector3(23.7656, 336.588, 4212.79)
 
 [node name="Map" type="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, -689.993, 467)
 script = ExtResource("1_1acjj")
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.250761, 0.0934823, -0.963525, -0.966423, -0.0818379, 0.243576, -0.0560828, 0.992252, 0.110865, -1634.26, 552.687, -669.961)
+shadow_enabled = true
+
 [node name="Png" parent="." instance=ExtResource("1_2vbu7")]
 transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 31.8694, -0.683899, -290.992)
-visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_w1byj")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, -8706, 190, 0)
-shadow_enabled = true
+environment = SubResource("Environment_m0pa7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2302.41, 0, -1005.17)
