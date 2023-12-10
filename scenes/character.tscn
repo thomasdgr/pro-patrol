@@ -3,14 +3,12 @@
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_8dwqb"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bohxr"]
-radius = 2.35994
-height = 13.8764
 
 [node name="Character" type="CharacterBody3D"]
 script = ExtResource("1_8dwqb")
 
 [node name="Neck" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.46761, -2.0066)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.236579, -0.00240254)
 
 [node name="Camera3D" type="Camera3D" parent="Neck"]
 

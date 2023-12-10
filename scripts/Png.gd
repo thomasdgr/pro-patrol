@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-const SPEED = 20
-const STOP_DISTANCE = 35.0
+const SPEED = 8
+const STOP_DISTANCE = 5.0
 var GRAVITY = ProjectSettings.get_setting("physics/3d/default_gravity")
 var player: Node
 
@@ -14,6 +14,10 @@ func _ready():
 	dialogBox = get_node("/root/Map/Control")
 	
 func _process(delta):
+	
+	if not is_on_floor() :
+		velocity.y -= GRAVITY * delta
+		
 	if player:
 		var direction = (player.global_transform.origin - global_transform.origin).normalized()
 		var opposite_dir = Vector3(-direction.x, direction.y, -direction.z)
@@ -22,12 +26,14 @@ func _process(delta):
 
 
 		var look_at = opposite_dir.normalized().lerp(global_transform.basis.z.normalized(), 0.1).normalized()
-		var rotation = Basis().looking_at(Vector3(look_at.x, 0, look_at.z), Vector3.UP).scaled(Vector3(18,18,18))
+		var rotation = Basis().looking_at(Vector3(look_at.x, 0, look_at.z), Vector3.UP).scaled(Vector3(1,1,1))
 		global_transform.basis = rotation
 		
 		# Check if the NPC is farther than the stopping distance
 		if distance > STOP_DISTANCE:
-			velocity = direction * SPEED
+			
+			velocity.x = direction.x * SPEED
+			velocity.z = direction.z * SPEED
 			# Move towards the player
 			anim.play("walking")
 		else:

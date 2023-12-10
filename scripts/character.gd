@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
-var current_speed = 100
+var current_speed = 15
 
 var jump_speed = 5
 var mouse_sensitivity = 0.002

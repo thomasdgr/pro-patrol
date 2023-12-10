@@ -90,7 +90,7 @@ func parse_string_to_vector3(str):
 
 	# Convert string values to floats
 	var x = values[0].to_float()
-	var y = values[1].to_float()
+	var y = 0
 	var z = values[2].to_float()
 
 	# Create a Vector3 using the parsed values

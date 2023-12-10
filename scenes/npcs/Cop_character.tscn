@@ -4,6 +4,9 @@
 
 [node name="scene" instance=ExtResource("1_078s8")]
 
+[node name="Sketchfab_model" parent="." index="0"]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, 0, 0)
+
 [node name="Skeleton3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/BARNEY-X_Template_Biped1_skeleton_64/GLTF_created_0" index="0"]
 bones/1/rotation = Quaternion(-0.518247, -0.47278, -0.501676, 0.506182)
 bones/3/rotation = Quaternion(-0.17821, -0.980722, -0.0646494, 0.0474034)

@@ -3,7 +3,7 @@
     <name>Test Scenario 1</name>
     <spawn> 30,9,40 </spawn>
     <events>
-        <event time="0" action="spawn_npc" npcId="1" position="(100,5,200)" path="to_player" goal="dialog">
+        <event time="0" action="spawn_npc" npcId="1" position="(100,0,200)" path="to_player" goal="dialog">
             <dialog>
                 <dialogInstance id="0" text="Bonjour, je suis Samuel Beckett" time="10">
                     <response text="Veuillez présenter une pièce d'identité" points="0" next="1" />
@@ -21,7 +21,7 @@
                 <dialogInstance id="4" text="Mais tout est correcte!" action="end_dialog" time="5"/>
             </dialog>
         </event>
-        <event time="10" action="spawn_npc" npcId="1" position="(100,5,200)" path="(100,100,200)" goal="dialog">
+        <event time="10" action="spawn_npc" npcId="1" position="(100,0,200)" path="(0,0,0)" goal="dialog">
             <dialog>
                 <dialogInstance id="0" text="Bonjour, je suis Samuel Beckett" time="10">
                     <response text="Veuillez présenter une pièce d'identité" points="0" next="1" />

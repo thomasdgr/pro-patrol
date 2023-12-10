@@ -2305,6 +2305,7 @@ script = ExtResource("1_edpq3")
 [node name="RootNode" type="Node3D" parent="."]
 
 [node name="Skeleton3D" type="Skeleton3D" parent="RootNode"]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0, 0)
 bones/0/name = "mixamorig_Hips"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.997833, -0.0308424)
@@ -2773,4 +2774,5 @@ libraries = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_1m1yq")
