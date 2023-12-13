@@ -1,0 +1,143 @@
+[gd_scene load_steps=12 format=3 uid="uid://b1j5liek54gkl"]
+
+[ext_resource type="FontFile" uid="uid://ce3i5xpvvgv68" path="res://We Love Peace.ttf" id="1_bqqyc"]
+[ext_resource type="Script" path="res://menu.gd" id="1_ehwax"]
+[ext_resource type="PackedScene" uid="uid://cb1q8tq03df41" path="res://donut.glb" id="2_6fabj"]
+[ext_resource type="AudioStream" uid="uid://ct060mrin82c3" path="res://sound.mp3" id="4_op02t"]
+
+[sub_resource type="FontVariation" id="FontVariation_vphev"]
+base_font = ExtResource("1_bqqyc")
+
+[sub_resource type="FontVariation" id="FontVariation_3by5l"]
+base_font = ExtResource("1_bqqyc")
+
+[sub_resource type="FontVariation" id="FontVariation_qksip"]
+base_font = ExtResource("1_bqqyc")
+
+[sub_resource type="FontVariation" id="FontVariation_hmr42"]
+base_font = ExtResource("1_bqqyc")
+
+[sub_resource type="Animation" id="Animation_qa60k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 2.92877)]
+}
+
+[sub_resource type="Animation" id="Animation_kaytw"]
+resource_name = "move"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0.566785, -0.258808, 2.92877), Vector3(-0.433215, -0.258808, 2.92877), Vector3(0.265017, -0.843915, 2.92877), Vector3(-1.09177, -0.000871718, 2.92877)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w0iwl"]
+_data = {
+"RESET": SubResource("Animation_qa60k"),
+"move": SubResource("Animation_kaytw")
+}
+
+[node name="menu" type="CanvasLayer"]
+script = ExtResource("1_ehwax")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+msaa_2d = 1
+msaa_3d = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="donut" parent="SubViewportContainer/SubViewport" instance=ExtResource("2_6fabj")]
+transform = Transform3D(0.846039, 0.2075, -0.491082, -0.528458, 0.44797, -0.721149, 0.0703512, 0.869636, 0.488654, 0, -0.381366, 0)
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 0.990899, 0.134609, 0, -0.134609, 0.990899, 0, 0, 2.92877)
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1153.0
+offset_bottom = 649.0
+theme_override_fonts/font = SubResource("FontVariation_vphev")
+theme_override_font_sizes/font_size = 80
+text = "Titre du jeu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 471.0
+offset_right = 694.0
+offset_bottom = 520.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = SubResource("FontVariation_3by5l")
+text = "START"
+
+[node name="Button2" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 537.0
+offset_right = 694.0
+offset_bottom = 586.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = SubResource("FontVariation_qksip")
+text = "EXIT"
+
+[node name="CheckButton" type="CheckButton" parent="Label"]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 608.0
+offset_right = 1142.0
+offset_bottom = 639.0
+theme_override_fonts/font = SubResource("FontVariation_hmr42")
+text = "SOUND"
+
+[node name="Button3" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 1041.0
+offset_top = 579.0
+offset_right = 1135.0
+offset_bottom = 605.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = SubResource("FontVariation_3by5l")
+text = "settings"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "move"
+libraries = {
+"": SubResource("AnimationLibrary_w0iwl")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_op02t")
+autoplay = true
