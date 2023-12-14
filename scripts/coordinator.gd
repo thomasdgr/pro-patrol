@@ -13,6 +13,7 @@ func start_scenario(scenario_id):
 	var parser = XMLParser.new()
 	parser.open("scenarios/scenario_" + str(scenario_id) + ".xml")
 	var events = []  # To store Event objects
+	var current_dialog_instance = null
 	while parser.read() != ERR_FILE_EOF:
 		if parser.get_node_type() == XMLParser.NODE_ELEMENT:
 			var node_name = parser.get_node_name()
@@ -26,32 +27,46 @@ func start_scenario(scenario_id):
 				while parser.read() != ERR_FILE_EOF:
 					if parser.get_node_type() == XMLParser.NODE_ELEMENT:
 						var inner_node_name = parser.get_node_name()
+
 						if inner_node_name == "dialogInstance":
 							var instance_attributes = {}
-							instance_attributes["action"] = ""
 							for idx in range(parser.get_attribute_count()):
 								instance_attributes[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
 							var instance = DialogInstance.new()
 							instance.set_text(instance_attributes["text"])
 							instance.set_time(instance_attributes["time"].to_int())
 							instance.set_id(instance_attributes["id"].to_int())
-							if instance_attributes.has("next"):
-								instance.set_next_index(instance_attributes["next"].to_int())
-							else:
-								instance.set_next_index(-1)
-							instance.set_action(instance_attributes["action"])
+							instance.set_action(instance_attributes.get("action", ""))
 							current_event.add_dialog_instance(instance)
-					elif parser.get_node_type() == XMLParser.NODE_ELEMENT_END and parser.get_node_name() == "event":
-						break  # End processing the current event
+							current_dialog_instance = instance
+
+						elif inner_node_name == "response":
+							if current_dialog_instance != null:
+								var response_attributes = {}
+								for idx in range(parser.get_attribute_count()):
+									response_attributes[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
+								var response = {}
+								response["text"] = response_attributes["text"]
+								response["points"] = response_attributes["points"].to_int()
+								response["next"] = response_attributes["next"].to_int()
+								current_dialog_instance.add_response(response)
+						elif parser.get_node_type() == XMLParser.NODE_ELEMENT_END and parser.get_node_name() == "event":
+							break  # End processing the current event
 
 
 	for event in events:
 		var dialogs = event.dialog_instances
 		dialogs.sort_custom(func(x,y): return y.id > x.id)
 		for dialog in dialogs:
-			if dialog.next_index >= 0:
-				dialog.set_next_instance(dialogs[dialog.next_index])
-
+			# make each response's next point to the corresponding dialog instance
+			var responses = dialog.responses
+			for response in responses:
+				var next = response["next"]
+				var nextInstance = null
+				if next >= 0:
+					nextInstance = dialogs[next]
+				response["nextInstance"] = nextInstance 
+			print(responses)
 	# Sort events based on their time
 	events.sort_custom(func(x,y): return y.event_attributes["time"].to_int() > x.event_attributes["time"].to_int())
 
@@ -105,6 +120,7 @@ func request_dialog(firstDialogInstance: DialogInstance):
 	if not active_dialog:
 		print("Hey")
 		active_dialog = true
+		print(firstDialogInstance)
 	
 
 

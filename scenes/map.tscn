@@ -50,6 +50,7 @@ shadow_enabled = true
 
 [node name="Png" parent="." instance=ExtResource("1_2vbu7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.734, 0, -51.044)
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_m0pa7")
