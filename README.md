@@ -19,7 +19,7 @@ Bridge to make certain functionalities global
 ### Dialog
 Public methods:
 `RequestDialog(DialogInstance)`
-    This displays the dialog as well as the responses and the timer. The timer starts when the dialog is displayed. The dialog triggers the next one when it is over
+	This displays the dialog as well as the responses and the timer. The timer starts when the dialog is displayed. The dialog triggers the next one when it is over
 `ClearDialog()`
 
 ### DialogInstance
