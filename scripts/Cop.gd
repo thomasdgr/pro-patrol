@@ -42,7 +42,7 @@ func _process(delta):
 		velocity = direction * Vector3(0,0,0)
 		anim.stop()
 		if goal == "dialog":
-			get_node("/root/Coordinator").request_dialog(firstDialogInstance)
+			get_node("/root/Coordinator").end_level()#request_dialog(firstDialogInstance)
 			
 
 	move_and_slide()

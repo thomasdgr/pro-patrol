@@ -124,13 +124,18 @@ func request_dialog(firstDialogInstance: DialogInstance):
 	
 
 
-func add_points(points: int):
+func add_points(dInstance: DialogInstance, response: Dictionary):
 	self.points += points
 
 func get_points():
 	return self.points
 
-	
+func end_level():
+	var resultScreen = preload("res://scenes/result_screen.tscn").instantiate()
+	# Get the current 2D scene tree
+	var viewport = get_viewport()
+	# Add the 2D result screen to the current viewport
+	viewport.add_child(resultScreen)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
