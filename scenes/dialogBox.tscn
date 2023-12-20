@@ -78,6 +78,7 @@ offset_left = -0.4
 offset_top = -2.5
 offset_right = 0.249936
 offset_bottom = -0.066007
+alignment = 2
 
 [node name="Button" type="Button" parent="Dialog/VBoxContainer"]
 layout_mode = 2

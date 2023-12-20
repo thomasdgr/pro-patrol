@@ -2,8 +2,10 @@ extends Node
 
 var points = 0
 var npc_manager = preload("res://scripts/npc_manager.gd")
+var dialogBox : Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	dialogBox = get_node("/root/Map/Control")
 	start_scenario(1)
 	pass # Replace with function body.
 
@@ -117,12 +119,14 @@ var active_dialog: bool
 
 func request_dialog(firstDialogInstance: DialogInstance):
 	# Call the other function
-	if not active_dialog:
-		print("Hey")
-		active_dialog = true
-		print(firstDialogInstance)
-	
 
+	#print("Hey")
+	
+	#print(firstDialogInstance)
+	if (!active_dialog):
+		active_dialog = true
+		dialogBox.RequestDialog(firstDialogInstance)
+	
 
 func add_points(points: int):
 	self.points += points
