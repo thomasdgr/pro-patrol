@@ -16,7 +16,13 @@ func start_scenario(scenario_id):
 	parser.open("scenarios/scenario_" + str(scenario_id) + ".xml")
 	var events = []  # To store Event objects
 	var current_dialog_instance = null
-	while parser.read() != ERR_FILE_EOF:
+	var to_read = true
+	while true:
+		if to_read:
+			if parser.read() == ERR_FILE_EOF:
+				break
+		else:
+			to_read = true
 		if parser.get_node_type() == XMLParser.NODE_ELEMENT:
 			var node_name = parser.get_node_name()
 			if node_name == "event":
@@ -26,9 +32,11 @@ func start_scenario(scenario_id):
 				var current_event = Event.new()
 				current_event.set_attributes(attributes_dict)
 				events.append(current_event)
+				var dialog_ctr = 0
 				while parser.read() != ERR_FILE_EOF:
 					if parser.get_node_type() == XMLParser.NODE_ELEMENT:
 						var inner_node_name = parser.get_node_name()
+						var inner_node = parser.get_node_data()
 
 						if inner_node_name == "dialogInstance":
 							var instance_attributes = {}
@@ -52,8 +60,9 @@ func start_scenario(scenario_id):
 								response["points"] = response_attributes["points"].to_int()
 								response["next"] = response_attributes["next"].to_int()
 								current_dialog_instance.add_response(response)
-						elif parser.get_node_type() == XMLParser.NODE_ELEMENT_END and parser.get_node_name() == "event":
-							break  # End processing the current event
+						elif inner_node_name == "event":
+							to_read = false
+							break
 
 
 	for event in events:
