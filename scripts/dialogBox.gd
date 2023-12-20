@@ -24,6 +24,10 @@ func _ready():
 	button1 = get_node("/root/Map/Control/Dialog/VBoxContainer/Button")
 	button2 = get_node("/root/Map/Control/Dialog/VBoxContainer/Button2")
 	button3 = get_node("/root/Map/Control/Dialog/VBoxContainer/Button3")
+	button1.connect("pressed", _on_button_pressed(button1), 0)
+	button2.connect("pressed", _on_button_pressed(button2), 1)
+	button3.connect("pressed", _on_button_pressed(button3), 2)
+
 	
 	dialogNode.visible = false
 	
@@ -40,15 +44,22 @@ func _process(delta):
 			stop_timer()
 			print(dialog.responses)
 			print("Next")
-			var t =  dialog.responses[0].nextInstance
-			print(t.responses)
 			hide()
+			
+			print(dialog.responses[0].nextInstance)
+			
+			#if (dialog.responses[0].nextInstance):
 			RequestDialog(dialog.responses[0].nextInstance)
 			return
 
 func RequestDialog(dialog_id: DialogInstance):
 	if !timer_running:
 		dialog = dialog_id
+		if (len(dialog.responses) == 0):
+			hide()
+			DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
+			return
+			
 		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_VISIBLE)
 		countdown_timer = dialog_id.time
 		label_title.text = "Question " + String.num_int64(dialog_id.id +1)
@@ -90,6 +101,24 @@ func start_timer() -> void:
 func stop_timer() -> void:
 	timer_running = false
 
-func _on_button_pressed():
-	print("Ok")
-	pass
+
+# Called when any button is pressed
+func _on_button_pressed(button: Button):
+	# Identify which button was pressed and handle accordingly
+	match button:
+		button1:
+			handle_button_click(button1)
+		button2:
+			handle_button_click(button2)
+		button3:
+			handle_button_click(button3)
+		# Add more buttons as needed
+
+# Function to handle button click
+func handle_button_click(button: Button):
+	print("Button clicked:", button.text)
+	# Add your logic here based on which button was clicked
+	# You can access button.text to get the text of the clicked button
+	# For example, you might want to trigger a specific action or advance the dialogue
+
+# ...
