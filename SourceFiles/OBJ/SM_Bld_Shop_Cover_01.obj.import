@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bepruolgqlo0v"
+path="res://.godot/imported/SM_Bld_Shop_Cover_01.obj-5141e8dc011471856623e7446c8980e8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_Shop_Cover_01.obj-5141e8dc011471856623e7446c8980e8.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Bld_Shop_Cover_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_Shop_Cover_01.obj-5141e8dc011471856623e7446c8980e8.mesh", "res://.godot/imported/SM_Bld_Shop_Cover_01.obj-5141e8dc011471856623e7446c8980e8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

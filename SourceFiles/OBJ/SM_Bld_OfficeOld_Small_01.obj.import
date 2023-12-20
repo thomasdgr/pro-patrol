@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bktpx1sx7utvs"
+path="res://.godot/imported/SM_Bld_OfficeOld_Small_01.obj-0531a1fc994fb75db268ded098db073a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_OfficeOld_Small_01.obj-0531a1fc994fb75db268ded098db073a.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Bld_OfficeOld_Small_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_OfficeOld_Small_01.obj-0531a1fc994fb75db268ded098db073a.mesh", "res://.godot/imported/SM_Bld_OfficeOld_Small_01.obj-0531a1fc994fb75db268ded098db073a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

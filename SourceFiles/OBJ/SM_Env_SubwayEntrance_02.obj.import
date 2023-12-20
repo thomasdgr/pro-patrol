@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnowl7ttndeu"
+path="res://.godot/imported/SM_Env_SubwayEntrance_02.obj-ea2d0c908f93ca81b5db7058597f589f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_SubwayEntrance_02.obj-ea2d0c908f93ca81b5db7058597f589f.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Env_SubwayEntrance_02.obj"
+dest_files=["res://.godot/imported/SM_Env_SubwayEntrance_02.obj-ea2d0c908f93ca81b5db7058597f589f.mesh", "res://.godot/imported/SM_Env_SubwayEntrance_02.obj-ea2d0c908f93ca81b5db7058597f589f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

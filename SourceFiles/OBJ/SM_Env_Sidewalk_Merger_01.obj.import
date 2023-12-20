@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c0jox53glpb5d"
+path="res://.godot/imported/SM_Env_Sidewalk_Merger_01.obj-6e131c96748cab55101deeea16f4195b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Sidewalk_Merger_01.obj-6e131c96748cab55101deeea16f4195b.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Env_Sidewalk_Merger_01.obj"
+dest_files=["res://.godot/imported/SM_Env_Sidewalk_Merger_01.obj-6e131c96748cab55101deeea16f4195b.mesh", "res://.godot/imported/SM_Env_Sidewalk_Merger_01.obj-6e131c96748cab55101deeea16f4195b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

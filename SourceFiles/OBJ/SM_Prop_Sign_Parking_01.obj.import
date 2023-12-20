@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dkmu6sog2yi0u"
+path="res://.godot/imported/SM_Prop_Sign_Parking_01.obj-987c7dd3125767e284796ed52b8dec97.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Sign_Parking_01.obj-987c7dd3125767e284796ed52b8dec97.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Sign_Parking_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Sign_Parking_01.obj-987c7dd3125767e284796ed52b8dec97.mesh", "res://.godot/imported/SM_Prop_Sign_Parking_01.obj-987c7dd3125767e284796ed52b8dec97.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

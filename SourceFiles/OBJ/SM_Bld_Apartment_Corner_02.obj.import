@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c0tbf5vi5ml15"
+path="res://.godot/imported/SM_Bld_Apartment_Corner_02.obj-72aa12dd2b621cfe9403a5cb55f7018d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_Apartment_Corner_02.obj-72aa12dd2b621cfe9403a5cb55f7018d.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Bld_Apartment_Corner_02.obj"
+dest_files=["res://.godot/imported/SM_Bld_Apartment_Corner_02.obj-72aa12dd2b621cfe9403a5cb55f7018d.mesh", "res://.godot/imported/SM_Bld_Apartment_Corner_02.obj-72aa12dd2b621cfe9403a5cb55f7018d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

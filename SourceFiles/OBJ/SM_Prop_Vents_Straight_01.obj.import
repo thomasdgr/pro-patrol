@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hsmckjn84b8o"
+path="res://.godot/imported/SM_Prop_Vents_Straight_01.obj-fb48b33b96238d083e711af7c69373a3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Vents_Straight_01.obj-fb48b33b96238d083e711af7c69373a3.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Vents_Straight_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Vents_Straight_01.obj-fb48b33b96238d083e711af7c69373a3.mesh", "res://.godot/imported/SM_Prop_Vents_Straight_01.obj-fb48b33b96238d083e711af7c69373a3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

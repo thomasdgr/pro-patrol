@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bxpxmwelsh2op"
+path="res://.godot/imported/SM_Prop_Billboard_Sign_03.obj-a32f913182690d8077fdf97061366573.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Billboard_Sign_03.obj-a32f913182690d8077fdf97061366573.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Billboard_Sign_03.obj"
+dest_files=["res://.godot/imported/SM_Prop_Billboard_Sign_03.obj-a32f913182690d8077fdf97061366573.mesh", "res://.godot/imported/SM_Prop_Billboard_Sign_03.obj-a32f913182690d8077fdf97061366573.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

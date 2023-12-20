@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c66y7wnsskt3j"
+path="res://.godot/imported/SM_Bld_Apartment_Stack_02.obj-9524738d234e76da01cb6fb814860745.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_Apartment_Stack_02.obj-9524738d234e76da01cb6fb814860745.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Bld_Apartment_Stack_02.obj"
+dest_files=["res://.godot/imported/SM_Bld_Apartment_Stack_02.obj-9524738d234e76da01cb6fb814860745.mesh", "res://.godot/imported/SM_Bld_Apartment_Stack_02.obj-9524738d234e76da01cb6fb814860745.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

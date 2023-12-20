@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cw5e65pw35t4x"
+path="res://.godot/imported/SM_Env_WaterEdge_Straight_02.obj-b5a98ed1f0e77f39c66bd3a9d7577d92.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_WaterEdge_Straight_02.obj-b5a98ed1f0e77f39c66bd3a9d7577d92.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Env_WaterEdge_Straight_02.obj"
+dest_files=["res://.godot/imported/SM_Env_WaterEdge_Straight_02.obj-b5a98ed1f0e77f39c66bd3a9d7577d92.mesh", "res://.godot/imported/SM_Env_WaterEdge_Straight_02.obj-b5a98ed1f0e77f39c66bd3a9d7577d92.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhpkwvtyl1ebl"
+path="res://.godot/imported/SM_Prop_CarboardBox_01.obj-ab53369bc61cddcf4973ed44cc57526e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_CarboardBox_01.obj-ab53369bc61cddcf4973ed44cc57526e.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_CarboardBox_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_CarboardBox_01.obj-ab53369bc61cddcf4973ed44cc57526e.mesh", "res://.godot/imported/SM_Prop_CarboardBox_01.obj-ab53369bc61cddcf4973ed44cc57526e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

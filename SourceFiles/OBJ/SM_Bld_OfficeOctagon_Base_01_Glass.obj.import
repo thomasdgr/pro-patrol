@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tntv34x27d02"
+path="res://.godot/imported/SM_Bld_OfficeOctagon_Base_01_Glass.obj-54349ec2dbb6209de3f65ec1ec431c21.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_OfficeOctagon_Base_01_Glass.obj-54349ec2dbb6209de3f65ec1ec431c21.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Bld_OfficeOctagon_Base_01_Glass.obj"
+dest_files=["res://.godot/imported/SM_Bld_OfficeOctagon_Base_01_Glass.obj-54349ec2dbb6209de3f65ec1ec431c21.mesh", "res://.godot/imported/SM_Bld_OfficeOctagon_Base_01_Glass.obj-54349ec2dbb6209de3f65ec1ec431c21.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

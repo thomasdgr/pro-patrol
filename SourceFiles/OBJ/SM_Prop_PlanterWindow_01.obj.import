@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dh2jaqabavpcq"
+path="res://.godot/imported/SM_Prop_PlanterWindow_01.obj-9551650e84020811326d17445ed84abe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_PlanterWindow_01.obj-9551650e84020811326d17445ed84abe.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_PlanterWindow_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_PlanterWindow_01.obj-9551650e84020811326d17445ed84abe.mesh", "res://.godot/imported/SM_Prop_PlanterWindow_01.obj-9551650e84020811326d17445ed84abe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

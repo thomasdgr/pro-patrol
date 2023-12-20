@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://baahera0j7u7"
+path="res://.godot/imported/SM_Prop_Skylight_01_Glass.obj-41bd7490438978193474a15979d1d5c9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Skylight_01_Glass.obj-41bd7490438978193474a15979d1d5c9.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Skylight_01_Glass.obj"
+dest_files=["res://.godot/imported/SM_Prop_Skylight_01_Glass.obj-41bd7490438978193474a15979d1d5c9.mesh", "res://.godot/imported/SM_Prop_Skylight_01_Glass.obj-41bd7490438978193474a15979d1d5c9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ciybjoa1a6og1"
+path="res://.godot/imported/SM_Env_Sidewalk_Straight_02.obj-d2ed8fa5aea4b5561a739dba96e3e46b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Sidewalk_Straight_02.obj-d2ed8fa5aea4b5561a739dba96e3e46b.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Env_Sidewalk_Straight_02.obj"
+dest_files=["res://.godot/imported/SM_Env_Sidewalk_Straight_02.obj-d2ed8fa5aea4b5561a739dba96e3e46b.mesh", "res://.godot/imported/SM_Env_Sidewalk_Straight_02.obj-d2ed8fa5aea4b5561a739dba96e3e46b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

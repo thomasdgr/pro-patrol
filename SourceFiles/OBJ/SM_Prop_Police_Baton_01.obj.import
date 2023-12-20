@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://rigwqoy5olei"
+path="res://.godot/imported/SM_Prop_Police_Baton_01.obj-eed96d5675e66f77ed8cf13fd6a2ed79.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Police_Baton_01.obj-eed96d5675e66f77ed8cf13fd6a2ed79.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Police_Baton_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Police_Baton_01.obj-eed96d5675e66f77ed8cf13fd6a2ed79.mesh", "res://.godot/imported/SM_Prop_Police_Baton_01.obj-eed96d5675e66f77ed8cf13fd6a2ed79.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c32r0k6ne4pgo"
+path="res://.godot/imported/SM_Prop_Power_Cables_03.obj-23a4f6ba2e12e80314a84e10b74a802f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Power_Cables_03.obj-23a4f6ba2e12e80314a84e10b74a802f.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Power_Cables_03.obj"
+dest_files=["res://.godot/imported/SM_Prop_Power_Cables_03.obj-23a4f6ba2e12e80314a84e10b74a802f.mesh", "res://.godot/imported/SM_Prop_Power_Cables_03.obj-23a4f6ba2e12e80314a84e10b74a802f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

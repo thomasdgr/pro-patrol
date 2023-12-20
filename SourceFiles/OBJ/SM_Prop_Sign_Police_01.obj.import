@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cg3pap8orwylu"
+path="res://.godot/imported/SM_Prop_Sign_Police_01.obj-7b7db3535008e3b99f212c1f80122cd8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Sign_Police_01.obj-7b7db3535008e3b99f212c1f80122cd8.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Sign_Police_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Sign_Police_01.obj-7b7db3535008e3b99f212c1f80122cd8.mesh", "res://.godot/imported/SM_Prop_Sign_Police_01.obj-7b7db3535008e3b99f212c1f80122cd8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

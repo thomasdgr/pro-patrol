@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://te27dhyrclyi"
+path="res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_02.obj-035de52ce3b8bda4cb0b51866534de02.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_02.obj-035de52ce3b8bda4cb0b51866534de02.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Bld_Apartment_Stairs_Planter_02.obj"
+dest_files=["res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_02.obj-035de52ce3b8bda4cb0b51866534de02.mesh", "res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_02.obj-035de52ce3b8bda4cb0b51866534de02.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

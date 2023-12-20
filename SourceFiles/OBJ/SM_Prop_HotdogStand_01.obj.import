@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://lfxe58jduqn7"
+path="res://.godot/imported/SM_Prop_HotdogStand_01.obj-18075cfde6d8ad6e649c0cc53c7a79ba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_HotdogStand_01.obj-18075cfde6d8ad6e649c0cc53c7a79ba.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_HotdogStand_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_HotdogStand_01.obj-18075cfde6d8ad6e649c0cc53c7a79ba.mesh", "res://.godot/imported/SM_Prop_HotdogStand_01.obj-18075cfde6d8ad6e649c0cc53c7a79ba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://liqavdwl47h0"
+path="res://.godot/imported/SM_Env_Skyline_02.obj-beb3aa0eb5fe80fbf59ebce3894a8967.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Skyline_02.obj-beb3aa0eb5fe80fbf59ebce3894a8967.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Env_Skyline_02.obj"
+dest_files=["res://.godot/imported/SM_Env_Skyline_02.obj-beb3aa0eb5fe80fbf59ebce3894a8967.mesh", "res://.godot/imported/SM_Env_Skyline_02.obj-beb3aa0eb5fe80fbf59ebce3894a8967.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

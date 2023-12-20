@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://fvnisfuh1noh"
+path="res://.godot/imported/SM_Prop_Sign_Attachment_01.obj-84c68c816ce7f1a44defe1ac18821acc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Sign_Attachment_01.obj-84c68c816ce7f1a44defe1ac18821acc.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Sign_Attachment_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Sign_Attachment_01.obj-84c68c816ce7f1a44defe1ac18821acc.mesh", "res://.godot/imported/SM_Prop_Sign_Attachment_01.obj-84c68c816ce7f1a44defe1ac18821acc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

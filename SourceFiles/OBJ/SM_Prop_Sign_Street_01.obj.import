@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cijmjllsc2olu"
+path="res://.godot/imported/SM_Prop_Sign_Street_01.obj-6b95f17af3a6ae285d20008fd46e8450.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Sign_Street_01.obj-6b95f17af3a6ae285d20008fd46e8450.mesh"]
+
+source_file="res://SourceFiles/OBJ/SM_Prop_Sign_Street_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Sign_Street_01.obj-6b95f17af3a6ae285d20008fd46e8450.mesh", "res://.godot/imported/SM_Prop_Sign_Street_01.obj-6b95f17af3a6ae285d20008fd46e8450.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
