@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://cwvncst8tvuyt"
-path="res://.godot/imported/SM_Prop_Sign_Warning_01.obj-ba337d08daf1f7b20fae569a81663f11.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Sign_Warning_01.obj-ba337d08daf1f7b20fae569a81663f11.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Sign_Warning_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Sign_Warning_01.obj-ba337d08daf1f7b20fae569a81663f11.mesh", "res://.godot/imported/SM_Prop_Sign_Warning_01.obj-ba337d08daf1f7b20fae569a81663f11.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:4abf211504592d6a769235cac1085716c39de0de13d8e76562bf1d50174e4864
+size 662

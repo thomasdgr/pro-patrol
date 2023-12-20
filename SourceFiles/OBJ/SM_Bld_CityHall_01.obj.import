@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://26f5h610rsva"
-path="res://.godot/imported/SM_Bld_CityHall_01.obj-e15e646ef197e684924f81221271c89c.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_CityHall_01.obj-e15e646ef197e684924f81221271c89c.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_CityHall_01.obj"
-dest_files=["res://.godot/imported/SM_Bld_CityHall_01.obj-e15e646ef197e684924f81221271c89c.mesh", "res://.godot/imported/SM_Bld_CityHall_01.obj-e15e646ef197e684924f81221271c89c.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b100753d20762c3af0f3c0bd7ee73be5e8dcb8825afc124868ff6b70b3d0db6
+size 636

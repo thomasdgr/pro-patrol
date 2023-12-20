@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dkwphxgp471is"
-path="res://.godot/imported/SM_Env_Street_Divider_01.obj-77b92914b5d5501acbef7f72ee238e76.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Street_Divider_01.obj-77b92914b5d5501acbef7f72ee238e76.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Street_Divider_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Street_Divider_01.obj-77b92914b5d5501acbef7f72ee238e76.mesh", "res://.godot/imported/SM_Env_Street_Divider_01.obj-77b92914b5d5501acbef7f72ee238e76.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d80692be7f2eea225f48c5f600fe80afcec2c678d56c2af3bc619c4302b9632
+size 667

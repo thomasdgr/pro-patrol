@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://bng0cbou15utn"
-path="res://.godot/imported/business_shirt.glb-600468dd9e8c2011571fe4be511cf79e.scn"
-
-[deps]
-
-source_file="res://business_shirt.glb"
-dest_files=["res://.godot/imported/business_shirt.glb-600468dd9e8c2011571fe4be511cf79e.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:f78c0be935c4169268b44576b1d631b5833d2452c3d0b7db9b75d672d2e11ca6
+size 770

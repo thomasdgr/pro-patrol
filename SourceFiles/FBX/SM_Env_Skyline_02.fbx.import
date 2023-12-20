@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://cahxp17mphbgt"
-path="res://.godot/imported/SM_Env_Skyline_02.fbx-7871299c48d76ec6bdba48e859f49f5f.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Env_Skyline_02.fbx"
-dest_files=["res://.godot/imported/SM_Env_Skyline_02.fbx-7871299c48d76ec6bdba48e859f49f5f.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3ab5769f7fd996230c2ca8e11d35e8ca89328464232f026f2701843f800eb21
+size 795

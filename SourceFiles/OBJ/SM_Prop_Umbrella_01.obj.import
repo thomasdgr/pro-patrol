@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://i1hwlml01xph"
-path="res://.godot/imported/SM_Prop_Umbrella_01.obj-cf42f827086eec3094da8224c0c434b2.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Umbrella_01.obj-cf42f827086eec3094da8224c0c434b2.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Umbrella_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Umbrella_01.obj-cf42f827086eec3094da8224c0c434b2.mesh", "res://.godot/imported/SM_Prop_Umbrella_01.obj-cf42f827086eec3094da8224c0c434b2.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:a27ec2b1c5a0bb607bc9927e21dae5d79f670f9696008d21fe9890f667ef5d44
+size 641

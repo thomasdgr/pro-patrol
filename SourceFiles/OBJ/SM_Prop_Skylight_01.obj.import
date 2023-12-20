@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bk8knn4cf1grw"
-path="res://.godot/imported/SM_Prop_Skylight_01.obj-2668ddd54f5877c44dad75a0bbb4323f.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Skylight_01.obj-2668ddd54f5877c44dad75a0bbb4323f.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Skylight_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Skylight_01.obj-2668ddd54f5877c44dad75a0bbb4323f.mesh", "res://.godot/imported/SM_Prop_Skylight_01.obj-2668ddd54f5877c44dad75a0bbb4323f.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:f64ce9b348f1f90ae8a7f834fbecbded1a19064eadb8a38c0ab8cf5b05ae691d
+size 642

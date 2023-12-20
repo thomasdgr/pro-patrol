@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://c6stfsoxqv57v"
-path="res://.godot/imported/SM_Prop_Paper_05.obj-5f35504e353b916e43678e1aa17ab96e.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Paper_05.obj-5f35504e353b916e43678e1aa17ab96e.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Paper_05.obj"
-dest_files=["res://.godot/imported/SM_Prop_Paper_05.obj-5f35504e353b916e43678e1aa17ab96e.mesh", "res://.godot/imported/SM_Prop_Paper_05.obj-5f35504e353b916e43678e1aa17ab96e.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:b6b21f80172675e582664a336eadb7da2b754afb5c4873d28c488ae96ab26fed
+size 627

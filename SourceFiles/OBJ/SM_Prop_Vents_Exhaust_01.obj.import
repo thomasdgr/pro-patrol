@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://cgubnruq8yvyv"
-path="res://.godot/imported/SM_Prop_Vents_Exhaust_01.obj-d0a2177f56173535cd4c831843638e21.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Vents_Exhaust_01.obj-d0a2177f56173535cd4c831843638e21.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Vents_Exhaust_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Vents_Exhaust_01.obj-d0a2177f56173535cd4c831843638e21.mesh", "res://.godot/imported/SM_Prop_Vents_Exhaust_01.obj-d0a2177f56173535cd4c831843638e21.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:2174c6f29985b5348ccf784993baea5d13a2b2ace0758269df0042b046bcd132
+size 667

@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://f8etr364o3ao"
-path="res://.godot/imported/SM_Prop_Sign_Bustop_01.obj-d22968f7e07f613aa5f05bfd35492bc4.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Sign_Bustop_01.obj-d22968f7e07f613aa5f05bfd35492bc4.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Sign_Bustop_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Sign_Bustop_01.obj-d22968f7e07f613aa5f05bfd35492bc4.mesh", "res://.godot/imported/SM_Prop_Sign_Bustop_01.obj-d22968f7e07f613aa5f05bfd35492bc4.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:882c7d15160b230396d20849d1a0406c7d003df7a3054713c269f11450b0a9ad
+size 656

@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dlgc5rvvdf0dq"
-path="res://.godot/imported/SM_Bld_FireEscape_03.obj-32cf3ea809d113cdf1c70608cda1bf4b.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_FireEscape_03.obj-32cf3ea809d113cdf1c70608cda1bf4b.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_FireEscape_03.obj"
-dest_files=["res://.godot/imported/SM_Bld_FireEscape_03.obj-32cf3ea809d113cdf1c70608cda1bf4b.mesh", "res://.godot/imported/SM_Bld_FireEscape_03.obj-32cf3ea809d113cdf1c70608cda1bf4b.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:2bd468a2bd51c7ccbe9888c53fd5beec08568e82c04ec5b534e3b016d20f4ca0
+size 647

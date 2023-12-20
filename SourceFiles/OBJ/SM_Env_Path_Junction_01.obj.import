@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://b08v0vrfbx6df"
-path="res://.godot/imported/SM_Env_Path_Junction_01.obj-9c2eb0518363774d1e919ca39cf250d2.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Path_Junction_01.obj-9c2eb0518363774d1e919ca39cf250d2.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Path_Junction_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Path_Junction_01.obj-9c2eb0518363774d1e919ca39cf250d2.mesh", "res://.godot/imported/SM_Env_Path_Junction_01.obj-9c2eb0518363774d1e919ca39cf250d2.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0f55d68bb662c4d8a35e52bed825da41f579366016ee7ced7de0c8953987996
+size 662

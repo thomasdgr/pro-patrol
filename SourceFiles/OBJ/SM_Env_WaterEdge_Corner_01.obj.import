@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://crcnjrbr50jte"
-path="res://.godot/imported/SM_Env_WaterEdge_Corner_01.obj-45c0ed64ab5da697f6dd014d7097683e.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_WaterEdge_Corner_01.obj-45c0ed64ab5da697f6dd014d7097683e.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_WaterEdge_Corner_01.obj"
-dest_files=["res://.godot/imported/SM_Env_WaterEdge_Corner_01.obj-45c0ed64ab5da697f6dd014d7097683e.mesh", "res://.godot/imported/SM_Env_WaterEdge_Corner_01.obj-45c0ed64ab5da697f6dd014d7097683e.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:55e53bc9afea94a15f6509714121f86ef128c34eaafd3e4b9e8e4d2b4b3883b7
+size 677

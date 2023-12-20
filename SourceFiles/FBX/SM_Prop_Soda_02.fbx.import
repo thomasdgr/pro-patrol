@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://dxifc481cin11"
-path="res://.godot/imported/SM_Prop_Soda_02.fbx-fa51bceaa95205899009ac04cdff3d87.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Prop_Soda_02.fbx"
-dest_files=["res://.godot/imported/SM_Prop_Soda_02.fbx-fa51bceaa95205899009ac04cdff3d87.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:42a252351d16387d6bcc5f4b095fbd81632d33e20c9f0db8d7e7c66d8ad0804a
+size 789

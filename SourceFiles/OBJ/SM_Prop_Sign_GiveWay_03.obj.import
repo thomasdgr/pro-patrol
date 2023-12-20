@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://be5tajss0jdlp"
-path="res://.godot/imported/SM_Prop_Sign_GiveWay_03.obj-43fa0308d6645ea754b904207ad37e39.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Sign_GiveWay_03.obj-43fa0308d6645ea754b904207ad37e39.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Sign_GiveWay_03.obj"
-dest_files=["res://.godot/imported/SM_Prop_Sign_GiveWay_03.obj-43fa0308d6645ea754b904207ad37e39.mesh", "res://.godot/imported/SM_Prop_Sign_GiveWay_03.obj-43fa0308d6645ea754b904207ad37e39.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:28754e79f3a29edb509c3d24cfb9cc1eb5ae68dfc85a3fb57b011060735c4371
+size 662

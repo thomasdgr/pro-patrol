@@ -1,35 +1,3 @@
-[remap]
-
-importer="texture"
-type="CompressedTexture2D"
-uid="uid://c6jxriol2hk7g"
-path.s3tc="res://.godot/imported/Clinic_baseColor.png-c7bd6d9bb60030e6f3574923519a299c.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-
-[deps]
-
-source_file="res://assets/ccity_building_set_1/textures/Clinic_baseColor.png"
-dest_files=["res://.godot/imported/Clinic_baseColor.png-c7bd6d9bb60030e6f3574923519a299c.s3tc.ctex"]
-
-[params]
-
-compress/mode=2
-compress/high_quality=false
-compress/lossy_quality=0.7
-compress/hdr_compression=1
-compress/normal_map=0
-compress/channel_pack=0
-mipmaps/generate=true
-mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
-process/fix_alpha_border=true
-process/premult_alpha=false
-process/normal_map_invert_y=false
-process/hdr_as_srgb=false
-process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=0
+version https://git-lfs.github.com/spec/v1
+oid sha256:c9ba47ee280cbecd847838741e16da5a3ea66fe3d9b5a040165a9aaf0c93067d
+size 867

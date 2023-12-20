@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://diu6aiybnfelk"
-path="res://.godot/imported/SM_Env_GrassPath_Corner_01.obj-426ae416c42d7e488b05c11de2cde5bb.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_GrassPath_Corner_01.obj-426ae416c42d7e488b05c11de2cde5bb.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_GrassPath_Corner_01.obj"
-dest_files=["res://.godot/imported/SM_Env_GrassPath_Corner_01.obj-426ae416c42d7e488b05c11de2cde5bb.mesh", "res://.godot/imported/SM_Env_GrassPath_Corner_01.obj-426ae416c42d7e488b05c11de2cde5bb.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:551796b22468aa4af44e959f6dd156a615bf1af89c37285fbcf2b564f94bd2eb
+size 677

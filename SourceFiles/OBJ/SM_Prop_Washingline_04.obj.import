@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dao0uhyefo8yv"
-path="res://.godot/imported/SM_Prop_Washingline_04.obj-975a1426f0cdc87eb0d3928397ed9969.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Washingline_04.obj-975a1426f0cdc87eb0d3928397ed9969.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Washingline_04.obj"
-dest_files=["res://.godot/imported/SM_Prop_Washingline_04.obj-975a1426f0cdc87eb0d3928397ed9969.mesh", "res://.godot/imported/SM_Prop_Washingline_04.obj-975a1426f0cdc87eb0d3928397ed9969.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:76bc186d451d1ae0a586a1b2a9fd942eb4da11c09fae3aa21a7aed8baf6b4dd3
+size 657

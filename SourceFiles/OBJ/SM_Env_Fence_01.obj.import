@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://cavxifmwhv0ir"
-path="res://.godot/imported/SM_Env_Fence_01.obj-e1b9bac7086998b8b0a077b0e33dd4b7.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Fence_01.obj-e1b9bac7086998b8b0a077b0e33dd4b7.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Fence_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Fence_01.obj-e1b9bac7086998b8b0a077b0e33dd4b7.mesh", "res://.godot/imported/SM_Env_Fence_01.obj-e1b9bac7086998b8b0a077b0e33dd4b7.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:76dff4bccd8c4e91b5d3c4ddb8182c3f2291289cb77906519ba27f741cfaec40
+size 622

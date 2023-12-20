@@ -1,35 +1,3 @@
-[remap]
-
-importer="texture"
-type="CompressedTexture2D"
-uid="uid://dcy4hcakfe0ji"
-path.s3tc="res://.godot/imported/RoadsGround_baseColor.png-72158ab86cd3e917313447a974e422d1.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-
-[deps]
-
-source_file="res://assets/ccity_building_set_1/textures/RoadsGround_baseColor.png"
-dest_files=["res://.godot/imported/RoadsGround_baseColor.png-72158ab86cd3e917313447a974e422d1.s3tc.ctex"]
-
-[params]
-
-compress/mode=2
-compress/high_quality=false
-compress/lossy_quality=0.7
-compress/hdr_compression=1
-compress/normal_map=0
-compress/channel_pack=0
-mipmaps/generate=true
-mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
-process/fix_alpha_border=true
-process/premult_alpha=false
-process/normal_map_invert_y=false
-process/hdr_as_srgb=false
-process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=0
+version https://git-lfs.github.com/spec/v1
+oid sha256:b977f85cc4ea19e32a9ef88e8d10eeae8b7177a1dd29e5d910f889e38b77398c
+size 882

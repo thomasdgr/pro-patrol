@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://cbdywl6hbeki1"
-path="res://.godot/imported/SK_Character_Female_Coat.fbx-a35b6afa27946ff16fa3ccdce3608206.scn"
-
-[deps]
-
-source_file="res://SourceFiles/Characters/SK_Character_Female_Coat.fbx"
-dest_files=["res://.godot/imported/SK_Character_Female_Coat.fbx-a35b6afa27946ff16fa3ccdce3608206.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:69495df44cd886f39ff58722e335c16d80346cc585c309475304f332f8f99512
+size 823

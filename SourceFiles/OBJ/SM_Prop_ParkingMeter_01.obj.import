@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bkcx3qsair34c"
-path="res://.godot/imported/SM_Prop_ParkingMeter_01.obj-02e79c3fe6c6b342154e2c83bf05a576.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_ParkingMeter_01.obj-02e79c3fe6c6b342154e2c83bf05a576.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_ParkingMeter_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_ParkingMeter_01.obj-02e79c3fe6c6b342154e2c83bf05a576.mesh", "res://.godot/imported/SM_Prop_ParkingMeter_01.obj-02e79c3fe6c6b342154e2c83bf05a576.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:6830d683c53690fa65716636dfb9d515672089c249f00e0a5c65e507ac91c473
+size 662

@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://62c4eolirefc"
-path="res://.godot/imported/SM_Prop_TrashCan_01.obj-29d20f2a47266581707fcd2fed8f2f58.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_TrashCan_01.obj-29d20f2a47266581707fcd2fed8f2f58.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_TrashCan_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_TrashCan_01.obj-29d20f2a47266581707fcd2fed8f2f58.mesh", "res://.godot/imported/SM_Prop_TrashCan_01.obj-29d20f2a47266581707fcd2fed8f2f58.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf426e30a1c19a994207ed45364e17c9a6683ef668d7acd2aba399d548a645f2
+size 641

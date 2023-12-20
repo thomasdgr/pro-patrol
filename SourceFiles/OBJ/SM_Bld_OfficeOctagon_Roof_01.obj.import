@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dwus3lr4am44j"
-path="res://.godot/imported/SM_Bld_OfficeOctagon_Roof_01.obj-e08ae3fb6fb45dd3e73538a97d1e9471.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_OfficeOctagon_Roof_01.obj-e08ae3fb6fb45dd3e73538a97d1e9471.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_OfficeOctagon_Roof_01.obj"
-dest_files=["res://.godot/imported/SM_Bld_OfficeOctagon_Roof_01.obj-e08ae3fb6fb45dd3e73538a97d1e9471.mesh", "res://.godot/imported/SM_Bld_OfficeOctagon_Roof_01.obj-e08ae3fb6fb45dd3e73538a97d1e9471.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f9f8224da309274c964a9022fefa0a5526c26d51c6f730ea100f90d094fcbb1
+size 687

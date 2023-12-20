@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dmc5ff172iknq"
-path="res://.godot/imported/SM_Bld_Shop_05_Glass.obj-04c9a66b1626c8c591042f3d146af1b2.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_Shop_05_Glass.obj-04c9a66b1626c8c591042f3d146af1b2.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_Shop_05_Glass.obj"
-dest_files=["res://.godot/imported/SM_Bld_Shop_05_Glass.obj-04c9a66b1626c8c591042f3d146af1b2.mesh", "res://.godot/imported/SM_Bld_Shop_05_Glass.obj-04c9a66b1626c8c591042f3d146af1b2.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:b62349d77a0c0d23a76b5793d9ea20f8405649656a1b47249944494796a598ba
+size 647

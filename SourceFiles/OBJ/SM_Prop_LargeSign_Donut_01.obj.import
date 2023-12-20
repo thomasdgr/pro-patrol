@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://o41v7jhs3uqd"
-path="res://.godot/imported/SM_Prop_LargeSign_Donut_01.obj-25376f7f0c97465f91cbe02b84cb6ade.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Donut_01.obj-25376f7f0c97465f91cbe02b84cb6ade.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Donut_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Donut_01.obj-25376f7f0c97465f91cbe02b84cb6ade.mesh", "res://.godot/imported/SM_Prop_LargeSign_Donut_01.obj-25376f7f0c97465f91cbe02b84cb6ade.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:27f1b87cbd6bd567f86e1a958c602054717dc2576a24bc8bb741f684b0c83f16
+size 676

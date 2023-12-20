@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dtnxqc1bdrc1o"
-path="res://.godot/imported/SM_Prop_Buger_01.obj-22af9dd2be5e29f86abe56abc8560bd8.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Buger_01.obj-22af9dd2be5e29f86abe56abc8560bd8.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Buger_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Buger_01.obj-22af9dd2be5e29f86abe56abc8560bd8.mesh", "res://.godot/imported/SM_Prop_Buger_01.obj-22af9dd2be5e29f86abe56abc8560bd8.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ad40d168129c85b1029b57b552c49bdf4b5ff5a77cfc49ec024a067eff4bd48
+size 627

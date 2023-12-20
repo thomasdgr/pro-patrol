@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://4uxakwtwhpg5"
-path="res://.godot/imported/SM_Env_Sidewalk_Grate_02.obj-486af173763a630ddd8c2699c2777786.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Sidewalk_Grate_02.obj-486af173763a630ddd8c2699c2777786.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Sidewalk_Grate_02.obj"
-dest_files=["res://.godot/imported/SM_Env_Sidewalk_Grate_02.obj-486af173763a630ddd8c2699c2777786.mesh", "res://.godot/imported/SM_Env_Sidewalk_Grate_02.obj-486af173763a630ddd8c2699c2777786.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:937572ce1e85b85ff16b30f5a7cb6bb10f515dfd3a8a0b0e3be1d287cf7fae08
+size 666

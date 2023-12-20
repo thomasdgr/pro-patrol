@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://e673uvqy21rn"
-path="res://.godot/imported/SM_Prop_TrashCan_01.fbx-0f5f4141b226b6fa3a2e827b1d5f332c.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Prop_TrashCan_01.fbx"
-dest_files=["res://.godot/imported/SM_Prop_TrashCan_01.fbx-0f5f4141b226b6fa3a2e827b1d5f332c.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:025b48c277115e58c0bcb2e0bd80cf0ea3ccd32aa7bcb28ddbc85c162be4dc34
+size 800

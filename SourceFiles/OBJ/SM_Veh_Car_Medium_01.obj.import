@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bwgku5we7n01w"
-path="res://.godot/imported/SM_Veh_Car_Medium_01.obj-0e59acb7b56f4a26e6894c50af1ca981.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Veh_Car_Medium_01.obj-0e59acb7b56f4a26e6894c50af1ca981.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Veh_Car_Medium_01.obj"
-dest_files=["res://.godot/imported/SM_Veh_Car_Medium_01.obj-0e59acb7b56f4a26e6894c50af1ca981.mesh", "res://.godot/imported/SM_Veh_Car_Medium_01.obj-0e59acb7b56f4a26e6894c50af1ca981.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:659c88e2b030668158883f36c063a9c7fe10d6594b6a545f4bd9c96d16b70ad6
+size 647

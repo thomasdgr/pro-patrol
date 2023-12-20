@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://c0x5cgkhpx30s"
-path="res://.godot/imported/SM_Env_Sidewalk_01.obj-ba2219d1349518dbbf6e8a4750fc16e6.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Sidewalk_01.obj-ba2219d1349518dbbf6e8a4750fc16e6.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Sidewalk_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Sidewalk_01.obj-ba2219d1349518dbbf6e8a4750fc16e6.mesh", "res://.godot/imported/SM_Env_Sidewalk_01.obj-ba2219d1349518dbbf6e8a4750fc16e6.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:c39e1cf7ec30c1b82c8181dd6d39ab2d8052198bb1411aaa69cde31ad8fcd1f3
+size 637

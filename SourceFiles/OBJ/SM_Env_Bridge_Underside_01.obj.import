@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://d4ay0sri5dfnx"
-path="res://.godot/imported/SM_Env_Bridge_Underside_01.obj-064b742059acf6e8b93d85a48c4c2f83.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Bridge_Underside_01.obj-064b742059acf6e8b93d85a48c4c2f83.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Bridge_Underside_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Bridge_Underside_01.obj-064b742059acf6e8b93d85a48c4c2f83.mesh", "res://.godot/imported/SM_Env_Bridge_Underside_01.obj-064b742059acf6e8b93d85a48c4c2f83.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2a469c7aad6eeb1887cd1d54b0129a050981cb3392f97571b7c000734f67907
+size 677

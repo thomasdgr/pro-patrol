@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://7rmda72fjfyk"
-path="res://.godot/imported/SM_Bld_Apartment_Roof_Corner_03.obj-a70e7c1a088cf8cc87346439254e7a8d.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_Apartment_Roof_Corner_03.obj-a70e7c1a088cf8cc87346439254e7a8d.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_Apartment_Roof_Corner_03.obj"
-dest_files=["res://.godot/imported/SM_Bld_Apartment_Roof_Corner_03.obj-a70e7c1a088cf8cc87346439254e7a8d.mesh", "res://.godot/imported/SM_Bld_Apartment_Roof_Corner_03.obj-a70e7c1a088cf8cc87346439254e7a8d.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:5723e957b2a39f6651792932585271d466816c4f3fb3fe5dd733772101184d4f
+size 701

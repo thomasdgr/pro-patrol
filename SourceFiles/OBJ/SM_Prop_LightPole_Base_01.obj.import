@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bf5i56n7f44ft"
-path="res://.godot/imported/SM_Prop_LightPole_Base_01.obj-d1a003ac12d139fff069df6113aa5f2e.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LightPole_Base_01.obj-d1a003ac12d139fff069df6113aa5f2e.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LightPole_Base_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LightPole_Base_01.obj-d1a003ac12d139fff069df6113aa5f2e.mesh", "res://.godot/imported/SM_Prop_LightPole_Base_01.obj-d1a003ac12d139fff069df6113aa5f2e.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf4ab9be611ac9c233db3c4c29870e8be9f1f78903be1e4de2b49e24921b64d2
+size 672

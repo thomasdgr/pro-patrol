@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://c3ly3u05k6x4x"
-path="res://.godot/imported/SM_Prop_LargeSign_Lollypop_01.obj-712d35e4a680c5b62b28de8a06893088.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Lollypop_01.obj-712d35e4a680c5b62b28de8a06893088.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Lollypop_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Lollypop_01.obj-712d35e4a680c5b62b28de8a06893088.mesh", "res://.godot/imported/SM_Prop_LargeSign_Lollypop_01.obj-712d35e4a680c5b62b28de8a06893088.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:722ed246bdd1a5214fcec4c73ff9da6fcea4b4981cd6298bdfe0cb7f56775ab2
+size 692

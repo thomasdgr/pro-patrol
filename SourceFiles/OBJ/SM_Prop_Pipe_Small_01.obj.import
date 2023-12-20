@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://hygg4nlofn61"
-path="res://.godot/imported/SM_Prop_Pipe_Small_01.obj-23124ab8df942846376e95f0ddc7f72f.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Pipe_Small_01.obj-23124ab8df942846376e95f0ddc7f72f.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Pipe_Small_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Pipe_Small_01.obj-23124ab8df942846376e95f0ddc7f72f.mesh", "res://.godot/imported/SM_Prop_Pipe_Small_01.obj-23124ab8df942846376e95f0ddc7f72f.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:b91848c7c3531f276a4d5ec0d8073f7b92e04592bb1421f49f75cd8910f47fa2
+size 651

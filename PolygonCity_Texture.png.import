@@ -1,35 +1,3 @@
-[remap]
-
-importer="texture"
-type="CompressedTexture2D"
-uid="uid://cgu1dhkesyws5"
-path.s3tc="res://.godot/imported/PolygonCity_Texture.png-3741a6fa0b8c8870a043deba4a176c0d.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-
-[deps]
-
-source_file="res://PolygonCity_Texture.png"
-dest_files=["res://.godot/imported/PolygonCity_Texture.png-3741a6fa0b8c8870a043deba4a176c0d.s3tc.ctex"]
-
-[params]
-
-compress/mode=2
-compress/high_quality=false
-compress/lossy_quality=0.7
-compress/hdr_compression=1
-compress/normal_map=0
-compress/channel_pack=0
-mipmaps/generate=true
-mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
-process/fix_alpha_border=true
-process/premult_alpha=false
-process/normal_map_invert_y=false
-process/hdr_as_srgb=false
-process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=0
+version https://git-lfs.github.com/spec/v1
+oid sha256:73d4a77dafb53f7ca424c1c9f33adfe33a2285fced40dd47097a0346866c21ad
+size 839

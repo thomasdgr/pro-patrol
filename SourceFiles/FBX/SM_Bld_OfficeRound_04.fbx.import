@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://tmo8dv8tgupr"
-path="res://.godot/imported/SM_Bld_OfficeRound_04.fbx-a5d573d03adc6eccf71a72b9c78d64d8.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Bld_OfficeRound_04.fbx"
-dest_files=["res://.godot/imported/SM_Bld_OfficeRound_04.fbx-a5d573d03adc6eccf71a72b9c78d64d8.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0cdf88c00cec6c751c19b20b5573c4f77f18c3e23c40427b5a222f21abd6728
+size 806

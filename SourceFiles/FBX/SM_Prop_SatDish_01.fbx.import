@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://cnxvrohehymcm"
-path="res://.godot/imported/SM_Prop_SatDish_01.fbx-3fa63d151f1b4fc1ffd38b0b6f5f4f96.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Prop_SatDish_01.fbx"
-dest_files=["res://.godot/imported/SM_Prop_SatDish_01.fbx-3fa63d151f1b4fc1ffd38b0b6f5f4f96.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb0ecd17f9f49ad13a5048289a342bb40b21be40198c9802a0e2f0d5d16cab92
+size 798

@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://cnhdxqxkebk0w"
-path="res://.godot/imported/SM_Env_WaterEdge_Straight_02.fbx-37a861b47ef39352eb7e4bb35deac2ac.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Env_WaterEdge_Straight_02.fbx"
-dest_files=["res://.godot/imported/SM_Env_WaterEdge_Straight_02.fbx-37a861b47ef39352eb7e4bb35deac2ac.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d650bd2b8853cfa95116ce13ff2c9fdd2ba7d1f53c7c30796e5c5c08b3fde1b
+size 828

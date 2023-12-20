@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://b2elebrp633d7"
-path="res://.godot/imported/SM_Prop_Billboard_Sign_01.obj-42a093f868198d35061d900050f38021.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Billboard_Sign_01.obj-42a093f868198d35061d900050f38021.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Billboard_Sign_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Billboard_Sign_01.obj-42a093f868198d35061d900050f38021.mesh", "res://.godot/imported/SM_Prop_Billboard_Sign_01.obj-42a093f868198d35061d900050f38021.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:87a2ff40aef861a68c9c6b25d00a08630b30fd624a127ccf50d441b2e2a881ef
+size 672

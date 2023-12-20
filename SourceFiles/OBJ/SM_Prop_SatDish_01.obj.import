@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bwe7gu5rf71wk"
-path="res://.godot/imported/SM_Prop_SatDish_01.obj-8df4973df96b3c8f0a9efc7b262f5663.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_SatDish_01.obj-8df4973df96b3c8f0a9efc7b262f5663.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_SatDish_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_SatDish_01.obj-8df4973df96b3c8f0a9efc7b262f5663.mesh", "res://.godot/imported/SM_Prop_SatDish_01.obj-8df4973df96b3c8f0a9efc7b262f5663.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:73df42ebf52fb273f22982451fe18085c0f55dbc62db6c18456ecc0d37ee42de
+size 637

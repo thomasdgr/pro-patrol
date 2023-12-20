@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://biadkd4y7lhb5"
-path="res://.godot/imported/SM_Prop_LargeSign_Icecream_01.obj-a6d8cacac4765fcc3de38dff4b670cc7.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Icecream_01.obj-a6d8cacac4765fcc3de38dff4b670cc7.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Icecream_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Icecream_01.obj-a6d8cacac4765fcc3de38dff4b670cc7.mesh", "res://.godot/imported/SM_Prop_LargeSign_Icecream_01.obj-a6d8cacac4765fcc3de38dff4b670cc7.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:07281a66c7d1c24d993ba9e7a771942c08e38e3f68340d49224707ce829b8c7c
+size 692

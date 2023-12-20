@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bep65k5hs1crk"
-path="res://.godot/imported/SM_Prop_ShopInterior_Display_02.obj-c5aa559d324d8c69b55d1a7bd0501a3d.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_ShopInterior_Display_02.obj-c5aa559d324d8c69b55d1a7bd0501a3d.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_ShopInterior_Display_02.obj"
-dest_files=["res://.godot/imported/SM_Prop_ShopInterior_Display_02.obj-c5aa559d324d8c69b55d1a7bd0501a3d.mesh", "res://.godot/imported/SM_Prop_ShopInterior_Display_02.obj-c5aa559d324d8c69b55d1a7bd0501a3d.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:08a9917e286bd53c86121aab61ccbe90af6ec417ff7f95cbb30bbe0238c4bf21
+size 702

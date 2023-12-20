@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://cdp3cgp2nybq7"
-path="res://.godot/imported/SM_Bld_Spire_01.obj-ffeec01bc55b8e2db0540c831adebf37.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_Spire_01.obj-ffeec01bc55b8e2db0540c831adebf37.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_Spire_01.obj"
-dest_files=["res://.godot/imported/SM_Bld_Spire_01.obj-ffeec01bc55b8e2db0540c831adebf37.mesh", "res://.godot/imported/SM_Bld_Spire_01.obj-ffeec01bc55b8e2db0540c831adebf37.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:73e0125a2edbacf51eea06ef773ba5b970cd16e33b1a907614f5dbbb5beca58b
+size 622

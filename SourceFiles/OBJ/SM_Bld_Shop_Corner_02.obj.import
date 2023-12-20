@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://d4lbel4vdqxfc"
-path="res://.godot/imported/SM_Bld_Shop_Corner_02.obj-2d2ff98fffa1fe17ac64340466afad54.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_Shop_Corner_02.obj-2d2ff98fffa1fe17ac64340466afad54.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_Shop_Corner_02.obj"
-dest_files=["res://.godot/imported/SM_Bld_Shop_Corner_02.obj-2d2ff98fffa1fe17ac64340466afad54.mesh", "res://.godot/imported/SM_Bld_Shop_Corner_02.obj-2d2ff98fffa1fe17ac64340466afad54.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:878b20b04db0f0154ca1cf62a9e32c8b7c108bce873e0270be01a5bde6dd5dc4
+size 652

@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://boma574urpgdj"
-path="res://.godot/imported/SM_Prop_LargeSign_Guitar_01.obj-dc3dce7baa2dc536ff28e3e905732508.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Guitar_01.obj-dc3dce7baa2dc536ff28e3e905732508.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Guitar_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Guitar_01.obj-dc3dce7baa2dc536ff28e3e905732508.mesh", "res://.godot/imported/SM_Prop_LargeSign_Guitar_01.obj-dc3dce7baa2dc536ff28e3e905732508.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:4863520e3fab0c181112006961e5976431f352c7d34d30c97a992ed90ffb2eb0
+size 682

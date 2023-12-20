@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://byyfs3og435yv"
-path="res://.godot/imported/SM_Prop_PotPlant_01.obj-45545ad036f60119459f114d8e58449f.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_PotPlant_01.obj-45545ad036f60119459f114d8e58449f.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_PotPlant_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_PotPlant_01.obj-45545ad036f60119459f114d8e58449f.mesh", "res://.godot/imported/SM_Prop_PotPlant_01.obj-45545ad036f60119459f114d8e58449f.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b912f7c17503510f0ad0dc42774c8e0dd4f990d93343e579801ea7c0a4de10a
+size 642

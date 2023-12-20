@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://yhwpu7gbsn7m"
-path="res://.godot/imported/SM_Env_GrassPath_Straight_01.obj-4be452b98e0055866ace5de927e6707f.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_GrassPath_Straight_01.obj-4be452b98e0055866ace5de927e6707f.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_GrassPath_Straight_01.obj"
-dest_files=["res://.godot/imported/SM_Env_GrassPath_Straight_01.obj-4be452b98e0055866ace5de927e6707f.mesh", "res://.godot/imported/SM_Env_GrassPath_Straight_01.obj-4be452b98e0055866ace5de927e6707f.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:f119e894f18fa699210f1f61616d2506f9e26c4b4d6f164ba4f3ff2fdf686139
+size 686

@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://xjla1tiefk4s"
-path="res://.godot/imported/SM_Env_Bridge_Edge_01.obj-d1f797f830510b2c9877f8a44ac73651.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Bridge_Edge_01.obj-d1f797f830510b2c9877f8a44ac73651.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Bridge_Edge_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Bridge_Edge_01.obj-d1f797f830510b2c9877f8a44ac73651.mesh", "res://.godot/imported/SM_Env_Bridge_Edge_01.obj-d1f797f830510b2c9877f8a44ac73651.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:d8be26f54cda3ce5a5cb5277c33a9177096464f40c474fae0002cab4cc404d16
+size 651

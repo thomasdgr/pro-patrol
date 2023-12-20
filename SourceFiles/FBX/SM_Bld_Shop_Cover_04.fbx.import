@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://dym3nnn26dwae"
-path="res://.godot/imported/SM_Bld_Shop_Cover_04.fbx-1f1a9f3dd503ab11e8df77099cf518ff.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Bld_Shop_Cover_04.fbx"
-dest_files=["res://.godot/imported/SM_Bld_Shop_Cover_04.fbx-1f1a9f3dd503ab11e8df77099cf518ff.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:e933124954c3fb84a49f2d05fdf44e2bf4566ebac97cd569782bfe566f4b085a
+size 804

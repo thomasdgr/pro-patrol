@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://blrmgrqyqsvo1"
-path="res://.godot/imported/SM_Prop_Phones_01.obj-5500f2eefd2473fa1e787eeae2693c81.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Phones_01.obj-5500f2eefd2473fa1e787eeae2693c81.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Phones_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Phones_01.obj-5500f2eefd2473fa1e787eeae2693c81.mesh", "res://.godot/imported/SM_Prop_Phones_01.obj-5500f2eefd2473fa1e787eeae2693c81.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:75b0f59adfa6dabe97861849c96e8ad620050cf02bad5b8bfa044aeef7bd67ea
+size 632

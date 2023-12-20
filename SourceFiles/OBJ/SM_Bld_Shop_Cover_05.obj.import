@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bybhyagm6ajit"
-path="res://.godot/imported/SM_Bld_Shop_Cover_05.obj-cfecc79ea7e65c6bdeb741f0f01adf92.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_Shop_Cover_05.obj-cfecc79ea7e65c6bdeb741f0f01adf92.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_Shop_Cover_05.obj"
-dest_files=["res://.godot/imported/SM_Bld_Shop_Cover_05.obj-cfecc79ea7e65c6bdeb741f0f01adf92.mesh", "res://.godot/imported/SM_Bld_Shop_Cover_05.obj-cfecc79ea7e65c6bdeb741f0f01adf92.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:9af8099cadbcecaba6d3b1da8a5bdc2e8975ad86b032884fc21da88aee2a8fc5
+size 647

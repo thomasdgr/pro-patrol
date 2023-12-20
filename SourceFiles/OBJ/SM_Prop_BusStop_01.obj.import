@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://b4xbfb2hkrw6q"
-path="res://.godot/imported/SM_Prop_BusStop_01.obj-d840dc8782e9a853322114bc04fd8945.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_BusStop_01.obj-d840dc8782e9a853322114bc04fd8945.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_BusStop_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_BusStop_01.obj-d840dc8782e9a853322114bc04fd8945.mesh", "res://.godot/imported/SM_Prop_BusStop_01.obj-d840dc8782e9a853322114bc04fd8945.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7323ca42710a2ba03cc296dde70c1e77df623457ee35bc1803f41a8b07b67ef
+size 637

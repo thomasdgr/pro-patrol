@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://5y4b7jti2lwh"
-path="res://.godot/imported/SM_Prop_LargeSign_Taco_01.obj-b616e2e98d177e69716ff57999e91084.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Taco_01.obj-b616e2e98d177e69716ff57999e91084.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Taco_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Taco_01.obj-b616e2e98d177e69716ff57999e91084.mesh", "res://.godot/imported/SM_Prop_LargeSign_Taco_01.obj-b616e2e98d177e69716ff57999e91084.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf47072b2205fd791b6c10feb1083ec67245a9acda4759379d6d313206575800
+size 671

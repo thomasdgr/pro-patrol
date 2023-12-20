@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://qt5w7hcx0q1n"
-path="res://.godot/imported/SM_Prop_Billboard_01.obj-ee11beab9e1f716ad4f62e411b945457.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Billboard_01.obj-ee11beab9e1f716ad4f62e411b945457.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Billboard_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Billboard_01.obj-ee11beab9e1f716ad4f62e411b945457.mesh", "res://.godot/imported/SM_Prop_Billboard_01.obj-ee11beab9e1f716ad4f62e411b945457.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:f91fc00b96aec7c7981acefd6da23e7aab0c4ced8208f50c550640fc8122857c
+size 646

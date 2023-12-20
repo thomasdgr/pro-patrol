@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://civjox8gulrwd"
-path="res://.godot/imported/SM_Prop_Sign_Hotel_01.fbx-b3b945fdf700211d91cd336ad033ddb1.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Prop_Sign_Hotel_01.fbx"
-dest_files=["res://.godot/imported/SM_Prop_Sign_Hotel_01.fbx-b3b945fdf700211d91cd336ad033ddb1.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:c51e4a76e461cc8f0c6afe0f07e392c81c7253e26d442d829c8b735c44176df6
+size 807

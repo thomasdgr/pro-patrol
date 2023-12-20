@@ -1,0 +1,40 @@
+newmtl SM_Bld_OfficeOctagon_Base_01_Glass_1745SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.00 0.00 0.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 18.00
+newmtl SM_Env_Road_Bare_01_44SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 18.00
+newmtl SM_Env_Skyline_01_5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 18.00
+newmtl SM_Env_Unreal_Water7_26SG
+illum 4
+Kd 0.00 0.25 0.86
+Ka 0.00 0.00 0.00
+Tf 0.44 0.44 0.44
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 18.00
+newmtl SM_Prop_Billboard_Sign_01_3026SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 18.00

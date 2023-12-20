@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://y62tl3luy6wq"
-path="res://.godot/imported/SM_Prop_LargeSign_Bottle_01.obj-698034b3977a837f032dc9bb410fb25f.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Bottle_01.obj-698034b3977a837f032dc9bb410fb25f.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Bottle_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Bottle_01.obj-698034b3977a837f032dc9bb410fb25f.mesh", "res://.godot/imported/SM_Prop_LargeSign_Bottle_01.obj-698034b3977a837f032dc9bb410fb25f.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:3dc5b34cdbe843d245f969dfeadea6d769192d9a2915b4de6cf8fc1cd7bba3dc
+size 681

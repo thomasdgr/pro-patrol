@@ -1,32 +1,3 @@
-[remap]
-
-importer="scene"
-importer_version=1
-type="PackedScene"
-uid="uid://oxg8mvbhpdo7"
-path="res://.godot/imported/SM_Env_Path_Junction_01.fbx-b06d7f0cf2e72d0063847bb75e94f8d5.scn"
-
-[deps]
-
-source_file="res://SourceFiles/FBX/SM_Env_Path_Junction_01.fbx"
-dest_files=["res://.godot/imported/SM_Env_Path_Junction_01.fbx-b06d7f0cf2e72d0063847bb75e94f8d5.scn"]
-
-[params]
-
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
-nodes/apply_root_scale=true
-nodes/root_scale=1.0
-meshes/ensure_tangents=true
-meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
-meshes/lightmap_texel_size=0.2
-skins/use_named_skins=true
-animation/import=true
-animation/fps=30
-animation/trimming=false
-animation/remove_immutable_tracks=true
-import_script/path=""
-_subresources={}
-gltf/embedded_image_handling=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:af2d5f22b160e5946c496c1fced76a7d45e8f7464845d2e6d2b97104ec23db50
+size 812

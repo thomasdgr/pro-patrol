@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://hlr4lfinq320"
-path="res://.godot/imported/SM_Prop_Power_Cables_01.obj-fe430cba293376572ae257550a516d18.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Power_Cables_01.obj-fe430cba293376572ae257550a516d18.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Power_Cables_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Power_Cables_01.obj-fe430cba293376572ae257550a516d18.mesh", "res://.godot/imported/SM_Prop_Power_Cables_01.obj-fe430cba293376572ae257550a516d18.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f059e2e5dcddc9d5d83970d4bd303e39e11cf5a3e071380cfdfe407ff1a1350
+size 661

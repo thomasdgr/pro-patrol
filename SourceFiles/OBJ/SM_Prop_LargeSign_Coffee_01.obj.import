@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dvlct5tl4jmwc"
-path="res://.godot/imported/SM_Prop_LargeSign_Coffee_01.obj-a9e0f01cd7b479017da9e2cbdb5e0500.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Coffee_01.obj-a9e0f01cd7b479017da9e2cbdb5e0500.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Coffee_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Coffee_01.obj-a9e0f01cd7b479017da9e2cbdb5e0500.mesh", "res://.godot/imported/SM_Prop_LargeSign_Coffee_01.obj-a9e0f01cd7b479017da9e2cbdb5e0500.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:e04d1881accfe715b541fb034707abbe4824c33ee7af0b9bdd62f79fe3712b48
+size 682

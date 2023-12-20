@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://cmnfugnrpb3ho"
-path="res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_01.obj-c4f982ade7f4e93d3e0e3bb186a41e28.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_01.obj-c4f982ade7f4e93d3e0e3bb186a41e28.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_Apartment_Stairs_Planter_01.obj"
-dest_files=["res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_01.obj-c4f982ade7f4e93d3e0e3bb186a41e28.mesh", "res://.godot/imported/SM_Bld_Apartment_Stairs_Planter_01.obj-c4f982ade7f4e93d3e0e3bb186a41e28.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:1602cd3959b07b7cf1a4e8b9248df66ff12b31451c756d67ddb3f38ca7a760e7
+size 717

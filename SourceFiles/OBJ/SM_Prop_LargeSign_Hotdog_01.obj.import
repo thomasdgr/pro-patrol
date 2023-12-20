@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bh8o7gtrdg8o6"
-path="res://.godot/imported/SM_Prop_LargeSign_Hotdog_01.obj-1e85fbc4aa4e12916a188c0c658787f5.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_LargeSign_Hotdog_01.obj-1e85fbc4aa4e12916a188c0c658787f5.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_LargeSign_Hotdog_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_LargeSign_Hotdog_01.obj-1e85fbc4aa4e12916a188c0c658787f5.mesh", "res://.godot/imported/SM_Prop_LargeSign_Hotdog_01.obj-1e85fbc4aa4e12916a188c0c658787f5.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:1edb6624e4dbe2360275bde401c8fe59360189a977e0831dc09b7086e779c6af
+size 682

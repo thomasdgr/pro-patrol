@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://quu0a001tvuj"
-path="res://.godot/imported/SM_Env_Road_01.obj-ca225f430750e53ad294f78ce5823d69.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Road_01.obj-ca225f430750e53ad294f78ce5823d69.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Road_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Road_01.obj-ca225f430750e53ad294f78ce5823d69.mesh", "res://.godot/imported/SM_Env_Road_01.obj-ca225f430750e53ad294f78ce5823d69.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:064773650bb209e7f4412f0e445c20a2b68efeab04f84d10fd43e88008095965
+size 616

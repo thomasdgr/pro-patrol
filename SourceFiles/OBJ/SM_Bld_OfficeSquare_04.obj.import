@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://ctriyr517hgyq"
-path="res://.godot/imported/SM_Bld_OfficeSquare_04.obj-b48f00a638683f5ae9d749100b2b02ff.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Bld_OfficeSquare_04.obj-b48f00a638683f5ae9d749100b2b02ff.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Bld_OfficeSquare_04.obj"
-dest_files=["res://.godot/imported/SM_Bld_OfficeSquare_04.obj-b48f00a638683f5ae9d749100b2b02ff.mesh", "res://.godot/imported/SM_Bld_OfficeSquare_04.obj-b48f00a638683f5ae9d749100b2b02ff.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf32dee47bd547e06fb5b58266350e85413ac91a90dc62057040d7aa3a0ee199
+size 657

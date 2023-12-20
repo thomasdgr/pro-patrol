@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dbmu74fak3i56"
-path="res://.godot/imported/SM_Env_Path_Straight_01.obj-8f783cdce51ccc2409dd2f199a781a04.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Path_Straight_01.obj-8f783cdce51ccc2409dd2f199a781a04.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Path_Straight_01.obj"
-dest_files=["res://.godot/imported/SM_Env_Path_Straight_01.obj-8f783cdce51ccc2409dd2f199a781a04.mesh", "res://.godot/imported/SM_Env_Path_Straight_01.obj-8f783cdce51ccc2409dd2f199a781a04.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:9537655727a1dd9574d1deeda871909a9f6aa89c541d92311b1cce89dbdb72a0
+size 662

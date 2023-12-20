@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://dyuaa1m272axf"
-path="res://.godot/imported/SM_Prop_Sign_DeliPizza_01.obj-dc983f26361eba5b5af677ca1ec81e99.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Prop_Sign_DeliPizza_01.obj-dc983f26361eba5b5af677ca1ec81e99.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Prop_Sign_DeliPizza_01.obj"
-dest_files=["res://.godot/imported/SM_Prop_Sign_DeliPizza_01.obj-dc983f26361eba5b5af677ca1ec81e99.mesh", "res://.godot/imported/SM_Prop_Sign_DeliPizza_01.obj-dc983f26361eba5b5af677ca1ec81e99.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:d5607ee0b60fd9455080396dbf047f294b39255164855b8354ec534ed0ded1f0
+size 672

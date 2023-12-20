@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://c3kjbfh0go38t"
-path="res://.godot/imported/SM_Env_Tree_02.obj-76949f73e52bbd4b110e0024440478f8.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_Tree_02.obj-76949f73e52bbd4b110e0024440478f8.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_Tree_02.obj"
-dest_files=["res://.godot/imported/SM_Env_Tree_02.obj-76949f73e52bbd4b110e0024440478f8.mesh", "res://.godot/imported/SM_Env_Tree_02.obj-76949f73e52bbd4b110e0024440478f8.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:0891c457bde40b525d7be85fcf203a9ac73fdeaa8ca19e1d71503464992f1485
+size 617

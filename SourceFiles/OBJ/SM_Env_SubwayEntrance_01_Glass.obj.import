@@ -1,21 +1,3 @@
-[remap]
-
-importer="wavefront_obj"
-importer_version=1
-type="Mesh"
-uid="uid://bloq4ix1u56oo"
-path="res://.godot/imported/SM_Env_SubwayEntrance_01_Glass.obj-39f6c360e311114190a3975a6d9120c8.mesh"
-
-[deps]
-
-files=["res://.godot/imported/SM_Env_SubwayEntrance_01_Glass.obj-39f6c360e311114190a3975a6d9120c8.mesh"]
-
-source_file="res://SourceFiles/OBJ/SM_Env_SubwayEntrance_01_Glass.obj"
-dest_files=["res://.godot/imported/SM_Env_SubwayEntrance_01_Glass.obj-39f6c360e311114190a3975a6d9120c8.mesh", "res://.godot/imported/SM_Env_SubwayEntrance_01_Glass.obj-39f6c360e311114190a3975a6d9120c8.mesh"]
-
-[params]
-
-generate_tangents=true
-scale_mesh=Vector3(1, 1, 1)
-offset_mesh=Vector3(0, 0, 0)
-optimize_mesh=true
+version https://git-lfs.github.com/spec/v1
+oid sha256:3185d4f79ccda473c2ef91f71965bfcf102071336abb02192ed1e40d245b7c63
+size 697
