@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scenario>
-    <name>Test Scenario 1</name>
+    <name text="Test Scenario 1"/>
     <spawn> 30,9,40 </spawn>
     <events>
         <event time="0" action="spawn_npc" npcId="1" position="(25,2,50)" path="to_player" goal="dialog">

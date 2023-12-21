@@ -1,5 +1,5 @@
 extends Node
-
+var level_name = ""
 var points = 0
 var npc_manager = preload("res://scripts/npc_manager.gd")
 var dialogBox : Node
@@ -25,6 +25,11 @@ func start_scenario(scenario_id):
 			to_read = true
 		if parser.get_node_type() == XMLParser.NODE_ELEMENT:
 			var node_name = parser.get_node_name()
+			if node_name == "name":
+				var attributes_dict = {}
+				for idx in range(parser.get_attribute_count()):
+					attributes_dict[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
+				level_name = attributes_dict["text"]
 			if node_name == "event":
 				var attributes_dict = {}
 				for idx in range(parser.get_attribute_count()):
@@ -147,6 +152,7 @@ func dialog_response(dialogInstance : DialogInstance, points : int, action : Str
 	match action:
 		"end_level":
 			print("ending level")
+			end_level()
 		_:
 			print("Else")
 			
