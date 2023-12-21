@@ -9,6 +9,7 @@ var goal: String
 var firstDialogInstance: DialogInstance
 var path: Vector3
 var path_to_player: bool
+var dialogActive: bool
 
 @onready var anim: AnimationPlayer = $Pivot/Character/AnimationPlayer
 
@@ -41,8 +42,8 @@ func _process(delta):
 	else:
 		velocity = direction * Vector3(0,0,0)
 		anim.stop()
-		if goal == "dialog":
+		if goal == "dialog" && !dialogActive:
+			dialogActive = true
 			get_node("/root/Coordinator").request_dialog(firstDialogInstance)
-			
 
 	move_and_slide()

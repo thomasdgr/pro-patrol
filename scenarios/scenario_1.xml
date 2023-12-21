@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scenario>
-    <name>Test Scenario 1</name>
+    <name text="Test Scenario 1"/>
     <spawn> 30,9,40 </spawn>
     <events>
-        <event time="0" action="spawn_npc" npcId="1" position="(100,0,200)" path="to_player" goal="dialog">
+        <event time="0" action="spawn_npc" npcId="1" position="(25,2,50)" path="to_player" goal="dialog">
             <dialog>
                 <dialogInstance id="0" text="Bonjour, je suis Samuel Beckett" time="10">
-                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" />
-                    <response text="Salut Sam!" points="5" next="-1" />
+                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" action="present_id" />
+                    <response text="Salut Sam!" points="5" next="-1"  action="end_level"/>
                 </dialogInstance>
                 <dialogInstance id="1" text="Tenez monsieur, voici ma carte d'assurance maladie" time="8">
-                    <response text="Vous n'avez pas de carte d'identité?" points="0" next="2" />
+                    <response text="Vous n'avez pas de carte d'identité?" points="0" next="2" action="present_id" />
                     <response text="Merci chef" points="5" next="-1" />
                 </dialogInstance>
-                <dialogInstance id="2" text="Ah oui, tenez" action="present_id" time="8">
+                <dialogInstance id="2" text="Ah oui, tenez" time="8">
                     <response text="Merci, c'est tout bon" points="0" next="3" />
                     <response text="Quelque chose ne colle pas avec votre carte!" points="5" next="4" />
                 </dialogInstance>
-                <dialogInstance id="3" text="Merci, bonne journée!" action="end_dialog" time="5"/>
-                <dialogInstance id="4" text="Mais tout est correcte!" action="end_dialog" time="5"/>
+                <dialogInstance id="3" text="Merci, bonne journée!" time="5">
+                    <response text="Ok" points="0" next="-1" action="end_level"/>
+                </dialogInstance>
+
+                <dialogInstance id="4" text="Mais tout est correcte!" time="5">
+                    <response text="Ok" points="0" next="-1" action="end_level"/>
+                </dialogInstance>
+
             </dialog>
         </event>
         <event time="10" action="spawn_npc" npcId="1" position="(100,0,200)" path="(0,0,0)" goal="dialog">

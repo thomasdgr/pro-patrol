@@ -1,10 +1,11 @@
 extends Node
-
+var level_name = ""
 var points = 0
 var npc_manager = preload("res://scripts/npc_manager.gd")
+var dialogBox : Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	dialogBox = get_node("/root/Map/Control")
 	pass # Replace with function body.
 
 func start_scenario(scenario_id):
@@ -14,9 +15,20 @@ func start_scenario(scenario_id):
 	parser.open("scenarios/scenario_" + str(scenario_id) + ".xml")
 	var events = []  # To store Event objects
 	var current_dialog_instance = null
-	while parser.read() != ERR_FILE_EOF:
+	var to_read = true
+	while true:
+		if to_read:
+			if parser.read() == ERR_FILE_EOF:
+				break
+		else:
+			to_read = true
 		if parser.get_node_type() == XMLParser.NODE_ELEMENT:
 			var node_name = parser.get_node_name()
+			if node_name == "name":
+				var attributes_dict = {}
+				for idx in range(parser.get_attribute_count()):
+					attributes_dict[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
+				level_name = attributes_dict["text"]
 			if node_name == "event":
 				var attributes_dict = {}
 				for idx in range(parser.get_attribute_count()):
@@ -24,9 +36,11 @@ func start_scenario(scenario_id):
 				var current_event = Event.new()
 				current_event.set_attributes(attributes_dict)
 				events.append(current_event)
+				var dialog_ctr = 0
 				while parser.read() != ERR_FILE_EOF:
 					if parser.get_node_type() == XMLParser.NODE_ELEMENT:
 						var inner_node_name = parser.get_node_name()
+						var inner_node = parser.get_node_data()
 
 						if inner_node_name == "dialogInstance":
 							var instance_attributes = {}
@@ -49,9 +63,14 @@ func start_scenario(scenario_id):
 								response["text"] = response_attributes["text"]
 								response["points"] = response_attributes["points"].to_int()
 								response["next"] = response_attributes["next"].to_int()
+								var action = ""
+								if response_attributes.has("action"):
+									action = response_attributes["action"]
+								response["action"] = action
 								current_dialog_instance.add_response(response)
-						elif parser.get_node_type() == XMLParser.NODE_ELEMENT_END and parser.get_node_name() == "event":
-							break  # End processing the current event
+						elif inner_node_name == "event":
+							to_read = false
+							break
 
 
 	for event in events:
@@ -117,20 +136,35 @@ var active_dialog: bool
 
 func request_dialog(firstDialogInstance: DialogInstance):
 	# Call the other function
-	if not active_dialog:
-		print("Hey")
-		active_dialog = true
-		print(firstDialogInstance)
+
+	#print("Hey")
 	
+	#print(firstDialogInstance)
+	if (!active_dialog):
+		active_dialog = true
+		dialogBox.RequestDialog(firstDialogInstance)
 
-
-func add_points(points: int):
-	self.points += points
+var dialogs = []
+func dialog_response(dialogInstance : DialogInstance, points : int, action : String):
+	dialogs.append({"dialog": dialogInstance, "points": points})
+	points += points
+	match action:
+		"end_level":
+			print("ending level")
+			end_level()
+		_:
+			print("Else")
+			
 
 func get_points():
 	return self.points
 
-	
+func end_level():
+	var resultScreen = preload("res://scenes/result_screen.tscn").instantiate()
+	# Get the current 2D scene tree
+	var viewport = get_viewport()
+	# Add the 2D result screen to the current viewport
+	viewport.add_child(resultScreen)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const SPEED = 8
+const SPEED = 0
 const STOP_DISTANCE = 5.0
 var GRAVITY = ProjectSettings.get_setting("physics/3d/default_gravity")
 var player: Node
@@ -37,7 +37,15 @@ func _process(delta):
 			# Move towards the player
 			anim.play("walking")
 		else:
-			#dialogBox.RequestDialog("Yo")
+			var dialog: DialogInstance = DialogInstance.new()
+			dialog.set_id(1)
+			dialog.set_text("Choose")
+			dialog.set_time(40)
+			#dialog.add_response({text: "Boulette", point: 10})
+			#dialog.add_response("Mini boulette", 5)
+			#dialog.add_response("Micro boulette", 2)
+			
+			dialogBox.RequestDialog(dialog)
 			velocity = direction * Vector3(0,0,0)
 			anim.stop()
 			# Initiate Conversation

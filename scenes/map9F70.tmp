@@ -1,0 +1,108 @@
+[gd_scene load_steps=17 format=3 uid="uid://yd8vw7rcf53q"]
+
+[ext_resource type="Script" path="res://scripts/map.gd" id="1_1acjj"]
+[ext_resource type="PackedScene" uid="uid://cnyyf71he22r1" path="res://scenes/png.tscn" id="1_2vbu7"]
+[ext_resource type="PackedScene" uid="uid://gk345cw7fe6d" path="res://scenes/character.tscn" id="1_8t06m"]
+[ext_resource type="PackedScene" uid="uid://cvjs3nust2ib" path="res://scenes/world.tscn" id="2_ge45h"]
+[ext_resource type="PackedScene" uid="uid://bth24b8oufsc6" path="res://scenes/car.tscn" id="4_qxnn0"]
+[ext_resource type="PackedScene" uid="uid://do3tcpmsb6xp1" path="res://scenes/dialogBox.tscn" id="6_8hwvt"]
+[ext_resource type="Script" path="res://scripts/dialogBox.gd" id="7_v4erb"]
+
+[sub_resource type="Gradient" id="Gradient_aufgv"]
+colors = PackedColorArray(0.137255, 0.137255, 0.529412, 1, 0.0509804, 0.0509804, 0.0509804, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ydrpk"]
+gradient = SubResource("Gradient_aufgv")
+fill_from = Vector2(0.982051, 0.574359)
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_3vo0y"]
+night_sky = SubResource("GradientTexture2D_ydrpk")
+
+[sub_resource type="Sky" id="Sky_gj8w5"]
+sky_material = SubResource("PhysicalSkyMaterial_3vo0y")
+
+[sub_resource type="Environment" id="Environment_m0pa7"]
+background_mode = 2
+sky = SubResource("Sky_gj8w5")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y7pwh"]
+size = Vector3(554.989, 0.001, 470.617)
+
+[sub_resource type="BoxMesh" id="BoxMesh_am6a4"]
+size = Vector3(2.08165e-12, 1, 2.08165e-12)
+
+[sub_resource type="Curve3D" id="Curve3D_u2hic"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 682.197, 10.0943, 470.219, 0, 0, 0, 1, 2, -91, -509.71, 30.1137, 446.186),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fskc3"]
+size = Vector3(23.7656, 336.588, 4212.79)
+
+[node name="Map" type="StaticBody3D"]
+script = ExtResource("1_1acjj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.250761, 0.0934823, -0.963525, -0.966423, -0.0818379, 0.243576, -0.0560828, 0.992252, 0.110865, -1634.26, 552.687, -669.961)
+shadow_enabled = true
+
+[node name="Png" parent="." instance=ExtResource("1_2vbu7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.734, 0, -51.044)
+visible = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_m0pa7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.4428, 0.0263386, 133.518)
+shape = SubResource("BoxShape3D_y7pwh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("BoxMesh_am6a4")
+skeleton = NodePath("../..")
+
+[node name="scene" parent="." instance=ExtResource("2_ge45h")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 11.3248, 0, 357.673)
+
+[node name="Character" parent="." instance=ExtResource("1_8t06m")]
+transform = Transform3D(1.93185, 0, 0.517638, 0, 2, 0, -0.517638, 0, 1.93185, 25, 2, 38)
+
+[node name="Path3D" type="Path3D" parent="."]
+transform = Transform3D(0.999862, -0.0165389, 0.00169087, 0.0165571, 0.999798, -0.0113611, -0.00150262, 0.0113875, 0.999934, 100.95, -12.2206, -1.91742)
+curve = SubResource("Curve3D_u2hic")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(0.020159, 0.0167862, 0.999618, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201558, 682.197, 10.0943, 470.219)
+
+[node name="group" parent="Path3D/PathFollow3D" instance=ExtResource("4_qxnn0")]
+transform = Transform3D(139.479, 2.17698, 3.10289, -2.17198, 139.513, -0.269983, -3.10675, 0.22167, 139.496, 7.37579, -14.6518, -57.4089)
+
+[node name="Control" parent="." instance=ExtResource("6_8hwvt")]
+visible = false
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+script = ExtResource("7_v4erb")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2903.01, 0, -811.577)
+visible = false
+shape = SubResource("BoxShape3D_fskc3")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 192.395, 0, -811.577)
+visible = false
+shape = SubResource("BoxShape3D_fskc3")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1332.65, 0, -2479.86)
+visible = false
+shape = SubResource("BoxShape3D_fskc3")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1332.65, 0, 573.531)
+visible = false
+shape = SubResource("BoxShape3D_fskc3")
