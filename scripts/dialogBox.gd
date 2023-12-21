@@ -7,11 +7,15 @@ var timer_running: bool = false
 var label_timer: RichTextLabel
 var label_title: RichTextLabel
 var label_question: RichTextLabel
+
+var buttonData = {}
+
 var button1: Button
 var button2: Button
 var button3: Button
 
 var dialog: DialogInstance
+
 
 
 # Called when the node enters the scene tree for the first time.
@@ -24,9 +28,9 @@ func _ready():
 	button1 = get_node("/root/Map/Control/Dialog/VBoxContainer/Button")
 	button2 = get_node("/root/Map/Control/Dialog/VBoxContainer/Button2")
 	button3 = get_node("/root/Map/Control/Dialog/VBoxContainer/Button3")
-	button1.connect("pressed", _on_button_pressed(button1), 0)
-	button2.connect("pressed", _on_button_pressed(button2), 1)
-	button3.connect("pressed", _on_button_pressed(button3), 2)
+	button1.pressed.connect(_on_button_pressed.bind(button1), 0)
+	button2.pressed.connect(_on_button_pressed.bind(button2), 1)
+	button3.pressed.connect(_on_button_pressed.bind(button3), 2)
 
 	
 	dialogNode.visible = false
@@ -53,7 +57,9 @@ func _process(delta):
 			return
 
 func RequestDialog(dialog_id: DialogInstance):
-	if !timer_running:
+	if dialog_id == null:
+		return
+	if true:
 		dialog = dialog_id
 		if (len(dialog.responses) == 0):
 			hide()
@@ -64,34 +70,39 @@ func RequestDialog(dialog_id: DialogInstance):
 		countdown_timer = dialog_id.time
 		label_title.text = "Question " + String.num_int64(dialog_id.id +1)
 		label_question.text = dialog_id.text
+		
 		button1.text = dialog_id.responses[0].text
-		button2.text = dialog_id.responses[1].text
+		
+		
+		buttonData[button1] = {
+			"nextInstance": dialog_id.responses[0].nextInstance,
+		 	"points": dialog_id.responses[0].points,
+			"action": dialog_id.responses[0].action,
+		}
+		
+		if len(dialog_id.responses) <= 1:
+			button2.visible = false
+		else:
+			button2.text = dialog_id.responses[1].text
+			buttonData[button2] = {
+				"nextInstance": dialog_id.responses[1].nextInstance,
+		 		"points": dialog_id.responses[1].points,
+				"action": dialog_id.responses[1].action,
+			}	
 		
 		if len(dialog_id.responses) <= 2:
 			button3.visible = false
 		else:
 			button3.text = dialog_id.responses[2].text
+			buttonData[button3] = {
+				"nextInstance": dialog_id.responses[2].nextInstance,
+		 		"points": dialog_id.responses[2].points,
+				"action": dialog_id.responses[2].action,
+			}	
 	
 		start_timer()
 		dialogNode.visible = true
 		
-		
-		
-	
-	# If dialog is active:
-	#	Do nothing (npc will request on every _process call
-	# If it isn't:
-	#	Populate the dialogue
-	#	Populate the timer
-	#	Populate the answers 
-	# If there are 3 answers:
-	#	[ ANSWER 1 ] [ ANSWER 2 ]
-	#			[ ANSWER 3 ] <- This 3 and the other 3 should be seperate nodes, so that we don't have to move them
-	# If there are 4 answers:
-	#	[ ANSWER 1 ] [ ANSWER 2 ]
-	#	[ ANSWER 3 ] [ ANSWER 4 ]
-	# If there are 2 answers:
-	#	[ ANSWER 1 ] [ ANSWER 2 ]
 	
 	# Show the dialog and set the proper flags 
 	
@@ -104,7 +115,6 @@ func stop_timer() -> void:
 
 # Called when any button is pressed
 func _on_button_pressed(button: Button):
-	# Identify which button was pressed and handle accordingly
 	match button:
 		button1:
 			handle_button_click(button1)
@@ -114,11 +124,11 @@ func _on_button_pressed(button: Button):
 			handle_button_click(button3)
 		# Add more buttons as needed
 
-# Function to handle button click
 func handle_button_click(button: Button):
 	print("Button clicked:", button.text)
-	# Add your logic here based on which button was clicked
-	# You can access button.text to get the text of the clicked button
-	# For example, you might want to trigger a specific action or advance the dialogue
-
+	get_node("/root/Coordinator").dialog_response(dialog, buttonData[button].points, buttonData[button].action)
+	if buttonData[button].nextInstance != null:
+		RequestDialog(buttonData[button].nextInstance)
+	else:
+		hide()
 # ...

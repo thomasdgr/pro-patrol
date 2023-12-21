@@ -59,6 +59,10 @@ func start_scenario(scenario_id):
 								response["text"] = response_attributes["text"]
 								response["points"] = response_attributes["points"].to_int()
 								response["next"] = response_attributes["next"].to_int()
+								var action = ""
+								if response_attributes.has("action"):
+									action = response_attributes["action"]
+								response["action"] = action
 								current_dialog_instance.add_response(response)
 						elif inner_node_name == "event":
 							to_read = false
@@ -135,10 +139,17 @@ func request_dialog(firstDialogInstance: DialogInstance):
 	if (!active_dialog):
 		active_dialog = true
 		dialogBox.RequestDialog(firstDialogInstance)
-	
 
-func add_points(points: int):
-	self.points += points
+var dialogs = []
+func dialog_response(dialogInstance : DialogInstance, points : int, action : String):
+	dialogs.append({"dialog": dialogInstance, "points": points})
+	points += points
+	match action:
+		"end_level":
+			print("ending level")
+		_:
+			print("Else")
+			
 
 func get_points():
 	return self.points
