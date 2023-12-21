@@ -4,7 +4,7 @@ var points = 0
 var npc_manager = preload("res://scripts/npc_manager.gd")
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	start_scenario(1)
+	
 	pass # Replace with function body.
 
 func start_scenario(scenario_id):

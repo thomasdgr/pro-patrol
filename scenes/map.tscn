@@ -43,7 +43,7 @@ point_count = 2
 script = ExtResource("1_1acjj")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.250761, 0.0934823, -0.963525, -0.966423, -0.0818379, 0.243576, -0.0560828, 0.992252, 0.110865, -1634.26, 552.687, -669.961)
+transform = Transform3D(-0.730429, -0.116478, 0.672983, 0.537614, 0.509673, 0.671717, -0.421242, 0.852447, -0.30966, -966.258, 552.687, 1619.18)
 shadow_enabled = true
 
 [node name="Png" parent="." instance=ExtResource("1_2vbu7")]
@@ -61,15 +61,12 @@ shape = SubResource("BoxShape3D_y7pwh")
 mesh = SubResource("BoxMesh_am6a4")
 skeleton = NodePath("../..")
 
-[node name="Character" parent="." instance=ExtResource("1_8t06m")]
-transform = Transform3D(1.93185, 0, 0.517638, 0, 2, 0, -0.517638, 0, 1.93185, 25, 2, 38)
-
 [node name="Path3D" type="Path3D" parent="."]
 transform = Transform3D(0.999862, -0.0165389, 0.00169087, 0.0165571, 0.999798, -0.0113611, -0.00150262, 0.0113875, 0.999934, 100.95, -12.2206, -1.91742)
 curve = SubResource("Curve3D_u2hic")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.020159, 0.0167862, 0.999617, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201558, 682.197, 10.0943, 470.219)
+transform = Transform3D(0.020159, 0.0167862, 0.999616, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201557, 682.197, 10.0943, 470.219)
 
 [node name="group" parent="Path3D/PathFollow3D" instance=ExtResource("4_qxnn0")]
 transform = Transform3D(139.479, 2.17698, 3.10289, -2.17198, 139.513, -0.269983, -3.10675, 0.22167, 139.496, 7.37579, -14.6518, -57.4089)
@@ -87,3 +84,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0, 77)
 
 [node name="POLYGON_City_Demo_Scene" parent="." instance=ExtResource("8_lojno")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.8437, 0.0268386, 78.6372)
+
+[node name="Character" parent="." instance=ExtResource("1_8t06m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.641, 1.45302, 0)
