@@ -36,7 +36,7 @@ func _on_checked_start(btn_pressed):
 		print(main_lvl.level)
 		# je veux la variable ici du script level_pop
 		# ----------- Change ici la scène pour le clic sur start ------------
-		#get_tree().change_scene_to_file("res://menu.tscn")
+		get_tree().change_scene_to_file("res://scenes/map.tscn")
 		
 		
 func _on_checked_level(btn_pressed):
