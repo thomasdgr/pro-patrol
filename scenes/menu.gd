@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Control
 
 var audio_player : AudioStreamPlayer
 
@@ -6,10 +6,10 @@ var niveau = ["1", "2", "3", "4", "5"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_node("Label/btn_music").toggled.connect(_on_checked)
-	get_node("Label/btn_exit").toggled.connect(_on_checked_exit)
-	get_node("Label/btn_start").toggled.connect(_on_checked_start)
-	get_node("Label/btn_niveau").toggled.connect(_on_checked_level)
+	get_node("Control/Label/btn_music").toggled.connect(_on_checked)
+	get_node("Control/Label/btn_exit").toggled.connect(_on_checked_exit)
+	get_node("Control/Label/btn_start").toggled.connect(_on_checked_start)
+	get_node("Control/Label/btn_niveau").toggled.connect(_on_checked_level)
 
 	audio_player = $AudioStreamPlayer  # Assurez-vous de remplacer 'AudioStreamPlayer' par le nom correct de votre nœud AudioStreamPlayer
 
