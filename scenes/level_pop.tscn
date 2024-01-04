@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfysom8q27n1x"]
+
+[ext_resource type="Script" path="res://level_pop.gd" id="1_7atr8"]
+
+[node name="level_pop" type="CanvasLayer"]
+script = ExtResource("1_7atr8")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = -0.0138889
+anchor_top = -0.0648148
+anchor_right = -0.0138889
+anchor_bottom = -0.0648148
+offset_left = 454.0
+offset_top = 235.0
+offset_right = 689.0
+offset_bottom = 489.0
+text = "NIVEAU"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="option_niveau" type="OptionButton" parent="."]
+offset_left = 536.0
+offset_top = 359.0
+offset_right = 592.0
+offset_bottom = 391.0
+metadata/_edit_use_anchors_ = true
+
+[node name="btn_validation" type="Button" parent="."]
+offset_left = 548.0
+offset_top = 396.0
+offset_right = 579.0
+offset_bottom = 427.0
+toggle_mode = true
+text = "OK"
+metadata/_edit_use_anchors_ = true
