@@ -5,7 +5,6 @@ var npc_manager = preload("res://scripts/npc_manager.gd")
 var dialogBox : Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	dialogBox = get_node("/root/Map/Control")
 	pass # Replace with function body.
 
 func start_scenario(scenario_id):
@@ -142,6 +141,8 @@ func request_dialog(firstDialogInstance: DialogInstance):
 	#print(firstDialogInstance)
 	if (!active_dialog):
 		active_dialog = true
+		dialogBox = get_node("/root/Map/Control")
+		
 		dialogBox.RequestDialog(firstDialogInstance)
 
 var dialogs = []

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <name text="Test Scenario 1"/>
+    <spawn> 30,9,40 </spawn>
+    <events>
+        <event time="0" action="spawn_npc" npcId="1" position="(25,2,50)" path="to_player" goal="dialog">
+            <dialog>
+                <dialogInstance id="0" text="Yo le policier" time="10">
+                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" action="present_id" />
+                    <response text="Euuuh yo...?" points="5" next="-1"  action="end_level"/>
+                    <response text="AAAAA yo...?" points="5" next="-1"  action="end_level"/>
+                </dialogInstance>
+                <dialogInstance id="1" text="Non merci" time="8">
+                    <response text="Je répète, veuillez présenter une pièce d'identité" points="0" next="2" action="present_id" />
+                    <response text="Ah... Tant pis..." points="5" next="-1" action="end_level"/>
+                </dialogInstance>
+                <dialogInstance id="2" text="Ah ok alors... tenez" time="8">
+                    <response text="Merci, c'est tout bon" points="5" next="-1" action="end_level"/>
+                    <response text="Quelque chose ne colle pas avec votre carte!" points="5" next="3" />
+                </dialogInstance>
+                <dialogInstance id="3" text="Oh zut!" time="5">
+                    <response text="Terminer." points="0" next="-1" action="end_level"/>
+                </dialogInstance>
+            </dialog>
+        </event>
+    </events>
+</scenario>

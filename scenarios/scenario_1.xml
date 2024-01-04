@@ -11,7 +11,7 @@
                 </dialogInstance>
                 <dialogInstance id="1" text="Tenez monsieur, voici ma carte d'assurance maladie" time="8">
                     <response text="Vous n'avez pas de carte d'identité?" points="0" next="2" action="present_id" />
-                    <response text="Merci chef" points="5" next="-1" />
+                    <response text="Merci chef" points="5" next="-1" action="end_level"/>
                 </dialogInstance>
                 <dialogInstance id="2" text="Ah oui, tenez" time="8">
                     <response text="Merci, c'est tout bon" points="0" next="3" />
@@ -31,11 +31,11 @@
             <dialog>
                 <dialogInstance id="0" text="Bonjour, je suis Samuel Beckett" time="10">
                     <response text="Veuillez présenter une pièce d'identité" points="0" next="1" />
-                    <response text="Salut Sam!" points="5" next="-1" />
+                    <response text="Salut Sam!" points="5" next="-1" action="end_level"/>
                 </dialogInstance>
                 <dialogInstance id="1" text="Tenez monsieur, voici ma carte d'assurance maladie" time="8">
                     <response text="Vous n'avez pas de carte d'identité?" points="0" next="2" />
-                    <response text="Merci chef" points="5" next="-1" />
+                    <response text="Merci chef" points="5" next="-1" action="end_level"/>
                 </dialogInstance>
                 <dialogInstance id="2" text="Ah oui, tenez" action="present_id" time="8">
                     <response text="Merci, c'est tout bon" points="0" next="3" />
