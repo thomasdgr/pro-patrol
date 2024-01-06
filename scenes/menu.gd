@@ -33,7 +33,7 @@ func _on_checked_exit(btn_pressed):
 func _on_checked_start(btn_pressed):
 	if btn_pressed:
 		print("hi")
-		print(main_lvl.level)
+		print($"/root/MainLvl".level)
 		# je veux la variable ici du script level_pop
 		# ----------- Change ici la scène pour le clic sur start ------------
 		#get_tree().change_scene_to_file("res://menu.tscn")
@@ -42,4 +42,4 @@ func _on_checked_start(btn_pressed):
 func _on_checked_level(btn_pressed):
 	if btn_pressed:
 		print("hi")
-		get_tree().change_scene_to_file("res://level_pop.tscn")
+		get_tree().change_scene_to_file("res://scenes/level_pop.tscn")

@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://b1j5liek54gkl"]
 
-[ext_resource type="FontFile" uid="uid://ce3i5xpvvgv68" path="res://We Love Peace.ttf" id="1_bqqyc"]
-[ext_resource type="Script" path="res://menu.gd" id="1_ehwax"]
-[ext_resource type="PackedScene" uid="uid://cb1q8tq03df41" path="res://donut.glb" id="2_6fabj"]
-[ext_resource type="AudioStream" uid="uid://ct060mrin82c3" path="res://sound.mp3" id="4_op02t"]
+[ext_resource type="FontFile" uid="uid://dpmnpum5r84nt" path="res://We Love Peace.ttf" id="1_bqqyc"]
+[ext_resource type="Script" path="res://scenes/menu.gd" id="1_ehwax"]
+[ext_resource type="PackedScene" uid="uid://dbytvkfs2d4pa" path="res://scenes/donut.glb" id="2_6fabj"]
+[ext_resource type="AudioStream" uid="uid://bt2qhwh15fdlr" path="res://assets/sound.mp3" id="4_op02t"]
 
 [sub_resource type="FontVariation" id="FontVariation_vphev"]
 base_font = ExtResource("1_bqqyc")
