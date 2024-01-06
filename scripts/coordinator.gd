@@ -169,6 +169,8 @@ func dialog_response(dialogInstance : DialogInstance, points : int, action : Str
 		"end_level":
 			print("ending level")
 			end_level()
+		"show_id":
+			print("Show ID")
 		_:
 			print("Else")
 			
