@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dbytvkfs2d4pa" path="res://scenes/donut.glb" id="2_fr8e6"]
 [ext_resource type="FontFile" uid="uid://dpmnpum5r84nt" path="res://We Love Peace.ttf" id="3_87nnv"]
 
-[sub_resource type="Animation" id="Animation_q58fe"]
+[sub_resource type="Animation" id="Animation_qa60k"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -20,9 +20,9 @@ tracks/0/keys = {
 "values": [Vector3(0, 0, 2.92877)]
 }
 
-[sub_resource type="Animation" id="Animation_gu147"]
+[sub_resource type="Animation" id="Animation_kaytw"]
 resource_name = "move"
-length = 9.0
+length = 4.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -31,16 +31,16 @@ tracks/0/path = NodePath("Control/SubViewportContainer/SubViewport/Camera3D:posi
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5, 3, 4.5, 6, 7.5, 9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1, 2, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 2.92877), Vector3(-2.28326, 0, 2.92877), Vector3(0.375484, 0.352539, 2.72102), Vector3(0.375484, -0.680219, 2.72102), Vector3(1.78901, -0.852807, 2.92877), Vector3(-1.71879, -0.766105, 2.72102), Vector3(0, 0, 2.92877)]
+"values": [Vector3(0.566785, -0.258808, 2.92877), Vector3(-0.433215, -0.258808, 2.92877), Vector3(0.265017, -0.843915, 2.92877), Vector3(-1.09177, -0.000871718, 2.92877)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_eepj7"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w0iwl"]
 _data = {
-"RESET": SubResource("Animation_q58fe"),
-"move": SubResource("Animation_gu147")
+"RESET": SubResource("Animation_qa60k"),
+"move": SubResource("Animation_kaytw")
 }
 
 [sub_resource type="FontVariation" id="FontVariation_5lnj5"]
@@ -72,7 +72,6 @@ libraries = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_aq0bq")
-autoplay = true
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 1
@@ -113,12 +112,12 @@ offset_right = 1153.0
 offset_bottom = 649.0
 theme_override_fonts/font = SubResource("FontVariation_5lnj5")
 theme_override_font_sizes/font_size = 80
-text = "Pro PATROL"
+text = "Titre du jeu"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="btn_start" type="Button" parent="Control/Label"]
+[node name="Start" type="Button" parent="Control/Label"]
 layout_mode = 0
 offset_left = 468.0
 offset_top = 471.0
@@ -127,10 +126,9 @@ offset_bottom = 520.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = SubResource("FontVariation_bq1di")
-toggle_mode = true
 text = "START"
 
-[node name="btn_exit" type="Button" parent="Control/Label"]
+[node name="Exit" type="Button" parent="Control/Label"]
 layout_mode = 0
 offset_left = 468.0
 offset_top = 537.0
@@ -139,39 +137,27 @@ offset_bottom = 586.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = SubResource("FontVariation_yxwkj")
-toggle_mode = true
 text = "EXIT"
 
-[node name="btn_music" type="CheckButton" parent="Control/Label"]
+[node name="SoundButton" type="CheckButton" parent="Control/Label"]
 layout_mode = 0
 offset_left = 1036.0
 offset_top = 608.0
 offset_right = 1142.0
 offset_bottom = 639.0
 theme_override_fonts/font = SubResource("FontVariation_u3k4o")
-button_pressed = true
-action_mode = 0
 text = "SOUND"
 
-[node name="btn_niveau" type="Button" parent="Control/Label"]
+[node name="Settings" type="Button" parent="Control/Label"]
 layout_mode = 0
-offset_left = 1042.0
-offset_top = 576.0
+offset_left = 1041.0
+offset_top = 579.0
 offset_right = 1135.0
-offset_bottom = 602.0
+offset_bottom = 605.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = SubResource("FontVariation_bq1di")
-toggle_mode = true
-text = "LEVEL"
+text = "settings"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "move"
-speed_scale = 2.0
-libraries = {
-"": SubResource("AnimationLibrary_eepj7")
-}
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_op02t")
-autoplay = true
+[connection signal="pressed" from="Control/Label/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Control/Label/Exit" to="." method="_on_exit_pressed"]

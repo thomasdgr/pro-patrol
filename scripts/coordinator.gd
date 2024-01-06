@@ -3,16 +3,31 @@ var level_name = ""
 var points = 0
 var npc_manager = preload("res://scripts/npc_manager.gd")
 var dialogBox : Node
+var level_id = -1
+var level_cleared = false
+var timer : SceneTreeTimer 
+var events = []
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
+func scenario_exists(scenario_id) -> bool:
+	var scenarioName = "scenarios/scenario_" + str(scenario_id) + ".xml"
+	return FileAccess.file_exists(scenarioName)
+
 func start_scenario(scenario_id):
+	level_cleared = false
+	
+	if not scenario_exists(scenario_id):
+		return
+		
+	level_id = scenario_id
 	# Read the scenario file and parse it
 	# The scenario is in scenarios/scenario_'scenario_id'.xml
 	var parser = XMLParser.new()
 	parser.open("scenarios/scenario_" + str(scenario_id) + ".xml")
-	var events = []  # To store Event objects
+	events = []  # To store Event objects
 	var current_dialog_instance = null
 	var to_read = true
 	while true:
@@ -94,7 +109,8 @@ func start_scenario(scenario_id):
 	for event in events:
 		var timeDelta = event.event_attributes["time"].to_int() - currTime
 		if timeDelta > 0:
-			await get_tree().create_timer(timeDelta).timeout
+			timer = get_tree().create_timer(timeDelta)
+			await timer.timeout
 		currTime += timeDelta
 		var current_action = event.event_attributes["action"]
 		if current_action == "spawn_npc":
@@ -111,8 +127,8 @@ func start_scenario(scenario_id):
 			var first_dialog = null
 			if event.dialog_instances.size() > 0:
 				first_dialog = event.dialog_instances[0]
-				
-			npc_manager.spawn_npc(get_node("/root/Map"), npc_id, parse_string_to_vector3(position), goal, path == "to_player", goalPosition, event.dialog_instances[0])
+			if not level_cleared:
+				npc_manager.spawn_npc(get_node("/root/Map"), npc_id, parse_string_to_vector3(position), goal, path == "to_player", goalPosition, event.dialog_instances[0])
 			
 		else:
 			pass
@@ -159,13 +175,52 @@ func dialog_response(dialogInstance : DialogInstance, points : int, action : Str
 
 func get_points():
 	return self.points
+	
+var resultScreen = null
 
 func end_level():
-	var resultScreen = preload("res://scenes/result_screen.tscn").instantiate()
+	timer.set_time_left(6000000) # Hack to make it so that no events happen during/after reset
+	resultScreen = preload("res://scenes/result_screen.tscn").instantiate()
 	# Get the current 2D scene tree
 	var viewport = get_viewport()
 	# Add the 2D result screen to the current viewport
 	viewport.add_child(resultScreen)
+
+func reset_states():
+	level_cleared = true
+	
+	npc_manager.clear_npcs()
+	self.points = 0
+	self.dialogs = []
+	if resultScreen != null:
+		get_viewport().remove_child(resultScreen)
+	events = []
+	
+	
+		
+
+func exit_to_menu():
+	reset_states()
+	return
+
+func restart_level():
+	reset_states()
+	start_scenario(level_id)
+	return
+	
+func start_next_level():
+	reset_states()
+	start_scenario(level_id + 1)
+	return
+
+func get_level_id():
+	return self.level_id
+
+func get_level_name():
+	return self.level_name
+
+func get_dialogs():
+	return self.dialogs
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

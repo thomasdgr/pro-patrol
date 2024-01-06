@@ -1,5 +1,7 @@
 extends Node
 
+static var npcs = []
+
 static func spawn_npc_scene(root_node: Node,npc_id: int, spawn_coordinates: Vector3) -> Node:
 	var name: String
 	var model: String
@@ -45,9 +47,15 @@ static func spawn_npc(root_node: Node, npc_id: int, spawn_coordinates: Vector3, 
 	npc.firstDialogInstance = dialogInstance
 	npc.path = destination
 	npc.path_to_player = path_to_player
+	npcs.append(npc)
 	return npc
 		
-	
+static func clear_npcs():
+	for npc in npcs:
+		if npc != null:
+			npc.queue_free()
+	npcs = []
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
