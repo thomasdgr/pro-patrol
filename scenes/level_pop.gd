@@ -1,6 +1,10 @@
 extends CanvasLayer
 
-var level = ["1", "2", "3"]
+var level = [
+	["1", true], 
+	["2", false], 
+	["3", false]
+]
 
 var level_selected = "0"
 var index = 0
@@ -9,7 +13,11 @@ var id = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for item in level:
-		$option_niveau.add_item(item)
+		print(item)
+		$option_niveau.add_item(item[0])
+		if item[1] == false:
+			print(item[0])
+			$option_niveau.set_item_disabled(int(item[0])-1, true)
 	get_node("btn_validation").toggled.connect(_on_checked)
 
 
