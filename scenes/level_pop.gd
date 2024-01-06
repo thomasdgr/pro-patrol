@@ -24,5 +24,5 @@ func _on_checked(btn_pressed):
 		index = $option_niveau.get_item_index(id)
 		level_selected = $option_niveau.get_item_text(index)
 		print(level_selected)
-		main_lvl.level = level_selected
-		get_tree().change_scene_to_file("res://menu.tscn")
+		$"/root/MainLvl".level = level_selected
+		get_tree().change_scene_to_file("res://scenes/menu.tscn")
