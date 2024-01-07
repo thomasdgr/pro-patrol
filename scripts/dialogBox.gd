@@ -46,14 +46,9 @@ func _process(delta):
 		if countdown_timer <= 0:
 			print("Le minuteur a atteint 0 !")
 			stop_timer()
-			print(dialog.responses)
-			print("Next")
-			hide()
-			
-			print(dialog.responses[0].nextInstance)
-			
-			#if (dialog.responses[0].nextInstance):
-			RequestDialog(dialog.responses[0].nextInstance)
+			get_node("/root/Coordinator").dialog_response(dialog, buttonData[button1].points, buttonData[button1].action)
+			if buttonData[button1].nextInstance != null:
+				RequestDialog(buttonData[button1].nextInstance)
 			return
 
 func RequestDialog(dialog_id: DialogInstance):
@@ -72,7 +67,7 @@ func RequestDialog(dialog_id: DialogInstance):
 		label_question.text = dialog_id.text
 		
 		button1.text = dialog_id.responses[0].text
-		
+		button1.visible = true
 		
 		buttonData[button1] = {
 			"nextInstance": dialog_id.responses[0].nextInstance,
@@ -83,6 +78,7 @@ func RequestDialog(dialog_id: DialogInstance):
 		if len(dialog_id.responses) <= 1:
 			button2.visible = false
 		else:
+			button2.visible = true
 			button2.text = dialog_id.responses[1].text
 			buttonData[button2] = {
 				"nextInstance": dialog_id.responses[1].nextInstance,
@@ -93,6 +89,7 @@ func RequestDialog(dialog_id: DialogInstance):
 		if len(dialog_id.responses) <= 2:
 			button3.visible = false
 		else:
+			button3.visible = true
 			button3.text = dialog_id.responses[2].text
 			buttonData[button3] = {
 				"nextInstance": dialog_id.responses[2].nextInstance,
@@ -132,3 +129,9 @@ func handle_button_click(button: Button):
 	else:
 		hide()
 # ...
+
+func reset_dialog():
+	button1.visible = false
+	button2.visible = false
+	button3.visible = false
+	

@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-var level = []
+var levels = []
 
 var level_selected = "0"
 var index = 0
@@ -9,8 +9,8 @@ var id = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var coordinator = get_node("/root/Coordinator")
-	level = coordinator.get_scenario_list()
-	for item in level:
+	levels = coordinator.get_scenario_list()
+	for item in levels:
 		print(item)
 		$option_niveau.add_item(item[0])
 		if item[1] == false:
@@ -31,4 +31,5 @@ func _on_checked(btn_pressed):
 		level_selected = $option_niveau.get_item_text(index)
 		print(level_selected)
 		$"/root/MainLvl".level = level_selected
+		$"/root/MainLvl".selected = true
 		get_tree().change_scene_to_file("res://scenes/menu.tscn")

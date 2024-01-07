@@ -42,6 +42,8 @@ func get_current_level():
 	else:
 		var file = FileAccess.open(lvl_file, FileAccess.READ)
 		curr_lvl = int(file.get_as_text())
+		if curr_lvl == 0:
+			curr_lvl = 1
 	get_node("/root/MainLvl").level = curr_lvl
 	return curr_lvl
 
@@ -221,8 +223,8 @@ func end_level():
 	# Saving progress into lvl.txt
 	if self.points == 0:
 		var file = FileAccess.open(lvl_file, FileAccess.WRITE)
-		var lvl = level_id
-		if scenario_exists(level_id + 1):
+		var lvl = int(level_id)
+		if scenario_exists(int(level_id) + 1):
 			lvl += 1
 		file.store_string(str(lvl))
 		
@@ -238,12 +240,11 @@ func reset_states():
 	npc_manager.clear_npcs()
 	self.points = 0
 	self.dialogs = []
+	self.events = []
 	if resultScreen != null:
 		get_viewport().remove_child(resultScreen)
 	events = []
-	
-	
-		
+	MainLvl.selected = false
 
 func exit_to_menu():
 	reset_states()

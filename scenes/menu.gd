@@ -1,10 +1,11 @@
 extends CanvasLayer
 
 var audio_player : AudioStreamPlayer
-
+static var selected = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_node("/root/Coordinator").get_current_level()
+	if not MainLvl.selected:
+		get_node("/root/Coordinator").get_current_level()
 	get_node("Label/btn_music").toggled.connect(_on_checked)
 	get_node("Label/btn_exit").toggled.connect(_on_checked_exit)
 	get_node("Label/btn_start").toggled.connect(_on_checked_start)
