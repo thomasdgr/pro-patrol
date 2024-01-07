@@ -12,6 +12,7 @@ var path_to_player: bool
 var dialogActive: bool
 
 @onready var anim: AnimationPlayer = $Pivot/Character/AnimationPlayer
+#@onready var anim: AnimationPlayer = $Pivot/business_shirt/AnimationPlayer
 
 func _ready():
 	player = get_node("/root/Map/Character")  
@@ -38,6 +39,7 @@ func _process(delta):
 	if distance > STOP_DISTANCE:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		#anim.play("Walk")
 		anim.play("BARNEY-X_Template_Biped1_skeleton|mixamo_com|Layer0")
 	else:
 		velocity = direction * Vector3(0,0,0)
