@@ -1,10 +1,6 @@
 extends CanvasLayer
 
-var level = [
-	["1", true], 
-	["2", false], 
-	["3", false]
-]
+var level = []
 
 var level_selected = "0"
 var index = 0
@@ -12,6 +8,8 @@ var id = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	var coordinator = get_node("/root/Coordinator")
+	level = coordinator.get_scenario_list()
 	for item in level:
 		print(item)
 		$option_niveau.add_item(item[0])

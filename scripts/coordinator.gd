@@ -7,10 +7,43 @@ var level_id = -1
 var level_cleared = false
 var timer : SceneTreeTimer 
 var events = []
+const lvl_file = "res://lvl.txt"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
+
+func get_scenario_list():
+	var curr_lvl = get_current_level()
+	var lvl_list = []
+	const lvl_path = "res://scenarios"
+	var scenario_dir = DirAccess.open(lvl_path)
+	if scenario_dir:
+		scenario_dir.list_dir_begin()
+		var file_name = scenario_dir.get_next()
+		while file_name != "":
+			if not scenario_dir.current_is_dir():
+				# This is scenario_{id}.xml
+				# Remove the first 9 chars
+				# And the last 4 chars
+				var scenario_id = file_name.get_slice("_", 1).get_slice(".", 0)
+				var lvl = [scenario_id, int(scenario_id) <= curr_lvl]
+				lvl_list.append(lvl)
+			file_name = scenario_dir.get_next()
+	return lvl_list
+	
+	
+func get_current_level():
+	var curr_lvl = 1
+	# If there is not lvl.txt file, then create it with level set as 1
+	if not FileAccess.file_exists(lvl_file):
+		var file = FileAccess.open("res://lvl.txt", FileAccess.WRITE)
+		file.store_string(str(curr_lvl))
+	else:
+		var file = FileAccess.open(lvl_file, FileAccess.READ)
+		curr_lvl = int(file.get_as_text())
+	get_node("/root/MainLvl").level = curr_lvl
+	return curr_lvl
 
 func scenario_exists(scenario_id) -> bool:
 	var scenarioName = "scenarios/scenario_" + str(scenario_id) + ".xml"
@@ -43,6 +76,12 @@ func start_scenario(scenario_id):
 				for idx in range(parser.get_attribute_count()):
 					attributes_dict[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
 				level_name = attributes_dict["text"]
+			if node_name == "spawn":
+				var player = get_node("/root/Map/Character")
+				var attributes_dict = {}
+				for idx in range(parser.get_attribute_count()):
+					attributes_dict[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
+				player.position = parse_string_to_vector3(attributes_dict["position"])
 			if node_name == "event":
 				var attributes_dict = {}
 				for idx in range(parser.get_attribute_count()):
@@ -139,7 +178,7 @@ func parse_string_to_vector3(str):
 
 	# Convert string values to floats
 	var x = values[0].to_float()
-	var y = 0
+	var y = values[1].to_float()
 	var z = values[2].to_float()
 
 	# Create a Vector3 using the parsed values
@@ -150,11 +189,6 @@ func parse_string_to_vector3(str):
 var active_dialog: bool
 
 func request_dialog(firstDialogInstance: DialogInstance):
-	# Call the other function
-
-	#print("Hey")
-	
-	#print(firstDialogInstance)
 	if (!active_dialog):
 		active_dialog = true
 		dialogBox = get_node("/root/Map/Control")
@@ -164,7 +198,7 @@ func request_dialog(firstDialogInstance: DialogInstance):
 var dialogs = []
 func dialog_response(dialogInstance : DialogInstance, points : int, action : String):
 	dialogs.append({"dialog": dialogInstance, "points": points})
-	points += points
+	self.points += points
 	match action:
 		"end_level":
 			print("ending level")
@@ -181,7 +215,17 @@ func get_points():
 var resultScreen = null
 
 func end_level():
-	timer.set_time_left(6000000) # Hack to make it so that no events happen during/after reset
+	if timer != null:
+		timer.set_time_left(6000000) # Hack to make it so that no events happen during/after reset
+	
+	# Saving progress into lvl.txt
+	if self.points == 0:
+		var file = FileAccess.open(lvl_file, FileAccess.WRITE)
+		var lvl = level_id
+		if scenario_exists(level_id + 1):
+			lvl += 1
+		file.store_string(str(lvl))
+		
 	resultScreen = preload("res://scenes/result_screen.tscn").instantiate()
 	# Get the current 2D scene tree
 	var viewport = get_viewport()
@@ -190,7 +234,7 @@ func end_level():
 
 func reset_states():
 	level_cleared = true
-	
+	active_dialog = false
 	npc_manager.clear_npcs()
 	self.points = 0
 	self.dialogs = []
@@ -203,6 +247,7 @@ func reset_states():
 
 func exit_to_menu():
 	reset_states()
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 	return
 
 func restart_level():

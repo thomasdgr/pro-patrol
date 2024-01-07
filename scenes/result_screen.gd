@@ -7,6 +7,8 @@ func _ready():
 	var dialogs = coordinator.get_dialogs()
 	var success = true
 	
+	get_node("TextureRect/ContentBox/Title/MissionName").text = coordinator.get_level_name()
+	
 	for dialog in dialogs:
 		if dialog.points > 0:
 			success = false
@@ -49,7 +51,7 @@ func _ready():
 	exitButton.text = "Retourner au Menu"
 	hBox.add_child(exitButton)
 	hBox.add_spacer(true)
-	var next_exists = coordinator.scenario_exists(coordinator.get_level_id() + 1)
+	var next_exists = coordinator.scenario_exists(int(coordinator.get_level_id()) + 1)
 	if not success:
 		var retryButton = Button.new()
 		retryButton.text = "Réessayer"
