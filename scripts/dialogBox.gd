@@ -1,5 +1,7 @@
 extends Control
 
+signal dialog_state
+
 var dialogNode : Node
 
 var countdown_timer: float = 10
@@ -13,8 +15,13 @@ var buttonData = {}
 var button1: Button
 var button2: Button
 var button3: Button
+var is_dialog_active: bool = false;
+
 
 var dialog: DialogInstance
+
+
+
 
 
 
@@ -53,14 +60,20 @@ func _process(delta):
 
 func RequestDialog(dialog_id: DialogInstance):
 	if dialog_id == null:
+
+
 		return
 	if true:
 		dialog = dialog_id
 		if (len(dialog.responses) == 0):
+			
+			print("FIND REESSAYER")
 			hide()
 			DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
 			return
-			
+		is_dialog_active = true
+		emit_signal("dialog_state",is_dialog_active)
+
 		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_VISIBLE)
 		countdown_timer = dialog_id.time
 		label_title.text = "Question " + String.num_int64(dialog_id.id +1)

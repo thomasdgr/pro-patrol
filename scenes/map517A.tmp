@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://yd8vw7rcf53q"]
+[gd_scene load_steps=16 format=3 uid="uid://yd8vw7rcf53q"]
 
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_1acjj"]
 [ext_resource type="PackedScene" uid="uid://cnyyf71he22r1" path="res://scenes/png.tscn" id="1_2vbu7"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" path="res://scripts/dialogBox.gd" id="7_v4erb"]
 [ext_resource type="PackedScene" uid="uid://dsorry3paxo5e" path="res://scenes/npcs/business_shirt.tscn" id="8_h2rts"]
 [ext_resource type="PackedScene" uid="uid://b013fyrgscynu" path="res://scenes/polygon_city.tscn" id="8_lojno"]
-[ext_resource type="PackedScene" uid="uid://bwxoflbosp6je" path="res://scenes/npcs/demo_shirt.tscn" id="8_x80lm"]
 
 [sub_resource type="Gradient" id="Gradient_aufgv"]
 colors = PackedColorArray(0.137255, 0.137255, 0.529412, 1, 0.0509804, 0.0509804, 0.0509804, 1)
@@ -38,13 +37,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 20
-
-[sub_resource type="Curve3D" id="Curve3D_4a6a8"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -58.3786, -0.00270995, 82.3832, 0.217697, 0.000366211, 0.0983047, -0.217697, -0.000366211, -0.0983047, -75.7806, -0.00222167, 82.4257, -0.135063, 0.00634766, 1.05967, 0.135063, -0.00634766, -1.05967, -77.0588, -0.0053955, 81.1934, -0.586014, 0.00231934, 0.291275, 0.586014, -0.00231934, -0.291275, -75.7648, -0.000390619, 80.0289, 0, 0, 0, 0, 0, 0, -58.3425, -0.00307617, 80.0316, 0.0329895, 0.00280762, -1.26393, -0.0329895, -0.00280762, 1.26393, -56.9545, -0.00588378, 81.291, 0, 0, 0, 0, 0, 0, -58.3786, -0.00270995, 82.3832),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
-}
-point_count = 7
 
 [node name="Map" type="StaticBody3D"]
 script = ExtResource("1_1acjj")
@@ -83,7 +75,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0, 77)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.8437, 0.0268386, 78.6372)
 
 [node name="Character" parent="." instance=ExtResource("1_8t06m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.3459, 1.45301, 72.3043)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.9563, 1.45301, 41.647)
 
 [node name="MovingPnj" type="Node3D" parent="."]
 
@@ -92,29 +84,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 curve = SubResource("Curve3D_crlvi")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D"]
-transform = Transform3D(-0.950833, -0.00054269, -0.309701, -0.00060993, 1, 0.000120288, 0.3097, 0.00030327, -0.950834, -58.2342, 0.000738551, 38.8152)
+transform = Transform3D(-0.950833, -0.00054269, -0.3097, -0.00060993, 1, 0.000120288, 0.3097, 0.00030327, -0.950834, -58.2342, 0.000738551, 38.8152)
 progress = 16.82
-
-[node name="Path3D2" type="Path3D" parent="MovingPnj"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0339966, 0.136743, 0.518723)
-curve = SubResource("Curve3D_4a6a8")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D2"]
-transform = Transform3D(-0.00244347, 2.80587e-05, 0.999997, 1.81899e-12, 1, -2.80588e-05, -0.999997, -6.85591e-08, -0.00244347, -58.3786, -0.00270995, 82.3832)
-
-[node name="Path3D3" type="Path3D" parent="MovingPnj"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.216, 0.161401, -15.6128)
-curve = SubResource("Curve3D_4a6a8")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D3"]
-transform = Transform3D(-0.00244347, 2.80587e-05, 0.999997, 1.81899e-12, 1, -2.80588e-05, -0.999997, -6.85591e-08, -0.00244347, -58.3786, -0.00270995, 82.3832)
-
-[node name="Path3D4" type="Path3D" parent="MovingPnj"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.6557, 0.167505, -0.140087)
-curve = SubResource("Curve3D_4a6a8")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D4"]
-transform = Transform3D(-0.00244347, 2.80587e-05, 0.999997, 1.81899e-12, 1, -2.80588e-05, -0.999997, -6.85591e-08, -0.00244347, -58.3786, -0.00270995, 82.3832)
-
-[node name="Node3D" parent="." instance=ExtResource("8_x80lm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -131.267, 0.0268388, 76.7493)
