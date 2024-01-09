@@ -3,19 +3,14 @@
 [ext_resource type="Script" path="res://scripts/Png.gd" id="1_edpq3"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tybj0"]
-load_path = "res://.godot/imported/casual_man_color.png-73e3ca165720b86ab7ec8445d41d4e22.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iu7ck"]
-load_path = "res://.godot/imported/casual_man_occ.png-a85d16d8b53394c5dbc1d7e97fdeccab.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_66j1t"]
-load_path = "res://.godot/imported/casual_man_metalness.png-30c3357f29751e3dea63bd9c8d9fddc0.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fmjq0"]
-load_path = "res://.godot/imported/casual_man_normal.png-689e79fdf9fc0d794b22dc6d0a3d31f5.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wvdoj"]
-load_path = "res://.godot/imported/casual_man_roughness.png-c6f0ef30f73035770e74bfca5a97982c.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6mhso"]
 resource_name = "DefaultMaterial"

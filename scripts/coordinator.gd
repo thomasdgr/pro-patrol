@@ -8,6 +8,7 @@ var level_cleared = false
 var timer : SceneTreeTimer 
 var events = []
 const lvl_file = "res://lvl.txt"
+var present_id: Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -205,8 +206,12 @@ func dialog_response(dialogInstance : DialogInstance, points : int, action : Str
 		"end_level":
 			print("ending level")
 			end_level()
-		"show_id":
+		"present_id":
 			print("Show ID")
+			get_tree().change_scene_to_file("res://scenes/present_id.tscn")
+			#present_id = get_node("/root/Map/Control")
+			#present_id.show_id()
+			
 		_:
 			print("Else")
 			

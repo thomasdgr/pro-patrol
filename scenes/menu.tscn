@@ -1,20 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1j5liek54gkl"]
+[gd_scene load_steps=7 format=3 uid="uid://b1j5liek54gkl"]
 
-[ext_resource type="FontFile" uid="uid://0vbmkcditkge" path="res://We Love Peace.ttf" id="1_bqqyc"]
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_ehwax"]
 [ext_resource type="PackedScene" uid="uid://dbytvkfs2d4pa" path="res://scenes/donut.glb" id="2_6fabj"]
 
 [sub_resource type="FontVariation" id="FontVariation_vphev"]
-base_font = ExtResource("1_bqqyc")
 
 [sub_resource type="FontVariation" id="FontVariation_3by5l"]
-base_font = ExtResource("1_bqqyc")
 
 [sub_resource type="FontVariation" id="FontVariation_qksip"]
-base_font = ExtResource("1_bqqyc")
 
 [sub_resource type="FontVariation" id="FontVariation_hmr42"]
-base_font = ExtResource("1_bqqyc")
 
 [node name="menu" type="CanvasLayer"]
 script = ExtResource("1_ehwax")
