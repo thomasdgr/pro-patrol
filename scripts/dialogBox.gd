@@ -19,7 +19,7 @@ var is_dialog_active: bool = false;
 
 var dialog: DialogInstance
 
-
+const TIMEOUT_PENALTY = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -43,15 +43,17 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if timer_running:
+	if timer_running && !get_node("/root/Coordinator").game_stopped:
 		countdown_timer -= delta
 		label_timer.text = String.num_scientific(countdown_timer);
 		if countdown_timer <= 0:
 			print("Le minuteur a atteint 0 !")
-			stop_timer()
-			get_node("/root/Coordinator").dialog_response(dialog, buttonData[button1].points, buttonData[button1].action, func() : return)
+			#stop_timer()
+			get_node("/root/Coordinator").dialog_response(dialog, TIMEOUT_PENALTY, buttonData[button1].action if buttonData[button1].action == "end_level" else "", func() : RequestDialog(buttonData[button1].nextInstance) if buttonData[button1].nextInstance != null else hide())
 			if buttonData[button1].nextInstance != null:
 				RequestDialog(buttonData[button1].nextInstance)
+			else:
+				hide()
 			return
 
 func pause_dialog():
@@ -80,8 +82,6 @@ func RequestDialog(dialog_id: DialogInstance, npc = null):
 		countdown_timer = dialog_id.time
 		label_title.text = "Question " + String.num_int64(dialog_id.id +1)
 		label_question.text = dialog_id.text
-		if dialogNpc != null:
-			dialogNpc.talking_anim()
 		button1.text = dialog_id.responses[0].text
 		button1.visible = true
 		
@@ -152,3 +152,8 @@ func reset_dialog():
 	button2.visible = false
 	button3.visible = false
 	dialog = null
+	is_dialog_active = false
+	stop_timer()
+	buttonData = {}
+	emit_signal("dialog_state",is_dialog_active)
+	

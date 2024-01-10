@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://b1j5liek54gkl"]
+[gd_scene load_steps=13 format=3 uid="uid://b1j5liek54gkl"]
 
 [ext_resource type="FontFile" uid="uid://dpmnpum5r84nt" path="res://We Love Peace.ttf" id="1_bqqyc"]
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_ehwax"]
 [ext_resource type="PackedScene" uid="uid://dbytvkfs2d4pa" path="res://scenes/donut.glb" id="2_6fabj"]
 [ext_resource type="AudioStream" uid="uid://bt2qhwh15fdlr" path="res://assets/sound.mp3" id="4_op02t"]
+[ext_resource type="PackedScene" uid="uid://b013fyrgscynu" path="res://scenes/polygon_city.tscn" id="5_t2mqj"]
 
 [sub_resource type="FontVariation" id="FontVariation_vphev"]
 base_font = ExtResource("1_bqqyc")
@@ -22,7 +23,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("MarginContainer/SubViewportContainer/SubViewport/Camera3D:position")
+tracks/0/path = NodePath("MarginContainer2/SubViewportContainer/SubViewport/Camera3D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -39,7 +40,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("MarginContainer/SubViewportContainer/SubViewport/Camera3D:position")
+tracks/0/path = NodePath("MarginContainer2/SubViewportContainer/SubViewport/Camera3D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -58,6 +59,34 @@ _data = {
 [node name="menu" type="CanvasLayer"]
 script = ExtResource("1_ehwax")
 
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SubViewport" type="SubViewport" parent="MarginContainer2/SubViewportContainer"]
+handle_input_locally = false
+msaa_2d = 1
+msaa_3d = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+size = Vector2i(3200, 2000)
+render_target_update_mode = 4
+
+[node name="donut" parent="MarginContainer2/SubViewportContainer/SubViewport" instance=ExtResource("2_6fabj")]
+transform = Transform3D(0.253812, 0.0622501, -0.147324, -0.158537, 0.134391, -0.216345, 0.0211054, 0.260891, 0.146597, 0, -0.381366, 0)
+
+[node name="Camera3D" type="Camera3D" parent="MarginContainer2/SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 0.990899, 0.134609, 0, -0.134609, 0.990899, 0, 0, 2.92877)
+
 [node name="sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_op02t")
 autoplay = true
@@ -72,27 +101,6 @@ offset_right = 1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="SubViewportContainer" type="SubViewportContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="SubViewport" type="SubViewport" parent="MarginContainer/SubViewportContainer"]
-handle_input_locally = false
-msaa_2d = 1
-msaa_3d = 1
-use_taa = true
-use_debanding = true
-use_occlusion_culling = true
-size = Vector2i(1152, 648)
-render_target_update_mode = 4
-
-[node name="donut" parent="MarginContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_6fabj")]
-transform = Transform3D(0.846039, 0.2075, -0.491082, -0.528458, 0.44797, -0.721149, 0.0703512, 0.869636, 0.488654, 0, -0.381366, 0)
-
-[node name="Camera3D" type="Camera3D" parent="MarginContainer/SubViewportContainer/SubViewport"]
-transform = Transform3D(1, 0, 0, 0, 0.990899, 0.134609, 0, -0.134609, 0.990899, 0, 0, 2.92877)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -149,3 +157,6 @@ speed_scale = 2.0
 libraries = {
 "": SubResource("AnimationLibrary_eepj7")
 }
+
+[node name="POLYGON_City_Demo_Scene" parent="." instance=ExtResource("5_t2mqj")]
+transform = Transform3D(0.962066, 0.0596249, 0.266222, -4.4607e-10, 0.975826, -0.218552, -0.272818, 0.210261, 0.938808, 4.9534, -33.5857, -159.191)

@@ -1,8 +1,5 @@
 extends Node
 
-signal dialog_state
-
-
 var level_name = ""
 var points = 0
 var npc_manager = preload("res://scripts/npc_manager.gd")
@@ -13,6 +10,8 @@ var timer : SceneTreeTimer
 var events = []
 const lvl_file = "res://lvl.txt"
 var present_id = null
+
+var game_stopped = false
 
 static var map_instance = null
 
@@ -154,6 +153,7 @@ func start_scenario(scenario_id):
 	# Start the scenario 
 	# Go through events and based on their time, start them
 	var currTime = 0
+	game_stopped = false
 	for event in events:
 		var timeDelta = event.event_attributes["time"].to_int() - currTime
 		if timeDelta > 0:
@@ -198,7 +198,7 @@ func parse_string_to_vector3(str):
 var active_dialog: bool
 
 func request_dialog(firstDialogInstance: DialogInstance, npc = null):
-	if (!active_dialog):
+	if !active_dialog && !game_stopped:
 		active_dialog = true
 		dialogBox = get_node("/root/Map/Control")
 		
@@ -267,7 +267,7 @@ var resultScreen = null
 func end_level():
 	if timer != null:
 		timer.set_time_left(6000000) # Hack to make it so that no events happen during/after reset
-	
+	game_stopped = true
 	# Saving progress into lvl.txt
 	if self.points == 0:
 		var file = FileAccess.open(lvl_file, FileAccess.WRITE)
@@ -283,7 +283,8 @@ func end_level():
 	viewport.add_child(resultScreen)
 
 func reset_states():
-	emit_signal("dialog_state",false)
+	dialogBox = get_node("/root/Map/Control")
+	dialogBox.reset_dialog()
 	map_instance = null
 	level_cleared = true
 	active_dialog = false
@@ -292,7 +293,8 @@ func reset_states():
 	self.dialogs = []
 	self.events = []
 	if resultScreen != null:
-		get_viewport().remove_child(resultScreen)
+		var viewport = get_viewport()
+		viewport.remove_child(resultScreen)
 	events = []
 	MainLvl.selected = false
 
@@ -303,12 +305,14 @@ func exit_to_menu():
 
 func restart_level():
 	reset_states()
+	DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
 	start_scenario(level_id)
 	return
 	
 func start_next_level():
 	reset_states()
-	start_scenario(level_id + 1)
+	DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
+	start_scenario(int(level_id) + 1)
 	return
 
 func get_level_id():

@@ -12,17 +12,11 @@ var path_to_player: bool
 var dialogActive: bool
 
 @onready var anim: AnimationPlayer = $Pivot/business_shirt/AnimationPlayer
-@onready var footstep : AudioStreamPlayer = $Pivot/business_shirt/footstep
+#@onready var footstep : AudioStreamPlayer3D = $Pivot/business_shirt/footstep
 
-
-func talking_anim():
-	#anim.loop = false
-	#anim.play("talking")
-	print("Talking Anim")
-	return
 
 func _ready():
-	player = get_node("/root/Map/Character")  
+	player = get_node("/root/Map/Character")
 	
 func _process(delta):
 	
@@ -33,11 +27,15 @@ func _process(delta):
 	var destination = path
 	if path_to_player and player:
 		destination = player.global_transform.origin
-		
+	var distance = global_transform.origin.distance_to(destination)
+	
+	
 	var direction = (destination - global_transform.origin).normalized()
 	var opposite_dir = Vector3(-direction.x, direction.y, -direction.z)
+	if distance <= STOP_DISTANCE:
+		direction = (destination - global_transform.origin).normalized()
+		opposite_dir = Vector3(-direction.z, direction.y, direction.x)
 	
-	var distance = global_transform.origin.distance_to(destination)
 	var look_at = opposite_dir.normalized().lerp(global_transform.basis.z.normalized(), 0.1).normalized()
 	var rotation = Basis().looking_at(Vector3(look_at.x, 0, look_at.z), Vector3.UP).scaled(Vector3(1,1,1))
 	global_transform.basis = rotation
@@ -48,10 +46,10 @@ func _process(delta):
 		velocity.z = direction.z * SPEED
 		#anim.play("Walk")
 		anim.play("Walk")
-		#footstep.play()
 	else:
 		velocity = direction * Vector3(0,0,0)
-		anim.stop()
+		
+		anim.play("Talk")
 		if goal == "dialog" && !dialogActive:
 			dialogActive = true
 			get_node("/root/Coordinator").request_dialog(firstDialogInstance, self)
