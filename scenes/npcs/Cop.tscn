@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c3su42rmlkpba"]
 
 [ext_resource type="Script" path="res://scripts/Cop.gd" id="1_0na6c"]
-[ext_resource type="PackedScene" uid="uid://b4kcf7fnvs0o7" path="res://scenes/npcs/Cop_character.tscn" id="2_y8awh"]
+[ext_resource type="PackedScene" uid="uid://bwxoflbosp6je" path="res://scenes/npcs/pnj/pnj1.tscn" id="2_qbqne"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3uflr"]
 
@@ -10,13 +10,12 @@ script = ExtResource("1_0na6c")
 
 [node name="Pivot" type="Node3D" parent="."]
 
-[node name="Character" parent="Pivot" instance=ExtResource("2_y8awh")]
-transform = Transform3D(0.265, 0, 0, 0, 0.265, 0, 0, 0, 0.265, 0, -0.72919, 0)
+[node name="business_shirt" parent="Pivot" instance=ExtResource("2_qbqne")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0364797, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00135, 0)
 shape = SubResource("CapsuleShape3D_3uflr")
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0099647, 0.0499619, 0.331121)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.013839, 0.99738, 0.331121)
 aabb = AABB(-0.556496, -0.996212, -0.815667, 1.0837, 1.99232, 0.924301)

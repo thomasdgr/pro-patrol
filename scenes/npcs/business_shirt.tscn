@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dsorry3paxo5e"]
+[gd_scene load_steps=5 format=3 uid="uid://dsorry3paxo5e"]
 
-[ext_resource type="PackedScene" uid="uid://jhbhgsece2fl" path="res://business_shirt.glb" id="1_te0m0"]
+[ext_resource type="PackedScene" uid="uid://bxalhwb8ku6a3" path="res://business_shirt.glb" id="1_te0m0"]
 [ext_resource type="Texture2D" uid="uid://culj7y6lbmpd4" path="res://SourceFiles/Textures/PolygonCity_Texture_03_A.png" id="2_7p80b"]
+[ext_resource type="Script" path="res://scenes/npcs/business_shirt.gd" id="2_uj136"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ypxi"]
 albedo_texture = ExtResource("2_7p80b")
 
 [node name="business_shirt" instance=ExtResource("1_te0m0")]
+script = ExtResource("2_uj136")
 
 [node name="Skeleton3D" parent="Root" index="0"]
 bones/2/rotation = Quaternion(0.995186, 0.0980031, -3.16336e-08, -7.39897e-09)

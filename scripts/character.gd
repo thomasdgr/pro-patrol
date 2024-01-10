@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+
+	
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var current_speed = 15
 
@@ -9,14 +11,15 @@ var mouse_sensitivity = 0.002
 var direction = Vector3.ZERO
 
 var lerp_speed = 10.0
+var is_camera_movable = true
 
 func _ready():
+	is_camera_movable = true
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 
-
 func _input(event):
-	if event is InputEventMouseMotion :
+	if event is InputEventMouseMotion && is_camera_movable == true :
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		#print($Neck/Camera3D.rotation.x)
 		$Neck/Camera3D.rotate_x(-event.relative.y * mouse_sensitivity)
@@ -30,7 +33,7 @@ func _physics_process(delta):
 
 	var input = Input.get_vector("left", "right", "forward", "backward")
 	direction = lerp(direction,(transform.basis * Vector3(input.x, 0, input.y)).normalized(),delta * lerp_speed) 
-	if direction:
+	if direction  && is_camera_movable == true :
 		velocity.x = direction.x * current_speed
 		velocity.z = direction.z * current_speed
 	else:
@@ -39,5 +42,7 @@ func _physics_process(delta):
 	
 	move_and_slide()
 	
-
+func camera_state(value):
+	print("stop camera character : ", value)
+	is_camera_movable = !value
 

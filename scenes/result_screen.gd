@@ -7,14 +7,14 @@ func _ready():
 	var dialogs = coordinator.get_dialogs()
 	var success = true
 	
-	get_node("TextureRect/ContentBox/Title/MissionName").text = coordinator.get_level_name()
+	get_node("ContentBox/Title/MissionName").text = coordinator.get_level_name()
 	
 	for dialog in dialogs:
 		if dialog.points > 0:
 			success = false
 			break
 			
-	var badge : TextureRect = get_node("TextureRect/ContentBox/Title/BadgeImg")
+	var badge : TextureRect = get_node("ContentBox/Title/BadgeImg")
 	
 	if success:
 		badge.set_texture(load("res://assets/png/PASS.png"))
@@ -22,7 +22,7 @@ func _ready():
 		badge.set_texture(load("res://assets/png/FAIL.png"))
 	
 	# We need to insert labels into the Recap for each dialog
-	var recapNode = get_node("TextureRect/ContentBox/Recap")
+	var recapNode = get_node("ContentBox/Recap")
 	for n in recapNode.get_children():
 		recapNode.remove_child(n)
 		n.queue_free()
@@ -44,7 +44,7 @@ func _ready():
 	# in both cases there should be an exit to main menu button
 	# We should also store the progress in some file. Maybe a json or maybe something less "modifiable"
 	
-	var contentBox : VBoxContainer = get_node("TextureRect/ContentBox")
+	var contentBox : VBoxContainer = get_node("ContentBox")
 	var hBox : HBoxContainer = HBoxContainer.new()
 	var exitButton = Button.new()
 	exitButton.pressed.connect(_exit_button_pressed)
