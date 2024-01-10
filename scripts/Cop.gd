@@ -13,6 +13,9 @@ var dialogActive: bool
 
 #@onready var anim: AnimationPlayer = $Pivot/Character/AnimationPlayer
 @onready var anim: AnimationPlayer = $Pivot/business_shirt/AnimationPlayer
+@onready var footstep : AudioStreamPlayer = $Pivot/business_shirt/footstep
+#@onready var talk : AudioStreamPlayer = $Pivot/business_shirt/talk
+
 func _ready():
 	player = get_node("/root/Map/Character")  
 	
@@ -39,10 +42,12 @@ func _process(delta):
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 		anim.play("Walk")
+		#footstep.play()
 		#anim.play("BARNEY-X_Template_Biped1_skeleton|mixamo_com|Layer0")
 	else:
 		velocity = direction * Vector3(0,0,0)
 		anim.stop()
+		#footstep.stop()
 		if goal == "dialog" && !dialogActive:
 			dialogActive = true
 			get_node("/root/Coordinator").request_dialog(firstDialogInstance)

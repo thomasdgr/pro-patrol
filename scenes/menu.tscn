@@ -1,20 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1j5liek54gkl"]
+[gd_scene load_steps=7 format=3 uid="uid://b1j5liek54gkl"]
 
-[ext_resource type="FontFile" uid="uid://0vbmkcditkge" path="res://We Love Peace.ttf" id="1_bqqyc"]
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_snyb4"]
 [ext_resource type="PackedScene" uid="uid://dbytvkfs2d4pa" path="res://scenes/donut.glb" id="2_6fabj"]
 
 [sub_resource type="FontVariation" id="FontVariation_50d8r"]
-base_font = ExtResource("1_bqqyc")
 
 [sub_resource type="FontVariation" id="FontVariation_vdbtt"]
-base_font = ExtResource("1_bqqyc")
 
 [sub_resource type="FontVariation" id="FontVariation_cw1c0"]
-base_font = ExtResource("1_bqqyc")
 
 [sub_resource type="FontVariation" id="FontVariation_2ou2k"]
-base_font = ExtResource("1_bqqyc")
 
 [node name="menu" type="CanvasLayer"]
 script = ExtResource("1_snyb4")
@@ -42,7 +37,7 @@ msaa_3d = 1
 use_taa = true
 use_debanding = true
 use_occlusion_culling = true
-size = Vector2i(1147, 642)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
 
 [node name="donut" parent="MarginContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_6fabj")]

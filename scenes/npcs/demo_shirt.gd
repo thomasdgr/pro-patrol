@@ -13,3 +13,8 @@ func _process(delta):
 func walk():
 	print("walk walk")
 	$AnimationPlayer.play("Walk")
+	
+func set_texture(png_path):
+	print(png_path)
+	$Root/Skeleton3D/Character_BusinessMan_Shirt.set_texture(png_path)
+

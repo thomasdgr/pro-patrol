@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3fkug478xiy0"]
+[gd_scene load_steps=6 format=3 uid="uid://b3fkug478xiy0"]
 
 [ext_resource type="Script" path="res://scripts/Cop.gd" id="1_0na6c"]
-[ext_resource type="PackedScene" uid="uid://vgds4rtmnvst" path="res://assets/barney_animated__rigged/scene.gltf" id="2_057vd"]
+[ext_resource type="PackedScene" uid="uid://vgds4rtmnvst" path="res://assets/scene.gltf" id="2_057vd"]
 [ext_resource type="PackedScene" uid="uid://clxgiq68w5tir" path="res://SourceFiles/Characters/business_shirt.glb" id="3_ih0bw"]
+[ext_resource type="AudioStream" uid="uid://dsqgauw011w5y" path="res://sounds/footstep.wav" id="4_mbr2n"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sn87m"]
 radius = 16.7217
@@ -19,6 +20,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.239453, 0, -0.00839114)
 visible = false
 
 [node name="business_shirt" parent="Pivot" instance=ExtResource("3_ih0bw")]
+
+[node name="footstep" type="AudioStreamPlayer" parent="Pivot/business_shirt"]
+stream = ExtResource("4_mbr2n")
+volume_db = -20.0
+
+[node name="talk" type="AudioStreamPlayer" parent="Pivot/business_shirt"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.24582, 29.9755, 2.84802)

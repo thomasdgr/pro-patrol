@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://omafv2ligcvi"]
+
+[ext_resource type="PackedScene" uid="uid://d0al8fht1y2db" path="res://Cars/Bus/Bus.fbx" id="1_wwf0c"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Bus" parent="." instance=ExtResource("1_wwf0c")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.0377808, 0, 0.758545)
