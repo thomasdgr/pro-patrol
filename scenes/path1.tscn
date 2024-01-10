@@ -14,7 +14,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 curve = SubResource("Curve3D_0oo5f")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="."]
-transform = Transform3D(-0.950836, -0.00054261, -0.309693, -0.000609845, 1, 0.000120294, 0.309692, 0.000303245, -0.950836, -58.2342, 0.000738548, 38.8152)
+transform = Transform3D(-0.950833, -0.00054269, -0.309701, -0.00060993, 1, 0.000120288, 0.3097, 0.00030327, -0.950834, -58.2342, 0.000738551, 38.8152)
 progress = 16.82
 
 [node name="business_shirt" parent="PathFollow3D" instance=ExtResource("1_h06hm")]

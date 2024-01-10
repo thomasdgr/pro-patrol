@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dfysom8q27n1x"]
 
-[ext_resource type="Script" path="res://level_pop.gd" id="1_7atr8"]
+[ext_resource type="Script" path="res://scenes/level_pop.gd" id="1_7atr8"]
 
 [node name="level_pop" type="CanvasLayer"]
 script = ExtResource("1_7atr8")

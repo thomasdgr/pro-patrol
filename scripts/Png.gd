@@ -51,3 +51,4 @@ func _process(delta):
 			# Initiate Conversation
 	velocity.y += -GRAVITY * delta
 	move_and_slide()
+	

@@ -6,12 +6,12 @@
         <event time="0" action="spawn_npc" npcId="1" position="(25,2,50)" path="to_player" goal="dialog">
             <dialog>
                 <dialogInstance id="0" text="Yo le policier" time="10">
-                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" action="present_id" />
+                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" action="" />
                     <response text="Euuuh yo...?" points="5" next="-1"  action="end_level"/>
                     <response text="AAAAA yo...?" points="5" next="-1"  action="end_level"/>
                 </dialogInstance>
                 <dialogInstance id="1" text="Non merci" time="8">
-                    <response text="Je répète, veuillez présenter une pièce d'identité" points="0" next="2" action="present_id" />
+                    <response text="Je répète, veuillez présenter une pièce d'identité" points="0" next="2" action="present_fake_id" />
                     <response text="Ah... Tant pis..." points="5" next="-1" action="end_level"/>
                 </dialogInstance>
                 <dialogInstance id="2" text="Ah ok alors... tenez" time="8">

@@ -217,6 +217,8 @@ point_count = 13
 [node name="Map" type="StaticBody3D"]
 script = ExtResource("1_1acjj")
 
+[node name="IdCanvas" type="CanvasLayer" parent="."]
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.730429, -0.116478, 0.672983, 0.537614, 0.509673, 0.671717, -0.421242, 0.852447, -0.30966, -966.258, 552.687, 1619.18)
 shadow_enabled = true
@@ -374,35 +376,35 @@ transform = Transform3D(0.017542, 0, 0.999844, 0, 1, 0, -0.999844, 0, 0.017542, 
 curve = SubResource("Curve3D_h27j5")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D20"]
-transform = Transform3D(-0.029809, 3.91257e-06, 0.999555, 2.27374e-13, 1, -3.91431e-06, -0.999555, -1.16681e-07, -0.029809, -121.779, 0.000488281, 116.359)
+transform = Transform3D(-0.0298218, 3.91259e-06, 0.999555, 0, 1, -3.91433e-06, -0.999555, -1.16732e-07, -0.0298218, -121.779, 0.000488281, 116.359)
 
 [node name="Path3D21" type="Path3D" parent="MovingPnj"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 curve = SubResource("Curve3D_ka5dg")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D21"]
-transform = Transform3D(-0.863753, 1.62939e-05, 0.503914, 9.09495e-13, 1, -3.23347e-05, -0.503914, -2.79293e-05, -0.863753, -77.9504, 0, -27.5919)
+transform = Transform3D(-0.863753, 1.62939e-05, 0.503914, 9.09494e-13, 1, -3.23347e-05, -0.503914, -2.79292e-05, -0.863753, -77.9504, 0, -27.5919)
 
 [node name="Path3D22" type="Path3D" parent="MovingPnj"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 curve = SubResource("Curve3D_umxsb")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D22"]
-transform = Transform3D(-0.884434, -1.93118e-05, -0.466666, 0, 1, -4.13825e-05, 0.466666, -3.66001e-05, -0.884434, -94.0828, 0, 27.367)
+transform = Transform3D(-0.884435, -1.93117e-05, -0.466665, 0, 1, -4.13824e-05, 0.466665, -3.66e-05, -0.884435, -94.0828, 0, 27.367)
 
 [node name="Path3D24" type="Path3D" parent="MovingPnj"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 curve = SubResource("Curve3D_pdqq5")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D24"]
-transform = Transform3D(0.0883796, 0, -0.996087, 0, 1, 0, 0.996087, 0, 0.0883796, -116.056, 0, 30.8256)
+transform = Transform3D(0.0883799, 0, -0.996087, 0, 1, 0, 0.996087, 0, 0.0883799, -116.056, 0, 30.8256)
 
 [node name="Path3D23" type="Path3D" parent="MovingPnj"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 curve = SubResource("Curve3D_opxf0")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="MovingPnj/Path3D23"]
-transform = Transform3D(0.999991, 1.62746e-08, 0.00414918, 0, 1, -3.92236e-06, -0.00414918, 3.92233e-06, 0.999991, -38.2667, 0, 57.0901)
+transform = Transform3D(0.999991, 1.62739e-08, 0.00414902, 0, 1, -3.92235e-06, -0.00414902, 3.92232e-06, 0.999991, -38.2667, 0, 57.0901)
 
 [node name="MovingVehicule" type="Node3D" parent="."]
 
@@ -428,7 +430,7 @@ transform = Transform3D(0.000686602, -5.38486e-07, -1, 2.84217e-14, 1, -5.38486e
 curve = SubResource("Curve3D_ituvt")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="MovingVehicule/Path3D4"]
-transform = Transform3D(0.00332601, 0, 0.999994, 0, 1, 0, -0.999994, 0, 0.00332601, -28.8261, 0.000244141, 76.4319)
+transform = Transform3D(0.00332636, 0, 0.999994, 0, 1, 0, -0.999994, 0, 0.00332636, -28.8261, 0.000244141, 76.4319)
 loop = false
 
 [node name="Path3D5" type="Path3D" parent="MovingVehicule"]
