@@ -1,15 +1,15 @@
 extends CanvasLayer
 
-var audio_player : AudioStreamPlayer
+@onready var audio_player : AudioStreamPlayer = $sound
 static var selected = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if not MainLvl.selected:
 		get_node("/root/Coordinator").get_current_level()
-	get_node("MarginContainer/VBoxContainer/btn_music").toggled.connect(_on_checked)
-	get_node("MarginContainer/VBoxContainer2/btn_exit").toggled.connect(_on_checked_exit)
-	get_node("MarginContainer/VBoxContainer2/btn_start").toggled.connect(_on_checked_start)
-	get_node("MarginContainer/VBoxContainer/btn_niveau").toggled.connect(_on_checked_level)
+	get_node("MarginContainer/VBoxContainer2/btn_music").toggled.connect(_on_checked)
+	get_node("MarginContainer/VBoxContainer/btn_exit").toggled.connect(_on_checked_exit)
+	get_node("MarginContainer/VBoxContainer/btn_start").toggled.connect(_on_checked_start)
+	get_node("MarginContainer/VBoxContainer2/btn_niveau").toggled.connect(_on_checked_level)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
