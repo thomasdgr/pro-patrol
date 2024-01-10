@@ -1,104 +1,149 @@
-[gd_scene load_steps=7 format=3 uid="uid://b1j5liek54gkl"]
+[gd_scene load_steps=12 format=3 uid="uid://b1j5liek54gkl"]
 
-[ext_resource type="Script" path="res://scenes/menu.gd" id="1_snyb4"]
-[ext_resource type="PackedScene" uid="uid://dbytvkfs2d4pa" path="res://scenes/donut.glb" id="2_6fabj"]
+[ext_resource type="FontFile" uid="uid://ce3i5xpvvgv68" path="res://We Love Peace.ttf" id="1_bqqyc"]
+[ext_resource type="Script" path="res://menu.gd" id="1_ehwax"]
+[ext_resource type="PackedScene" uid="uid://cb1q8tq03df41" path="res://donut.glb" id="2_6fabj"]
+[ext_resource type="AudioStream" uid="uid://ct060mrin82c3" path="res://sound.mp3" id="4_op02t"]
 
-[sub_resource type="FontVariation" id="FontVariation_50d8r"]
+[sub_resource type="FontVariation" id="FontVariation_vphev"]
+base_font = ExtResource("1_bqqyc")
 
-[sub_resource type="FontVariation" id="FontVariation_vdbtt"]
+[sub_resource type="FontVariation" id="FontVariation_3by5l"]
+base_font = ExtResource("1_bqqyc")
 
-[sub_resource type="FontVariation" id="FontVariation_cw1c0"]
+[sub_resource type="FontVariation" id="FontVariation_qksip"]
+base_font = ExtResource("1_bqqyc")
 
-[sub_resource type="FontVariation" id="FontVariation_2ou2k"]
+[sub_resource type="FontVariation" id="FontVariation_hmr42"]
+base_font = ExtResource("1_bqqyc")
+
+[sub_resource type="Animation" id="Animation_q58fe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 2.92877)]
+}
+
+[sub_resource type="Animation" id="Animation_gu147"]
+resource_name = "move"
+length = 9.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewportContainer/SubViewport/Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3, 4.5, 6, 7.5, 9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 2.92877), Vector3(-2.28326, 0, 2.92877), Vector3(0.375484, 0.352539, 2.72102), Vector3(0.375484, -0.680219, 2.72102), Vector3(1.78901, -0.852807, 2.92877), Vector3(-1.71879, -0.766105, 2.72102), Vector3(0, 0, 2.92877)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eepj7"]
+_data = {
+"RESET": SubResource("Animation_q58fe"),
+"move": SubResource("Animation_gu147")
+}
 
 [node name="menu" type="CanvasLayer"]
-script = ExtResource("1_snyb4")
+script = ExtResource("1_ehwax")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-anchors_preset = -1
-anchor_left = 0.002
-anchor_top = 0.061
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
 anchor_right = 1.0
-anchor_bottom = 0.989
-offset_left = 2.696
-offset_top = -40.528
-offset_bottom = 0.127991
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="MarginContainer"]
-layout_mode = 2
-stretch = true
-
-[node name="SubViewport" type="SubViewport" parent="MarginContainer/SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false
 msaa_2d = 1
 msaa_3d = 1
 use_taa = true
 use_debanding = true
 use_occlusion_culling = true
-size = Vector2i(1147, 642)
+size = Vector2i(1152, 648)
 render_target_update_mode = 4
 
-[node name="donut" parent="MarginContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_6fabj")]
+[node name="donut" parent="SubViewportContainer/SubViewport" instance=ExtResource("2_6fabj")]
 transform = Transform3D(0.846039, 0.2075, -0.491082, -0.528458, 0.44797, -0.721149, 0.0703512, 0.869636, 0.488654, 0, -0.381366, 0)
 
-[node name="Camera3D" type="Camera3D" parent="MarginContainer/SubViewportContainer/SubViewport"]
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(1, 0, 0, 0, 0.990899, 0.134609, 0, -0.134609, 0.990899, 0, 0, 2.92877)
-current = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-alignment = 1
+[node name="Label" type="Label" parent="."]
+offset_right = 1153.0
+offset_bottom = 649.0
+theme_override_fonts/font = SubResource("FontVariation_vphev")
+theme_override_font_sizes/font_size = 80
+text = "Pro PATROL"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="btn_niveau" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+[node name="btn_start" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 471.0
+offset_right = 694.0
+offset_bottom = 520.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_fonts/font = SubResource("FontVariation_50d8r")
+theme_override_fonts/font = SubResource("FontVariation_3by5l")
 toggle_mode = true
-text = "LEVEL"
-alignment = 2
+text = "START"
 
-[node name="btn_music" type="CheckButton" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_fonts/font = SubResource("FontVariation_vdbtt")
+[node name="btn_exit" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 537.0
+offset_right = 694.0
+offset_bottom = 586.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = SubResource("FontVariation_qksip")
+toggle_mode = true
+text = "EXIT"
+
+[node name="btn_music" type="CheckButton" parent="Label"]
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 608.0
+offset_right = 1142.0
+offset_bottom = 639.0
+theme_override_fonts/font = SubResource("FontVariation_hmr42")
 button_pressed = true
 action_mode = 0
 text = "SOUND"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
-custom_minimum_size = Vector2(0, 20)
-layout_mode = 2
+[node name="btn_niveau" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 1042.0
+offset_top = 576.0
+offset_right = 1135.0
+offset_bottom = 602.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-size_flags_stretch_ratio = 0.0
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_fonts/font = SubResource("FontVariation_cw1c0")
-theme_override_font_sizes/font_size = 80
-text = "Pro Patrol"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="btn_start" type="Button" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_fonts/font = SubResource("FontVariation_50d8r")
+theme_override_fonts/font = SubResource("FontVariation_3by5l")
 toggle_mode = true
-text = "START"
+text = "LEVEL"
 
-[node name="btn_exit" type="Button" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_fonts/font = SubResource("FontVariation_2ou2k")
-toggle_mode = true
-text = "EXIT"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "move"
+speed_scale = 2.0
+libraries = {
+"": SubResource("AnimationLibrary_eepj7")
+}
 
-[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_op02t")
+autoplay = true
