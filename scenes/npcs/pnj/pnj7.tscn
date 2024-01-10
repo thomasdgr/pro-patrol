@@ -1,11 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://bwxoflbosp6je"]
+[gd_scene load_steps=17 format=3 uid="uid://dn0w0ss73utmc"]
 
-[ext_resource type="Script" path="res://scenes/npcs/demo_shirt.gd" id="1_2ayu6"]
-[ext_resource type="Texture2D" uid="uid://culj7y6lbmpd4" path="res://SourceFiles/Textures/PolygonCity_Texture_03_A.png" id="2_2pnhq"]
-[ext_resource type="Script" path="res://scenes/npcs/Character_BusinessMan_Shirt.gd" id="3_mrhp4"]
+[ext_resource type="Script" path="res://scenes/npcs/demo_shirt.gd" id="1_x8rp0"]
+[ext_resource type="Texture2D" uid="uid://b5ivnxv1n86t0" path="res://SourceFiles/Textures/PolygonCity_Texture_03_C.png" id="2_6nfte"]
+[ext_resource type="Script" path="res://scenes/npcs/Character_BusinessMan_Shirt.gd" id="3_ipqfp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dv7p1"]
-albedo_texture = ExtResource("2_2pnhq")
+albedo_texture = ExtResource("2_6nfte")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sfifn"]
 resource_name = "lambert14"
@@ -3027,7 +3027,7 @@ _data = {
 
 [node name="demo_shirt" type="Node3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
-script = ExtResource("1_2ayu6")
+script = ExtResource("1_x8rp0")
 
 [node name="Root" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
@@ -3374,7 +3374,7 @@ bones/47/scale = Vector3(1, 1, 1)
 material_override = SubResource("StandardMaterial3D_dv7p1")
 mesh = SubResource("ArrayMesh_bewfx")
 skin = SubResource("Skin_f7cwk")
-script = ExtResource("3_mrhp4")
+script = ExtResource("3_ipqfp")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

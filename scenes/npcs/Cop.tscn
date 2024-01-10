@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c3su42rmlkpba"]
 
 [ext_resource type="Script" path="res://scripts/Cop.gd" id="1_0na6c"]
-[ext_resource type="PackedScene" uid="uid://bwxoflbosp6je" path="res://scenes/npcs/demo_shirt.tscn" id="2_qbqne"]
+[ext_resource type="PackedScene" uid="uid://bwxoflbosp6je" path="res://scenes/npcs/pnj/pnj1.tscn" id="2_qbqne"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3uflr"]
 
