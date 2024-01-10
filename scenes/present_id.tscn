@@ -4,15 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://lporpt16ivtm" path="res://scenes/ID_Card.glb" id="1_pxgxs"]
 [ext_resource type="Script" path="res://scenes/ID_Card.gd" id="2_hk1gc"]
 
-[sub_resource type="Environment" id="Environment_xwqn5"]
+[sub_resource type="BoxMesh" id="BoxMesh_nk8x2"]
 
 [node name="present_id" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0401826, 0.0642356, -0.0180354)
 script = ExtResource("1_8tu4w")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.296502, 0.434864, -0.421707)
-environment = SubResource("Environment_xwqn5")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -25,11 +21,8 @@ offset_top = 0.039999
 offset_right = 30.3839
 offset_bottom = 5.90399
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Control"]
-transform = Transform3D(0.954112, 0.299449, 0.0010595, -0.235738, 0.748922, 0.619309, 0.184658, -0.59114, 0.785147, -0.414, 2.3674, 0.051071)
-
 [node name="ID_Card" parent="Control" instance=ExtResource("1_pxgxs")]
-transform = Transform3D(-0.0175222, 0, -0.999846, 0, 1, 0, 0.999846, 0, -0.0175222, 0.166681, -0.306562, -2.45184)
+transform = Transform3D(-0.0175222, 0, -0.999846, 0, 1, 0, 0.999846, 0, -0.0175222, -150, -20, 200)
 script = ExtResource("2_hk1gc")
 
 [node name="Button" type="Button" parent="Control"]
@@ -44,3 +37,38 @@ offset_top = -0.140015
 offset_right = -0.140015
 offset_bottom = -2.0
 text = "Finir la visualisation"
+
+[node name="idCam" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.929776, 0.368125, 0, -0.368125, 0.929776, -149.904, -18.8454, 202.333)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(55.222, 4.52002e-05, -0.144203, -0.00937473, 0.290945, -0.336885, 0.137089, 0.00168811, 58.0643, -149.701, -22.606, 204.724)
+mesh = SubResource("BoxMesh_nk8x2")
+skeleton = NodePath("../idCam")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(68.8486, 4.87593e-05, -0.12826, 0.167655, 0.0452449, 51.1061, 0.0352327, -0.310582, 7.44503, -150.51, -10.8978, 191.036)
+mesh = SubResource("BoxMesh_nk8x2")
+skeleton = NodePath("../idCam")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(10.0862, 0.310283, -1.79183, -0.541178, 0.0113728, 51.6102, 68.1038, -0.0458625, 0.675482, -130.017, -7.74273, 191.658)
+mesh = SubResource("BoxMesh_nk8x2")
+skeleton = NodePath("../idCam")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(10.0862, 0.310283, -1.79183, -0.541178, 0.0113728, 51.6102, 68.1038, -0.0458625, 0.675482, -174.499, -7.74273, 190.307)
+mesh = SubResource("BoxMesh_nk8x2")
+skeleton = NodePath("../idCam")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.146498, 0.988603, -0.0346944, -0.968244, 0.150487, 0.199643, 0.202589, 0.00434538, 0.979254, -147.961, -15.9748, 212.96)
+light_energy = 0.8
+light_indirect_energy = 0.64
+light_volumetric_fog_energy = 0.68
+directional_shadow_mode = 0
+sky_mode = 1
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(0.146498, 0.988603, -0.0346944, -0.968244, 0.150487, 0.199644, 0.202589, 0.00434538, 0.979254, -147.961, -15.9748, 212.96)
+visible = false

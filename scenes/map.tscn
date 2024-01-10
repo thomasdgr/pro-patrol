@@ -1,9 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://yd8vw7rcf53q"]
+[gd_scene load_steps=16 format=3 uid="uid://yd8vw7rcf53q"]
 
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_1acjj"]
 [ext_resource type="PackedScene" uid="uid://cnyyf71he22r1" path="res://scenes/png.tscn" id="1_2vbu7"]
 [ext_resource type="PackedScene" uid="uid://gk345cw7fe6d" path="res://scenes/character.tscn" id="1_8t06m"]
-[ext_resource type="PackedScene" uid="uid://bth24b8oufsc6" path="res://scenes/car.tscn" id="4_qxnn0"]
 [ext_resource type="PackedScene" uid="uid://do3tcpmsb6xp1" path="res://scenes/dialogBox.tscn" id="6_8hwvt"]
 [ext_resource type="Script" path="res://scripts/dialogBox.gd" id="7_v4erb"]
 [ext_resource type="PackedScene" uid="uid://dsorry3paxo5e" path="res://scenes/npcs/business_shirt.tscn" id="8_h2rts"]
@@ -42,6 +41,9 @@ point_count = 2
 [node name="Map" type="StaticBody3D"]
 script = ExtResource("1_1acjj")
 
+[node name="IdCanvas" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.730429, -0.116478, 0.672983, 0.537614, 0.509673, 0.671717, -0.421242, 0.852447, -0.30966, -966.258, 552.687, 1619.18)
 shadow_enabled = true
@@ -66,13 +68,12 @@ transform = Transform3D(0.999862, -0.0165389, 0.00169087, 0.0165571, 0.999798, -
 curve = SubResource("Curve3D_u2hic")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.020159, 0.0167862, 0.999616, 0, 0.999817, -0.0167897, -0.999776, 0.000338469, 0.0201557, 682.197, 10.0943, 470.219)
+transform = Transform3D(0.020159, 0.0167862, 0.999615, 0, 0.999817, -0.0167896, -0.999776, 0.000338469, 0.0201557, 682.197, 10.0943, 470.219)
 
-[node name="group" parent="Path3D/PathFollow3D" instance=ExtResource("4_qxnn0")]
+[node name="group" parent="Path3D/PathFollow3D" instance=ExtResource("8_h2rts")]
 transform = Transform3D(139.479, 2.17698, 3.10289, -2.17198, 139.513, -0.269983, -3.10675, 0.22167, 139.496, 7.37579, -14.6518, -57.4089)
 
 [node name="Control" parent="." instance=ExtResource("6_8hwvt")]
-visible = false
 offset_left = 0.0
 offset_top = 0.0
 offset_right = 0.0

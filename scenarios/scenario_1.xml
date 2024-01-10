@@ -6,7 +6,7 @@
         <event time="0" action="spawn_npc" npcId="1" position="(-86,1,78)" path="to_player" goal="dialog">
             <dialog>
                 <dialogInstance id="0" text="Bonjour, je suis Samuel Beckett" time="10">
-                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" action="present_id" />
+                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" action="present_fake_id" />
                     <response text="Salut Sam!" points="5" next="-1"  action="end_level"/>
                 </dialogInstance>
                 <dialogInstance id="1" text="Tenez monsieur, voici ma carte d'assurance maladie" time="8">

@@ -13,6 +13,9 @@ func _process(delta):
 var pressed = false
 
 func _input(event: InputEvent) -> void:
+	if not self.visible:
+		return
+		
 	if pressed and event is InputEventMouseMotion:
 		$Cube.rotation.z += event.relative.y * 0.005
 		$Cube.rotation.y += event.relative.x * 0.005

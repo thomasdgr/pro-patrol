@@ -14,6 +14,12 @@ var dialogActive: bool
 @onready var anim: AnimationPlayer = $Pivot/Character/AnimationPlayer
 #@onready var anim: AnimationPlayer = $Pivot/business_shirt/AnimationPlayer
 
+func talking_anim():
+	#anim.loop = false
+	#anim.play("talking")
+	print("Talking Anim")
+	return
+
 func _ready():
 	player = get_node("/root/Map/Character")  
 	
@@ -46,6 +52,6 @@ func _process(delta):
 		anim.stop()
 		if goal == "dialog" && !dialogActive:
 			dialogActive = true
-			get_node("/root/Coordinator").request_dialog(firstDialogInstance)
+			get_node("/root/Coordinator").request_dialog(firstDialogInstance, self)
 
 	move_and_slide()

@@ -8,11 +8,13 @@ var level_cleared = false
 var timer : SceneTreeTimer 
 var events = []
 const lvl_file = "res://lvl.txt"
-var present_id: Node
+var present_id = null
+
+static var map_instance = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 func get_scenario_list():
 	var curr_lvl = get_current_level()
@@ -191,30 +193,67 @@ func parse_string_to_vector3(str):
 
 var active_dialog: bool
 
-func request_dialog(firstDialogInstance: DialogInstance):
+func request_dialog(firstDialogInstance: DialogInstance, npc = null):
 	if (!active_dialog):
 		active_dialog = true
 		dialogBox = get_node("/root/Map/Control")
 		
-		dialogBox.RequestDialog(firstDialogInstance)
+		dialogBox.RequestDialog(firstDialogInstance, npc)
 
 var dialogs = []
-func dialog_response(dialogInstance : DialogInstance, points : int, action : String):
+func dialog_response(dialogInstance : DialogInstance, points : int, action : String, submitAction):
 	dialogs.append({"dialog": dialogInstance, "points": points})
 	self.points += points
 	match action:
 		"end_level":
 			print("ending level")
 			end_level()
+			return false
 		"present_id":
 			print("Show ID")
-			get_tree().change_scene_to_file("res://scenes/present_id.tscn")
-			#present_id = get_node("/root/Map/Control")
-			#present_id.show_id()
+			#get_tree().change_scene_to_file("res://scenes/present_id.tscn")
+			present_id = load("res://scenes/present_id.tscn").instantiate()
+			pause_dialog()
+			var idCanvas = get_node("/root/Map/IdCanvas")
+			idCanvas.add_child(present_id)
+			present_id.get_node("idCam").current = true
+			present_id.setAction(submitAction)
+			return true
+		"present_fake_id":
+			print("Show fake ID")
+			#get_tree().change_scene_to_file("res://scenes/present_id.tscn")
+			var ids = ["jean", "mickey"]
+			ids.shuffle()
+			present_id = load("res://scenes/present_id_" + ids[0] + ".tscn").instantiate()
+			pause_dialog()
+			var idCanvas = get_node("/root/Map/IdCanvas")
+			idCanvas.add_child(present_id)
+			present_id.get_node("idCam").current = true
+			present_id.setAction(submitAction)
+			return true
 			
 		_:
 			print("Else")
-			
+
+
+
+
+func hide_id():
+	if present_id != null:
+		get_node("/root/Map/IdCanvas").remove_child(present_id)
+		present_id.queue_free()
+		resume_dialog()
+		get_node("/root/Map/Character/Neck/Camera3D").current = true
+		
+func pause_dialog():
+	dialogBox = get_node("/root/Map/Control")
+	dialogBox.pause_dialog()
+	dialogBox.visible = false
+	
+func resume_dialog():
+	dialogBox = get_node("/root/Map/Control")
+	dialogBox.resume_dialog()
+	dialogBox.visible = true
 
 func get_points():
 	return self.points
@@ -240,6 +279,7 @@ func end_level():
 	viewport.add_child(resultScreen)
 
 func reset_states():
+	map_instance = null
 	level_cleared = true
 	active_dialog = false
 	npc_manager.clear_npcs()
