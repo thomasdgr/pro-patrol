@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <name text="Contrôle piège"/>
+    <spawn position="(-60,2,-14)"/>
+    <events>
+        <event time="0" action="spawn_npc" npcId="1" position="(-60,1,-18)" path="to_player" goal="dialog">
+            <dialog>
+                <dialogInstance id="0" text="Bonjour, comment puis-je vous aider?" time="10">
+                    <response text="Bonnjour, pouvez vous présenter une pièce d'identité?" points="0" next="1" action="present_fake_id" />
+                    <response text="Bonjour, pouvez vous présenter votre carte grise?" points="5" next="-1"  action="end_level"/>
+                </dialogInstance>
+                <dialogInstance id="1" text="Tenez monsieur, voici ma carte d'identité" time="8">
+                    <response text="Tout a l'air juste, bonne journée!" points="5" next="2"/>
+                    <response text="Quelque chose cloche avec votre carte...." points="0" next="3"/>
+                </dialogInstance>
+                <dialogInstance id="2" text="Merci, vous aussi!" time="8">
+                    <response text="Ok" points="0" next="-1" action="end_level"/>
+                </dialogInstance>
+                <dialogInstance id="3" text="Ah pardon c'était la mauvaise haha, tenez!" time="8">
+                    <response text="Accepter la carte" points="0" next="4" action="present_id"/>
+                    <response text="Refuser la carte, et embarquer l'individu" points="5" next="-1" action="end_level"/>
+                </dialogInstance>
+                <dialogInstance id="4" text="Haha, tout est en ordre?" time="8">
+                    <response text="Oui, tout est en ordre, bonne journée!" points="5" next="-1" action="end_level"/>
+                    <response text="La carte est correcte, mais je vous mets une amende!" points="0" next="-1" action="end_level"/>
+            </dialog>
+        </event>
+    </events>
+</scenario>

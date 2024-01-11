@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <name text="Conrôle hôstile"/>
+    <spawn position="(-135,2,124)"/>
+    <events>
+        <event time="0" action="spawn_npc" npcId="1" position="(-135,1,120)" path="to_player" goal="dialog">
+            <dialog>
+                <dialogInstance id="0" text="Y a quoi?" time="10">
+                    <response text="Menotter" points="5" next="-1" action="end_level" />
+                    <response text="Bonjour, contrôle d'identité, présentez une pièce d'identité s'il vous plaît" points="0" next="1"/>
+                </dialogInstance>
+                <dialogInstance id="1" text="Pourquoi tu veux ma carte?" time="10">
+                    <response text="C'est une procédure standard, veuillez coopérer" points="0" next="2" action="present_id"/>
+                    <response text="Bon, tu la sors cette carte?" points="5" next="3" action="end_level"/>
+                </dialogInstance>
+                <dialogInstance id="2" text="... D'accord..." time="12">
+                    <response text="Tout semble correct, bonne journée" points="0" next="-1" action="end_level" />
+                    <response text="Qu'est-ce que tu me montre, elle est clairement fausse ta carte!" points="5" next="3" action="end_level" />
+                </dialogInstance>
+                <dialogInstance id="3" text="T'es qui toi, à me parler comme ça?" time="5">
+                    <response text="Menotter l'individu" points="5" next="-1" action="end_level"/>
+                    <response text="Terminer" points="5" next="-1" action="end_level"/>
+                </dialogInstance>
+            </dialog>
+        </event>
+    </events>
+</scenario>

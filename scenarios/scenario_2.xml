@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scenario>
-    <name text="Test Scenario 1"/>
-    <spawn position="(30,2,40)"/>
+    <name text="Conrôle suprise...?"/>
+    <spawn position="(-44,2,90)"/>
     <events>
-        <event time="0" action="spawn_npc" npcId="1" position="(25,2,50)" path="to_player" goal="dialog">
+        <event time="0" action="spawn_npc" npcId="1" position="(-44,1,85)" path="to_player" goal="dialog">
             <dialog>
-                <dialogInstance id="0" text="Yo le policier" time="10">
-                    <response text="Veuillez présenter une pièce d'identité" points="0" next="1" action="" />
-                    <response text="Euuuh yo...?" points="5" next="-1"  action="end_level"/>
-                    <response text="AAAAA yo...?" points="5" next="-1"  action="end_level"/>
+                <dialogInstance id="0" text="Qu'est-ce que vous voulez?" time="10">
+                    <response text="Comment ça qu'est-ce que je veux?" points="5" next="-1" action="end_level" />
+                    <response text="Bonjour, contrôle d'identité, présentez une pièce d'identité s'il vous plaît" points="0" next="1"  action="present_fake_id"/>
                 </dialogInstance>
-                <dialogInstance id="1" text="Non merci" time="8">
-                    <response text="Je répète, veuillez présenter une pièce d'identité" points="0" next="2" action="present_fake_id" />
-                    <response text="Ah... Tant pis..." points="5" next="-1" action="end_level"/>
+                <dialogInstance id="1" text="Tenez, voici ma carte d'identité. Satisfait?" time="8">
+                    <response text="Merci, tout semble correct. Bonne journée." points="5" next="3"/>
+                    <response text="Cette carte est fausse, veneze avec moi." points="0" next="2"/>
                 </dialogInstance>
-                <dialogInstance id="2" text="Ah ok alors... tenez" time="8">
-                    <response text="Merci, c'est tout bon" points="5" next="-1" action="end_level"/>
-                    <response text="Quelque chose ne colle pas avec votre carte!" points="0" next="3" />
+                <dialogInstance id="2" text="..." time="8">
+                    <response text="Terminer" points="0" next="3" action="end_level" />
                 </dialogInstance>
-                <dialogInstance id="3" text="Oh zut!" time="5">
-                    <response text="Terminer." points="0" next="-1" action="end_level"/>
+                <dialogInstance id="3" text="Ciao" time="5">
+                    <response text="Terminer" points="0" next="-1" action="end_level"/>
                 </dialogInstance>
             </dialog>
         </event>

@@ -68,6 +68,7 @@ var dialogNpc = null
 func RequestDialog(dialog_id: DialogInstance, npc = null):
 	if npc != null:
 		dialogNpc = npc
+	
 	if dialog_id == null:
 		return
 	if true:

@@ -3,7 +3,7 @@ extends CharacterBody3D
 
 	
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
-var current_speed = 15
+var current_speed = 0
 
 var jump_speed = 5
 var mouse_sensitivity = 0.002
@@ -30,7 +30,11 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 		
-
+	# Add flying controls
+	# var input_y = Input.get_action_strength("fly_up") - Input.get_action_strength("fly_down")
+	# velocity.y += input_y * current_speed * delta
+	
+	
 	var input = Input.get_vector("left", "right", "forward", "backward")
 	direction = lerp(direction,(transform.basis * Vector3(input.x, 0, input.y)).normalized(),delta * lerp_speed) 
 	if direction  && is_camera_movable == true :

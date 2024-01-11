@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://yd8vw7rcf53q"]
+[gd_scene load_steps=44 format=3 uid="uid://yd8vw7rcf53q"]
 
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_1acjj"]
 [ext_resource type="PackedScene" uid="uid://cnyyf71he22r1" path="res://scenes/png.tscn" id="1_2vbu7"]
@@ -8,23 +8,10 @@
 [ext_resource type="Script" path="res://scripts/dialogBox.gd" id="7_v4erb"]
 [ext_resource type="PackedScene" uid="uid://b013fyrgscynu" path="res://scenes/polygon_city.tscn" id="8_lojno"]
 [ext_resource type="AudioStream" uid="uid://cfkmo6j2t787u" path="res://sounds/city_ambiance.wav" id="8_v7hvs"]
-
-[sub_resource type="Gradient" id="Gradient_aufgv"]
-colors = PackedColorArray(0.137255, 0.137255, 0.529412, 1, 0.0509804, 0.0509804, 0.0509804, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_ydrpk"]
-gradient = SubResource("Gradient_aufgv")
-fill_from = Vector2(0.982051, 0.574359)
-
-[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_3vo0y"]
-night_sky = SubResource("GradientTexture2D_ydrpk")
-
-[sub_resource type="Sky" id="Sky_gj8w5"]
-sky_material = SubResource("PhysicalSkyMaterial_3vo0y")
-
-[sub_resource type="Environment" id="Environment_m0pa7"]
-background_mode = 2
-sky = SubResource("Sky_gj8w5")
+[ext_resource type="Shader" path="res://clouds/clouds.gdshader" id="9_731q1"]
+[ext_resource type="CompressedTexture3D" uid="uid://dbfbysid168mx" path="res://clouds/perlworlnoise.tga" id="10_ld285"]
+[ext_resource type="Texture2D" uid="uid://dfkye0uf4i6w1" path="res://clouds/weather.bmp" id="11_0bpur"]
+[ext_resource type="CompressedTexture3D" uid="uid://c4dp6g6gouj2b" path="res://clouds/worlnoise.bmp" id="12_ykvxp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y7pwh"]
 size = Vector3(554.989, 0.001, 470.617)
@@ -214,6 +201,35 @@ _data = {
 }
 point_count = 13
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lqqhi"]
+shader = ExtResource("9_731q1")
+shader_parameter/wind_direction = Vector2(1, 0)
+shader_parameter/wind_speed = 1.0
+shader_parameter/_density = 0.05
+shader_parameter/cloud_coverage = 0.25
+shader_parameter/_time_offset = 0.0
+shader_parameter/rayleigh = 2.0
+shader_parameter/rayleigh_color = Color(0.26, 0.41, 0.58, 1)
+shader_parameter/mie = 0.005
+shader_parameter/mie_eccentricity = 0.8
+shader_parameter/mie_color = Color(0.63, 0.77, 0.92, 1)
+shader_parameter/turbidity = 10.0
+shader_parameter/sun_disk_scale = 1.0
+shader_parameter/ground_color = Color(1, 1, 1, 1)
+shader_parameter/exposure = 0.1
+shader_parameter/worlnoise = ExtResource("12_ykvxp")
+shader_parameter/perlworlnoise = ExtResource("10_ld285")
+shader_parameter/weathermap = ExtResource("11_0bpur")
+
+[sub_resource type="Sky" id="Sky_m81e2"]
+sky_material = SubResource("ShaderMaterial_lqqhi")
+
+[sub_resource type="Environment" id="Environment_mcq88"]
+background_mode = 2
+sky = SubResource("Sky_m81e2")
+tonemap_mode = 3
+tonemap_white = 3.22
+
 [node name="Map" type="StaticBody3D"]
 script = ExtResource("1_1acjj")
 
@@ -226,9 +242,6 @@ shadow_enabled = true
 [node name="Png" parent="." instance=ExtResource("1_2vbu7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.734, 0, -51.044)
 visible = false
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_m0pa7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.4428, 0.0263386, 133.518)
@@ -443,3 +456,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -135.89, -0.0715618, 111.195)
 [node name="city_ambiance" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_v7hvs")
 volume_db = -20.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mcq88")

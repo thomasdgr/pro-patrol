@@ -5,45 +5,50 @@
 [node name="level_pop" type="CanvasLayer"]
 script = ExtResource("1_7atr8")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 0.994
+offset_right = 4.0
+offset_bottom = -0.112
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.995
+anchor_bottom = 1.0
 offset_left = 1.0
-offset_right = 1150.0
-offset_bottom = 646.0
+offset_right = -0.220093
+offset_bottom = 2.0
 color = Color(0.0705882, 0.180392, 0.556863, 1)
 
-[node name="Label" type="Label" parent="."]
-anchors_preset = -1
-anchor_left = -0.0138889
-anchor_top = -0.0648148
-anchor_right = -0.00173611
-anchor_bottom = -0.0648148
-offset_left = 449.0
-offset_top = 233.0
-offset_right = 684.0
-offset_bottom = 487.0
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.5
+offset_top = -42.5
+offset_right = 74.5
+offset_bottom = 42.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
 text = "CHOISIR LE NIVEAU"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="option_niveau" type="OptionButton" parent="."]
-anchors_preset = -1
-anchor_left = -0.0243056
-anchor_right = 0.0208333
-offset_left = 533.0
-offset_top = 348.0
-offset_right = 589.0
-offset_bottom = 380.0
+[node name="option_niveau" type="OptionButton" parent="Control/VBoxContainer"]
+layout_mode = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="btn_validation" type="Button" parent="."]
-anchors_preset = -1
-anchor_left = -0.0078125
-anchor_right = 0.0147569
-offset_left = 541.0
-offset_top = 402.0
-offset_right = 572.0
-offset_bottom = 433.0
+[node name="btn_validation" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
 toggle_mode = true
 text = "OK"
 metadata/_edit_use_anchors_ = true
